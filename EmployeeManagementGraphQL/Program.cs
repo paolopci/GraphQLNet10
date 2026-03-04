@@ -1,17 +1,25 @@
+using GraphQL;
+using GraphQL.Types;
+using GraphQL.Server;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Controllers (se vuoi mantenere anche REST)
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 
+// GraphQL
+builder.Services.AddGraphQL(options =>
+    {
+        options.EnableMetrics = false;
+    })
+    .AddSystemTextJson()
+    .AddGraphTypes(ServiceLifetime.Scoped);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    //
+    app.UseGraphiQL("/ui/graphiql", "/graphql");
 }
 
 app.UseHttpsRedirection();
@@ -19,5 +27,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Endpoint GraphQL
+app.UseGraphQL<ISchema>("/graphql");
 
 app.Run();
