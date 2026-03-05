@@ -6,7 +6,7 @@ namespace EmployeeManagementGraphQL.Data.Models
     [Table("Review")]
     public class Review
     {
-        [Key] 
+        [Key]
         public int Id { get; set; }
 
         [Required]
