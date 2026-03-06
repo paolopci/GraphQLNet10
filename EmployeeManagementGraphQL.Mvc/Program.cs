@@ -4,10 +4,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var graphQlBaseUrl = builder.Configuration["GraphQl:BaseUrl"];
+if (string.IsNullOrWhiteSpace(graphQlBaseUrl))
+{
+    graphQlBaseUrl = "http://localhost:5232";
+}
+
 builder.Services.AddHttpClient<IEmployeeGraphQlClient, EmployeeGraphQlClient>(httpClient =>
 {
-    // Default didattico: backend GraphQL locale.
-    httpClient.BaseAddress = new Uri("http://localhost:5232");
+    // Endpoint configurabile via appsettings, con fallback locale per demo.
+    httpClient.BaseAddress = new Uri(graphQlBaseUrl, UriKind.Absolute);
 });
 
 var app = builder.Build();
