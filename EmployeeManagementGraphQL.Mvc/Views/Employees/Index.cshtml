@@ -1,6 +1,11 @@
 @model EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm
 @{
     ViewData["Title"] = "Elenco Dipendenti";
+    var currentPage = Model.PageInfo.Page;
+    var totalPages = Model.PageInfo.TotalPages;
+    var windowSize = 1;
+    var startPage = Math.Max(1, currentPage - windowSize);
+    var endPage = Math.Min(totalPages, currentPage + windowSize);
 
     string ToggleSortDir(string field)
     {
@@ -170,39 +175,119 @@
         <span class="mx-2">|</span>
         <strong>Total Count:</strong> @Model.PageInfo.TotalCount
     </div>
-    <div class="btn-group" role="group">
-        @if (Model.PageInfo.HasPreviousPage)
-        {
-            <a class="btn btn-outline-secondary"
-               asp-controller="Employees"
-               asp-action="Index"
-               asp-route-page="@(Model.PageInfo.Page - 1)"
-               asp-route-pageSize="@Model.PageSize"
-               asp-route-sortField="@Model.SortField"
-               asp-route-sortDir="@Model.SortDir">
-                Prev
-            </a>
-        }
-        else
-        {
-            <button type="button" class="btn btn-outline-secondary" disabled>Prev</button>
-        }
+    <nav aria-label="Employees pagination">
+        <ul class="pagination mb-0">
+            <li class="page-item @(Model.PageInfo.HasPreviousPage ? string.Empty : "disabled")">
+                @if (Model.PageInfo.HasPreviousPage)
+                {
+                    <a class="page-link"
+                       asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="@(currentPage - 1)"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="@Model.SortField"
+                       asp-route-sortDir="@Model.SortDir">Previous</a>
+                }
+                else
+                {
+                    <span class="page-link">Previous</span>
+                }
+            </li>
 
-        @if (Model.PageInfo.HasNextPage)
-        {
-            <a class="btn btn-outline-secondary"
-               asp-controller="Employees"
-               asp-action="Index"
-               asp-route-page="@(Model.PageInfo.Page + 1)"
-               asp-route-pageSize="@Model.PageSize"
-               asp-route-sortField="@Model.SortField"
-               asp-route-sortDir="@Model.SortDir">
-                Next
-            </a>
-        }
-        else
-        {
-            <button type="button" class="btn btn-outline-secondary" disabled>Next</button>
-        }
-    </div>
+            @if (totalPages <= 1)
+            {
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+            }
+            else
+            {
+                <li class="page-item @(currentPage == 1 ? "active" : string.Empty)" aria-current="@(currentPage == 1 ? "page" : null)">
+                    @if (currentPage == 1)
+                    {
+                        <span class="page-link">1</span>
+                    }
+                    else
+                    {
+                        <a class="page-link"
+                           asp-controller="Employees"
+                           asp-action="Index"
+                           asp-route-page="1"
+                           asp-route-pageSize="@Model.PageSize"
+                           asp-route-sortField="@Model.SortField"
+                           asp-route-sortDir="@Model.SortDir">1</a>
+                    }
+                </li>
+
+                @if (startPage > 2)
+                {
+                    <li class="page-item disabled"><span class="page-link">...</span></li>
+                }
+
+                @for (var pageNumber = startPage; pageNumber <= endPage; pageNumber++)
+                {
+                    if (pageNumber == 1 || pageNumber == totalPages)
+                    {
+                        continue;
+                    }
+
+                    <li class="page-item @(currentPage == pageNumber ? "active" : string.Empty)" aria-current="@(currentPage == pageNumber ? "page" : null)">
+                        @if (currentPage == pageNumber)
+                        {
+                            <span class="page-link">@pageNumber</span>
+                        }
+                        else
+                        {
+                            <a class="page-link"
+                               asp-controller="Employees"
+                               asp-action="Index"
+                               asp-route-page="@pageNumber"
+                               asp-route-pageSize="@Model.PageSize"
+                               asp-route-sortField="@Model.SortField"
+                               asp-route-sortDir="@Model.SortDir">@pageNumber</a>
+                        }
+                    </li>
+                }
+
+                @if (endPage < totalPages - 1)
+                {
+                    <li class="page-item disabled"><span class="page-link">...</span></li>
+                }
+
+                <li class="page-item @(currentPage == totalPages ? "active" : string.Empty)" aria-current="@(currentPage == totalPages ? "page" : null)">
+                    @if (currentPage == totalPages)
+                    {
+                        <span class="page-link">@totalPages</span>
+                    }
+                    else
+                    {
+                        <a class="page-link"
+                           asp-controller="Employees"
+                           asp-action="Index"
+                           asp-route-page="@totalPages"
+                           asp-route-pageSize="@Model.PageSize"
+                           asp-route-sortField="@Model.SortField"
+                           asp-route-sortDir="@Model.SortDir">@totalPages</a>
+                    }
+                </li>
+            }
+
+            <li class="page-item @(Model.PageInfo.HasNextPage ? string.Empty : "disabled")">
+                @if (Model.PageInfo.HasNextPage)
+                {
+                    <a class="page-link"
+                       asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="@(currentPage + 1)"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="@Model.SortField"
+                       asp-route-sortDir="@Model.SortDir">Next</a>
+                }
+                else
+                {
+                    <span class="page-link">Next</span>
+                }
+            </li>
+        </ul>
+    </nav>
 </div>
