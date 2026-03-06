@@ -30,6 +30,10 @@ builder.Services.AddDbContext<EntityDatabaseContext>(options =>
 builder.Services.AddScoped<EmployeeRepository>();
 builder.Services.AddScoped<EmployeeQuery>();
 builder.Services.AddScoped<EmployeeGraphType>();
+builder.Services.AddScoped<EmployeePagedResultGraphType>();
+builder.Services.AddScoped<PageInfoGraphType>();
+builder.Services.AddScoped<EmployeeSortFieldEnumType>();
+builder.Services.AddScoped<SortDirectionEnumType>();
 builder.Services.AddScoped<EmployeeSchema>();
 builder.Services.AddScoped<ISchema>(sp => sp.GetRequiredService<EmployeeSchema>());
 
