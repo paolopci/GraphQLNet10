@@ -34,6 +34,7 @@ builder.Services.AddScoped<EmployeePagedResultGraphType>();
 builder.Services.AddScoped<PageInfoGraphType>();
 builder.Services.AddScoped<EmployeeSortFieldEnumType>();
 builder.Services.AddScoped<SortDirectionEnumType>();
+builder.Services.AddScoped<EmployeeSortInputType>();
 builder.Services.AddScoped<EmployeeSchema>();
 builder.Services.AddScoped<ISchema>(sp => sp.GetRequiredService<EmployeeSchema>());
 

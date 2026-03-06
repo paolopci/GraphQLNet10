@@ -21,14 +21,13 @@ public class EmployeeRepository
     public PagedResult<Employee> GetEmployeesPaged(
         int page,
         int pageSize,
-        EmployeeSortField sortBy,
-        SortDirection sortDirection)
+        IEnumerable<EmployeeSortCriterion>? sortCriteria)
     {
         var request = PaginationRequest.Normalize(page, pageSize);
 
         IQueryable<Employee> query = _context.EmployeeEntity.AsNoTracking();
 
-        query = ApplySorting(query, sortBy, sortDirection);
+        query = ApplySorting(query, sortCriteria);
 
         var totalCount = query.Count();
         var items = query
@@ -78,24 +77,77 @@ public class EmployeeRepository
 
     private static IQueryable<Employee> ApplySorting(
         IQueryable<Employee> query,
-        EmployeeSortField sortBy,
-        SortDirection sortDirection)
+        IEnumerable<EmployeeSortCriterion>? sortCriteria)
     {
-        return sortBy switch
+        var normalizedCriteria = (sortCriteria ?? [])
+            .Where(c => c is not null)
+            .GroupBy(c => c.Field)
+            .Select(g => g.First())
+            .ToList();
+
+        if (normalizedCriteria.Count == 0)
         {
-            EmployeeSortField.FirstName => sortDirection == SortDirection.Desc
-                ? query.OrderByDescending(e => e.FirstName)
-                : query.OrderBy(e => e.FirstName),
-            EmployeeSortField.LastName => sortDirection == SortDirection.Desc
-                ? query.OrderByDescending(e => e.LastName)
-                : query.OrderBy(e => e.LastName),
-            EmployeeSortField.Email => sortDirection == SortDirection.Desc
-                ? query.OrderByDescending(e => e.Email)
-                : query.OrderBy(e => e.Email),
-            _ => sortDirection == SortDirection.Desc
-                ? query.OrderByDescending(e => e.Id)
-                : query.OrderBy(e => e.Id)
+            return query.OrderBy(e => e.Id);
+        }
+
+        IOrderedQueryable<Employee>? orderedQuery = null;
+
+        foreach (var criterion in normalizedCriteria)
+        {
+            orderedQuery = ApplySingleCriterion(orderedQuery, query, criterion);
+        }
+
+        return orderedQuery ?? query.OrderBy(e => e.Id);
+    }
+
+    private static IOrderedQueryable<Employee> ApplySingleCriterion(
+        IOrderedQueryable<Employee>? orderedQuery,
+        IQueryable<Employee> baseQuery,
+        EmployeeSortCriterion criterion)
+    {
+        var isDescending = criterion.Direction == SortDirection.Desc;
+
+        return criterion.Field switch
+        {
+            EmployeeSortField.FirstName => ApplyOrdering(
+                orderedQuery,
+                baseQuery,
+                e => e.FirstName,
+                isDescending),
+            EmployeeSortField.LastName => ApplyOrdering(
+                orderedQuery,
+                baseQuery,
+                e => e.LastName,
+                isDescending),
+            EmployeeSortField.Email => ApplyOrdering(
+                orderedQuery,
+                baseQuery,
+                e => e.Email,
+                isDescending),
+            _ => ApplyOrdering(
+                orderedQuery,
+                baseQuery,
+                e => e.Id,
+                isDescending)
         };
+    }
+
+    private static IOrderedQueryable<Employee> ApplyOrdering<TKey>(
+        IOrderedQueryable<Employee>? orderedQuery,
+        IQueryable<Employee> baseQuery,
+        System.Linq.Expressions.Expression<Func<Employee, TKey>> keySelector,
+        bool descending)
+    {
+        if (orderedQuery is null)
+        {
+            return descending
+                ? baseQuery.OrderByDescending(keySelector)
+                : baseQuery.OrderBy(keySelector);
+        }
+
+        return descending
+            ? orderedQuery.ThenByDescending(keySelector)
+            : orderedQuery.ThenBy(keySelector);
     }
 }
 

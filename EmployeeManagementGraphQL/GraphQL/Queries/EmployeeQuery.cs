@@ -21,6 +21,11 @@ public class EmployeeQuery : ObjectGraphType
             arguments: new QueryArguments(
                 new QueryArgument<IntGraphType> { Name = "page", DefaultValue = 1, Description = "Requested page number." },
                 new QueryArgument<IntGraphType> { Name = "pageSize", DefaultValue = 20, Description = "Requested page size." },
+                new QueryArgument<ListGraphType<NonNullGraphType<EmployeeSortInputType>>>
+                {
+                    Name = "sort",
+                    Description = "Multi-field sort criteria. Applied in order."
+                },
                 new QueryArgument<EmployeeSortFieldEnumType> { Name = "sortBy", DefaultValue = EmployeeSortField.Id, Description = "Employee sort field." },
                 new QueryArgument<SortDirectionEnumType> { Name = "sortDir", DefaultValue = SortDirection.Asc, Description = "Sort direction." }),
             resolve: context =>
@@ -29,8 +34,13 @@ public class EmployeeQuery : ObjectGraphType
                 var pageSize = context.GetArgument<int>("pageSize", 20);
                 var sortBy = context.GetArgument<EmployeeSortField>("sortBy", EmployeeSortField.Id);
                 var sortDir = context.GetArgument<SortDirection>("sortDir", SortDirection.Asc);
+                var sort = context.GetArgument<List<EmployeeSortCriterion>?>("sort");
 
-                return employeeRepository.GetEmployeesPaged(page, pageSize, sortBy, sortDir);
+                var effectiveSort = sort is { Count: > 0 }
+                    ? sort
+                    : [new EmployeeSortCriterion { Field = sortBy, Direction = sortDir }];
+
+                return employeeRepository.GetEmployeesPaged(page, pageSize, effectiveSort);
             });
 
         Field<EmployeeGraphType>(
