@@ -177,6 +177,23 @@
     </div>
     <nav aria-label="Employees pagination">
         <ul class="pagination mb-0">
+            <li class="page-item @(currentPage > 1 ? string.Empty : "disabled")">
+                @if (currentPage > 1)
+                {
+                    <a class="page-link"
+                       asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="1"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="@Model.SortField"
+                       asp-route-sortDir="@Model.SortDir">First</a>
+                }
+                else
+                {
+                    <span class="page-link">First</span>
+                }
+            </li>
+
             <li class="page-item @(Model.PageInfo.HasPreviousPage ? string.Empty : "disabled")">
                 @if (Model.PageInfo.HasPreviousPage)
                 {
@@ -286,6 +303,23 @@
                 else
                 {
                     <span class="page-link">Next</span>
+                }
+            </li>
+
+            <li class="page-item @(currentPage < totalPages ? string.Empty : "disabled")">
+                @if (currentPage < totalPages)
+                {
+                    <a class="page-link"
+                       asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="@totalPages"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="@Model.SortField"
+                       asp-route-sortDir="@Model.SortDir">Last</a>
+                }
+                else
+                {
+                    <span class="page-link">Last</span>
                 }
             </li>
         </ul>
