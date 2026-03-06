@@ -1,14 +1,208 @@
+@model EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm
 @{
     ViewData["Title"] = "Elenco Dipendenti";
+
+    string ToggleSortDir(string field)
+    {
+        return Model.SortField.Equals(field, StringComparison.OrdinalIgnoreCase)
+            && Model.SortDir.Equals("asc", StringComparison.OrdinalIgnoreCase)
+            ? "desc"
+            : "asc";
+    }
+
+    string SortIcon(string field)
+    {
+        if (!Model.SortField.Equals(field, StringComparison.OrdinalIgnoreCase))
+        {
+            return "↕";
+        }
+
+        return Model.SortDir.Equals("asc", StringComparison.OrdinalIgnoreCase) ? "↑" : "↓";
+    }
 }
 
-<div class="text-center">
-    <h1 class="display-6">Elenco Dipendenti (Demo GraphQL)</h1>
-    <p class="lead">
-        In questo step la pagina di atterraggio del client MVC è pronta.
-    </p>
-    <p>
-        Nei prossimi step collegheremo questa view all'endpoint GraphQL
-        <code>/graphql</code> e mostreremo tabella, paginazione e riordino.
-    </p>
+<h1 class="mb-3">Elenco Dipendenti (Demo GraphQL)</h1>
+
+@if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        <strong>Errore:</strong> @Model.ErrorMessage
+    </div>
+}
+
+<form method="get" asp-controller="Employees" asp-action="Index" class="row g-3 mb-4">
+    <div class="col-md-2">
+        <label class="form-label" for="page">Page</label>
+        <input class="form-control" type="number" id="page" name="page" min="1" value="@Model.Page" />
+    </div>
+    <div class="col-md-2">
+        <label class="form-label" for="pageSize">Page Size</label>
+        <select class="form-select" id="pageSize" name="pageSize">
+            @{
+                var allowedPageSizes = new[] { 5, 10, 20, 50 };
+                foreach (var size in allowedPageSizes)
+                {
+                    if (Model.PageSize == size)
+                    {
+                        <option selected value="@size">@size</option>
+                    }
+                    else
+                    {
+                        <option value="@size">@size</option>
+                    }
+                }
+            }
+        </select>
+    </div>
+    <div class="col-md-3">
+        <label class="form-label" for="sortField">Sort Field</label>
+        <select class="form-select" id="sortField" name="sortField">
+            @{
+                var sortFields = new[] { "id", "firstName", "lastName", "email" };
+                foreach (var field in sortFields)
+                {
+                    if (Model.SortField.Equals(field, StringComparison.OrdinalIgnoreCase))
+                    {
+                        <option selected value="@field">@field</option>
+                    }
+                    else
+                    {
+                        <option value="@field">@field</option>
+                    }
+                }
+            }
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label class="form-label" for="sortDir">Sort Dir</label>
+        <select class="form-select" id="sortDir" name="sortDir">
+            @if (Model.SortDir.Equals("asc", StringComparison.OrdinalIgnoreCase))
+            {
+                <option selected value="asc">asc</option>
+                <option value="desc">desc</option>
+            }
+            else
+            {
+                <option value="asc">asc</option>
+                <option selected value="desc">desc</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary">Applica</button>
+    </div>
+</form>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>
+                    <a asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="1"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="id"
+                       asp-route-sortDir="@ToggleSortDir("id")">
+                        Id @SortIcon("id")
+                    </a>
+                </th>
+                <th>
+                    <a asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="1"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="firstName"
+                       asp-route-sortDir="@ToggleSortDir("firstName")">
+                        FirstName @SortIcon("firstName")
+                    </a>
+                </th>
+                <th>
+                    <a asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="1"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="lastName"
+                       asp-route-sortDir="@ToggleSortDir("lastName")">
+                        LastName @SortIcon("lastName")
+                    </a>
+                </th>
+                <th>
+                    <a asp-controller="Employees"
+                       asp-action="Index"
+                       asp-route-page="1"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-sortField="email"
+                       asp-route-sortDir="@ToggleSortDir("email")">
+                        Email @SortIcon("email")
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Items.Count == 0)
+            {
+                <tr>
+                    <td colspan="4" class="text-center">Nessun dato disponibile.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var employee in Model.Items)
+                {
+                    <tr>
+                        <td>@employee.Id</td>
+                        <td>@employee.FirstName</td>
+                        <td>@employee.LastName</td>
+                        <td>@employee.Email</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-between align-items-center mt-3">
+    <div>
+        <strong>Page:</strong> @Model.PageInfo.Page
+        <span class="mx-2">|</span>
+        <strong>Total Pages:</strong> @Model.PageInfo.TotalPages
+        <span class="mx-2">|</span>
+        <strong>Total Count:</strong> @Model.PageInfo.TotalCount
+    </div>
+    <div class="btn-group" role="group">
+        @if (Model.PageInfo.HasPreviousPage)
+        {
+            <a class="btn btn-outline-secondary"
+               asp-controller="Employees"
+               asp-action="Index"
+               asp-route-page="@(Model.PageInfo.Page - 1)"
+               asp-route-pageSize="@Model.PageSize"
+               asp-route-sortField="@Model.SortField"
+               asp-route-sortDir="@Model.SortDir">
+                Prev
+            </a>
+        }
+        else
+        {
+            <button type="button" class="btn btn-outline-secondary" disabled>Prev</button>
+        }
+
+        @if (Model.PageInfo.HasNextPage)
+        {
+            <a class="btn btn-outline-secondary"
+               asp-controller="Employees"
+               asp-action="Index"
+               asp-route-page="@(Model.PageInfo.Page + 1)"
+               asp-route-pageSize="@Model.PageSize"
+               asp-route-sortField="@Model.SortField"
+               asp-route-sortDir="@Model.SortDir">
+                Next
+            </a>
+        }
+        else
+        {
+            <button type="button" class="btn btn-outline-secondary" disabled>Next</button>
+        }
+    </div>
 </div>
