@@ -1,7 +1,14 @@
+using EmployeeManagementGraphQL.Mvc.GraphQL;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient<IEmployeeGraphQlClient, EmployeeGraphQlClient>(httpClient =>
+{
+    // Default didattico: backend GraphQL locale.
+    httpClient.BaseAddress = new Uri("http://localhost:5232");
+});
 
 var app = builder.Build();
 
