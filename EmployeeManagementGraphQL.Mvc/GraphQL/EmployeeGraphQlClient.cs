@@ -111,10 +111,10 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
     {
         return sortField.Trim().ToLowerInvariant() switch
         {
-            "firstname" => "FirstName",
-            "lastname" => "LastName",
-            "email" => "Email",
-            _ => "Id"
+            "firstname" => "FIRST_NAME",
+            "lastname" => "LAST_NAME",
+            "email" => "EMAIL",
+            _ => "ID"
         };
     }
 
