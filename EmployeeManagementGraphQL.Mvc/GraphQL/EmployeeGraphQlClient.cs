@@ -122,8 +122,8 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
     {
         return sortDir.Trim().ToLowerInvariant() switch
         {
-            "desc" => "Desc",
-            _ => "Asc"
+            "desc" => "DESC",
+            _ => "ASC"
         };
     }
 }
