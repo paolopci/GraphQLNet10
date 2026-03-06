@@ -31,6 +31,27 @@ Obiettivo: mantenere un flusso di lavoro chiaro, coerente e manutenibile per API
    - non marcare step come completati prima della scelta esplicita
    - se scelta `1`, esegui solo lo step indicato
    - se scelta `2`, esegui tutti gli step rimanenti
+3-bis. Per ogni step del piano, applica anche una checklist di item eseguibili (3-7 item concreti):
+   - stato item aperto: `🟦`
+   - stato item completato: `🟧 ~~testo~~`
+   - mantieni sempre visibili item completati e item aperti
+   - prompt decisionale obbligatorio per ogni step:
+     - `🟡 1. Vuoi eseguire un item alla volta dello STEP <n>?`
+     - `🟡 2. Vuoi eseguire tutti gli item dello STEP <n> assieme?`
+   - input valido solo `1` o `2`
+   - se input non valido, mostra errore e riproponi la scelta
+   - prima della risposta utente, tutti gli item restano `🟦`
+   - non marcare item come completati prima della scelta esplicita
+   - se scelta `1`, esegui solo il primo item aperto dello step e poi riproponi `1/2` sugli item rimanenti dello stesso step
+   - se scelta `2`, esegui tutti gli item aperti dello step
+   - divieto di inferenza: non assumere mai implicitamente la scelta `1` o `2` da frasi generiche (es. "procedi", "implementa", "vai avanti")
+   - stop obbligatorio: prima di ogni step e prima della prosecuzione item-by-item, attendi sempre una risposta esplicita `1` o `2`
+   - nessuna esecuzione preventiva: non avviare item, modifiche o tool operativi finché non arriva input valido `1` o `2`
+   - perimetro scelta: la scelta `1/2` vale solo per lo step corrente; per lo step successivo va sempre richiesta di nuovo
+   - in caso di input diverso da `1` o `2`, non proseguire e ripresenta esclusivamente la richiesta di scelta
+   - uno step è completato solo quando tutti i suoi item sono completati
+   - dopo ogni item o uso di tool, valida l'esito in 1-2 frasi e correggi se serve
+   - compatibilità: il controllo `1/2` a livello step resta invariato e si aggiunge anche il controllo `1/2` a livello item
 4. Dopo ogni modifica o uso di tool, valida l'esito in 1-2 frasi e correggi se serve.
 5. Testa e verifica il codice modificato; riformatta i file toccati.
 6. Se compare `Accesso negato`, usa permessi elevati.
