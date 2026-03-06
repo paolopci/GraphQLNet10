@@ -5,9 +5,9 @@ namespace EmployeeManagementGraphQL.GraphQL.Schemas;
 
 public class EmployeeSchema : Schema
 {
-    public EmployeeSchema(IServiceProvider serviceProvider)
+    public EmployeeSchema(IServiceProvider serviceProvider, EmployeeQuery query)
         : base(serviceProvider)
     {
-        Query = serviceProvider.GetRequiredService<EmployeeQuery>();
+        Query = query;
     }
 }

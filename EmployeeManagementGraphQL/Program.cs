@@ -31,7 +31,7 @@ builder.Services.AddScoped<EmployeeRepository>();
 builder.Services.AddScoped<EmployeeQuery>();
 builder.Services.AddScoped<EmployeeGraphType>();
 builder.Services.AddScoped<EmployeeSchema>();
-builder.Services.AddScoped<ISchema, EmployeeSchema>();
+builder.Services.AddScoped<ISchema>(sp => sp.GetRequiredService<EmployeeSchema>());
 
 // GraphQL
 builder.Services.AddGraphQL(options =>
