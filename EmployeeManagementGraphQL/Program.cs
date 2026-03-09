@@ -3,6 +3,7 @@ using GraphQL.Types;
 using GraphQL.Server;
 using EmployeeManagementGraphQL.Data;
 using EmployeeManagementGraphQL.Data.Repositories;
+using EmployeeManagementGraphQL.GraphQL.Mutations;
 using EmployeeManagementGraphQL.GraphQL.Queries;
 using EmployeeManagementGraphQL.GraphQL.Schemas;
 using EmployeeManagementGraphQL.GraphQL.Types;
@@ -29,9 +30,11 @@ builder.Services.AddDbContext<EntityDatabaseContext>(options =>
 
 builder.Services.AddScoped<EmployeeRepository>();
 builder.Services.AddScoped<EmployeeQuery>();
+builder.Services.AddScoped<EmployeeMutation>();
 builder.Services.AddScoped<EmployeeGraphType>();
 builder.Services.AddScoped<EmployeePagedResultGraphType>();
 builder.Services.AddScoped<PageInfoGraphType>();
+builder.Services.AddScoped<EmployeeInputType>();
 builder.Services.AddScoped<EmployeeSortFieldEnumType>();
 builder.Services.AddScoped<SortDirectionEnumType>();
 builder.Services.AddScoped<EmployeeSortInputType>();
