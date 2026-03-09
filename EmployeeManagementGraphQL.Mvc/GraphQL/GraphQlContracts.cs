@@ -69,6 +69,9 @@ public sealed class EmployeeRowVm
 
     [JsonPropertyName("email")]
     public string Email { get; init; } = string.Empty;
+
+    [JsonPropertyName("reviewsCount")]
+    public int ReviewsCount { get; init; }
 }
 
 public sealed class PageInfoVm

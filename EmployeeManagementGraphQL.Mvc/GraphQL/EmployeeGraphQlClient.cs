@@ -12,6 +12,7 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
               firstName
               lastName
               email
+              reviewsCount
             }
             pageInfo {
               page
@@ -32,6 +33,7 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
             firstName
             lastName
             email
+            reviewsCount
           }
         }
         """;
@@ -43,6 +45,7 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
             firstName
             lastName
             email
+            reviewsCount
           }
         }
         """;
@@ -54,6 +57,7 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
             firstName
             lastName
             email
+            reviewsCount
           }
         }
         """;
