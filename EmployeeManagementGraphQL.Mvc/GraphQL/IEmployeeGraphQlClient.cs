@@ -29,4 +29,32 @@ public interface IEmployeeGraphQlClient
         string lastName,
         string email,
         CancellationToken cancellationToken = default);
+
+    Task<ReviewsQueryResult> GetReviewsAsync(
+        CancellationToken cancellationToken = default);
+
+    Task<ReviewsQueryResult> GetReviewsByEmployeeIdAsync(
+        int employeeId,
+        CancellationToken cancellationToken = default);
+
+    Task<ReviewQueryResult> GetReviewByIdAsync(
+        int id,
+        CancellationToken cancellationToken = default);
+
+    Task<ReviewMutationResult> AddReviewAsync(
+        int rate,
+        string comment,
+        int employeeId,
+        CancellationToken cancellationToken = default);
+
+    Task<ReviewMutationResult> UpdateReviewAsync(
+        int id,
+        int rate,
+        string comment,
+        int employeeId,
+        CancellationToken cancellationToken = default);
+
+    Task<GraphQlOperationResult> DeleteReviewAsync(
+        int id,
+        CancellationToken cancellationToken = default);
 }

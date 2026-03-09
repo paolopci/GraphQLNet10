@@ -36,6 +36,9 @@
        asp-route-pageSize="@Model.PageSize"
        asp-route-sortField="@Model.SortField"
        asp-route-sortDir="@Model.SortDir">Add Employee</a>
+    <a class="btn btn-outline-secondary"
+       asp-controller="Reviews"
+       asp-action="Index">Vai alle Review</a>
 </div>
 
 @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
@@ -189,6 +192,10 @@
                                    asp-route-pageSize="@Model.PageSize"
                                    asp-route-sortField="@Model.SortField"
                                    asp-route-sortDir="@Model.SortDir">Delete</a>
+                                <a class="btn btn-sm btn-outline-secondary"
+                                   asp-controller="Reviews"
+                                   asp-action="Index"
+                                   asp-route-employeeId="@employee.Id">@employee.ReviewsCount Reviews</a>
                             </div>
                         </td>
                     </tr>

@@ -69,6 +69,9 @@ public sealed class EmployeeRowVm
 
     [JsonPropertyName("email")]
     public string Email { get; init; } = string.Empty;
+
+    [JsonPropertyName("reviewsCount")]
+    public int ReviewsCount { get; init; }
 }
 
 public sealed class PageInfoVm
@@ -189,4 +192,127 @@ public sealed class EmployeeQueryResult
     public string? ErrorMessage { get; init; }
 
     public EmployeeRowVm? Employee { get; init; }
+}
+
+public sealed class ReviewRowVm
+{
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+
+    [JsonPropertyName("rate")]
+    public int Rate { get; init; }
+
+    [JsonPropertyName("comment")]
+    public string Comment { get; init; } = string.Empty;
+
+    [JsonPropertyName("employeeId")]
+    public int EmployeeId { get; init; }
+}
+
+public sealed class ReviewsResponseData
+{
+    [JsonPropertyName("reviews")]
+    public List<ReviewRowVm> Reviews { get; init; } = [];
+}
+
+public sealed class ReviewByIdResponseData
+{
+    [JsonPropertyName("reviewById")]
+    public ReviewRowVm? ReviewById { get; init; }
+}
+
+public sealed class ReviewsByEmployeeIdVariables
+{
+    [JsonPropertyName("employeeId")]
+    public int EmployeeId { get; init; }
+}
+
+public sealed class ReviewsByEmployeeIdResponseData
+{
+    [JsonPropertyName("reviewsByEmployeeId")]
+    public List<ReviewRowVm> ReviewsByEmployeeId { get; init; } = [];
+}
+
+public sealed class ReviewByIdVariables
+{
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+}
+
+public sealed class ReviewInputVariables
+{
+    [JsonPropertyName("rate")]
+    public int Rate { get; init; }
+
+    [JsonPropertyName("comment")]
+    public required string Comment { get; init; }
+
+    [JsonPropertyName("employeeId")]
+    public int EmployeeId { get; init; }
+}
+
+public sealed class AddReviewVariables
+{
+    [JsonPropertyName("input")]
+    public required ReviewInputVariables Input { get; init; }
+}
+
+public sealed class UpdateReviewVariables
+{
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+
+    [JsonPropertyName("input")]
+    public required ReviewInputVariables Input { get; init; }
+}
+
+public sealed class DeleteReviewVariables
+{
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+}
+
+public sealed class AddReviewResponseData
+{
+    [JsonPropertyName("addReview")]
+    public ReviewRowVm? AddReview { get; init; }
+}
+
+public sealed class UpdateReviewResponseData
+{
+    [JsonPropertyName("updateReview")]
+    public ReviewRowVm? UpdateReview { get; init; }
+}
+
+public sealed class DeleteReviewResponseData
+{
+    [JsonPropertyName("deleteReview")]
+    public bool DeleteReview { get; init; }
+}
+
+public sealed class ReviewsQueryResult
+{
+    public bool Success { get; init; }
+
+    public string? ErrorMessage { get; init; }
+
+    public List<ReviewRowVm> Reviews { get; init; } = [];
+}
+
+public sealed class ReviewQueryResult
+{
+    public bool Success { get; init; }
+
+    public string? ErrorMessage { get; init; }
+
+    public ReviewRowVm? Review { get; init; }
+}
+
+public sealed class ReviewMutationResult
+{
+    public bool Success { get; init; }
+
+    public string? ErrorMessage { get; init; }
+
+    public ReviewRowVm? Review { get; init; }
 }

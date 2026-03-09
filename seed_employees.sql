@@ -10,6 +10,7 @@ DECLARE @InsertedEmployees INT = 0;
 DECLARE @UpdatedEmployees INT = 0;
 DECLARE @InsertedReviews INT = 0;
 DECLARE @UpdatedReviews INT = 0;
+DECLARE @DeletedReviews INT = 0;
 
 ;WITH Numbers AS
 (
@@ -110,27 +111,60 @@ WHERE NOT EXISTS
 
 SET @InsertedEmployees = @@ROWCOUNT;
 
-;WITH SeedReviews AS
+;WITH ReviewSlots AS
+(
+    SELECT * FROM (VALUES (1), (2), (3)) AS rs(Slot)
+),
+SeedReviews AS
 (
     SELECT
         e.Id AS EmployeeId,
-        CASE WHEN e.Id % 2 = 0 THEN 4 ELSE 5 END AS Rate,
-        CONCAT('Valutazione annuale seed per ', e.FirstName, ' ', e.LastName, ' (', e.Email, ').') AS Comment
+        rs.Slot AS ReviewOrdinal,
+        CASE
+            WHEN rs.Slot = 1 THEN CASE WHEN e.Id % 2 = 0 THEN 4 ELSE 5 END
+            WHEN rs.Slot = 2 THEN CASE WHEN e.Id % 5 IN (0, 1) THEN 3 ELSE 4 END
+            ELSE 5
+        END AS Rate,
+        CONCAT(
+            'Valutazione seed #',
+            rs.Slot,
+            ' per ',
+            e.FirstName,
+            ' ',
+            e.LastName,
+            ' (',
+            e.Email,
+            ').'
+        ) AS Comment
     FROM dbo.Employee e
+    CROSS JOIN ReviewSlots rs
+    WHERE e.Email LIKE 'employee___@azienda.it'
+      AND (
+            (e.Id % 4 = 0 AND rs.Slot = 1)
+         OR (e.Id % 4 = 1 AND rs.Slot IN (1, 2))
+         OR (e.Id % 4 = 2 AND rs.Slot IN (1, 2, 3))
+      )
+),
+ExistingReviews AS
+(
+    SELECT
+        r.Id,
+        r.EmployeeId,
+        ROW_NUMBER() OVER (PARTITION BY r.EmployeeId ORDER BY r.Id) AS ReviewOrdinal
+    FROM dbo.Review r
+    INNER JOIN dbo.Employee e ON e.Id = r.EmployeeId
     WHERE e.Email LIKE 'employee___@azienda.it'
 ),
 ReviewTarget AS
 (
     SELECT
-        sr.EmployeeId,
+        er.Id AS ExistingReviewId,
         sr.Rate,
-        sr.Comment,
-        (
-            SELECT MIN(r.Id)
-            FROM dbo.Review r
-            WHERE r.EmployeeId = sr.EmployeeId
-        ) AS ExistingReviewId
+        sr.Comment
     FROM SeedReviews sr
+    INNER JOIN ExistingReviews er
+        ON er.EmployeeId = sr.EmployeeId
+       AND er.ReviewOrdinal = sr.ReviewOrdinal
 )
 UPDATE r
 SET
@@ -143,28 +177,99 @@ WHERE r.Rate <> rt.Rate
 
 SET @UpdatedReviews = @@ROWCOUNT;
 
-;WITH SeedReviews AS
+;WITH ReviewSlots AS
+(
+    SELECT * FROM (VALUES (1), (2), (3)) AS rs(Slot)
+),
+SeedReviews AS
 (
     SELECT
         e.Id AS EmployeeId,
-        CASE WHEN e.Id % 2 = 0 THEN 4 ELSE 5 END AS Rate,
-        CONCAT('Valutazione annuale seed per ', e.FirstName, ' ', e.LastName, ' (', e.Email, ').') AS Comment
+        rs.Slot AS ReviewOrdinal,
+        CASE
+            WHEN rs.Slot = 1 THEN CASE WHEN e.Id % 2 = 0 THEN 4 ELSE 5 END
+            WHEN rs.Slot = 2 THEN CASE WHEN e.Id % 5 IN (0, 1) THEN 3 ELSE 4 END
+            ELSE 5
+        END AS Rate,
+        CONCAT(
+            'Valutazione seed #',
+            rs.Slot,
+            ' per ',
+            e.FirstName,
+            ' ',
+            e.LastName,
+            ' (',
+            e.Email,
+            ').'
+        ) AS Comment
     FROM dbo.Employee e
+    CROSS JOIN ReviewSlots rs
+    WHERE e.Email LIKE 'employee___@azienda.it'
+      AND (
+            (e.Id % 4 = 0 AND rs.Slot = 1)
+         OR (e.Id % 4 = 1 AND rs.Slot IN (1, 2))
+         OR (e.Id % 4 = 2 AND rs.Slot IN (1, 2, 3))
+      )
+),
+ExistingReviews AS
+(
+    SELECT
+        r.Id,
+        r.EmployeeId,
+        ROW_NUMBER() OVER (PARTITION BY r.EmployeeId ORDER BY r.Id) AS ReviewOrdinal
+    FROM dbo.Review r
+    INNER JOIN dbo.Employee e ON e.Id = r.EmployeeId
     WHERE e.Email LIKE 'employee___@azienda.it'
 )
 INSERT INTO dbo.Review (Rate, Comment, EmployeeId)
 SELECT sr.Rate, sr.Comment, sr.EmployeeId
 FROM SeedReviews sr
-WHERE NOT EXISTS
-(
-    SELECT 1
-    FROM dbo.Review r
-    WHERE r.EmployeeId = sr.EmployeeId
-);
+LEFT JOIN ExistingReviews er
+    ON er.EmployeeId = sr.EmployeeId
+   AND er.ReviewOrdinal = sr.ReviewOrdinal
+WHERE er.Id IS NULL;
 
 SET @InsertedReviews = @@ROWCOUNT;
+
+;WITH ReviewSlots AS
+(
+    SELECT * FROM (VALUES (1), (2), (3)) AS rs(Slot)
+),
+DesiredReviewOrdinals AS
+(
+    SELECT
+        e.Id AS EmployeeId,
+        rs.Slot AS ReviewOrdinal
+    FROM dbo.Employee e
+    CROSS JOIN ReviewSlots rs
+    WHERE e.Email LIKE 'employee___@azienda.it'
+      AND (
+            (e.Id % 4 = 0 AND rs.Slot = 1)
+         OR (e.Id % 4 = 1 AND rs.Slot IN (1, 2))
+         OR (e.Id % 4 = 2 AND rs.Slot IN (1, 2, 3))
+      )
+),
+ExistingReviews AS
+(
+    SELECT
+        r.Id,
+        r.EmployeeId,
+        ROW_NUMBER() OVER (PARTITION BY r.EmployeeId ORDER BY r.Id) AS ReviewOrdinal
+    FROM dbo.Review r
+    INNER JOIN dbo.Employee e ON e.Id = r.EmployeeId
+    WHERE e.Email LIKE 'employee___@azienda.it'
+)
+DELETE r
+FROM dbo.Review r
+INNER JOIN ExistingReviews er ON er.Id = r.Id
+LEFT JOIN DesiredReviewOrdinals d
+    ON d.EmployeeId = er.EmployeeId
+   AND d.ReviewOrdinal = er.ReviewOrdinal
+WHERE d.EmployeeId IS NULL;
+
+SET @DeletedReviews = @@ROWCOUNT;
 
 COMMIT TRANSACTION;
 
 PRINT CONCAT('Employee aggiornati: ', @UpdatedEmployees, ', inseriti: ', @InsertedEmployees);
-PRINT CONCAT('Review aggiornate: ', @UpdatedReviews, ', inserite: ', @InsertedReviews);
+PRINT CONCAT('Review aggiornate: ', @UpdatedReviews, ', inserite: ', @InsertedReviews, ', eliminate: ', @DeletedReviews);

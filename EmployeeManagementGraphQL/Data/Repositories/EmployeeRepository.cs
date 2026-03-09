@@ -15,7 +15,17 @@ public class EmployeeRepository
 
     public List<Employee> GetAllEmployees()
     {
-        return [.. _context.EmployeeEntity.Include(f => f.Reviews)];
+        return [.. _context.EmployeeEntity
+            .AsNoTracking()
+            .Select(e => new Employee
+            {
+                Id = e.Id,
+                FirstName = e.FirstName,
+                LastName = e.LastName,
+                Email = e.Email,
+                Reviews = e.Reviews.ToList(),
+                ReviewsCount = e.Reviews.Count()
+            })];
     }
 
     public PagedResult<Employee> GetEmployeesPaged(
@@ -33,6 +43,14 @@ public class EmployeeRepository
         var items = query
             .Skip((request.Page - 1) * request.PageSize)
             .Take(request.PageSize)
+            .Select(e => new Employee
+            {
+                Id = e.Id,
+                FirstName = e.FirstName,
+                LastName = e.LastName,
+                Email = e.Email,
+                ReviewsCount = e.Reviews.Count()
+            })
             .ToList();
 
         var pageInfo = PageInfo.From(totalCount, request.Page, request.PageSize);
@@ -42,13 +60,26 @@ public class EmployeeRepository
 
     public Employee? GetEmployeeById(int id)
     {
-        return _context.EmployeeEntity.Include(t => t.Reviews).Where(d => d.Id == id).FirstOrDefault();
+        return _context.EmployeeEntity
+            .AsNoTracking()
+            .Where(e => e.Id == id)
+            .Select(e => new Employee
+            {
+                Id = e.Id,
+                FirstName = e.FirstName,
+                LastName = e.LastName,
+                Email = e.Email,
+                Reviews = e.Reviews.ToList(),
+                ReviewsCount = e.Reviews.Count()
+            })
+            .FirstOrDefault();
     }
 
     public Employee AddEmployee(Employee employee)
     {
         _context.EmployeeEntity.Add(employee);
         _context.SaveChanges();
+        employee.ReviewsCount = 0;
         return employee;
     }
 
@@ -60,19 +91,38 @@ public class EmployeeRepository
             _employee.FirstName = employee.FirstName;
             _employee.LastName = employee.LastName;
             _employee.Email = employee.Email;
+            _context.SaveChanges();
+
+            return _context.EmployeeEntity
+                .AsNoTracking()
+                .Where(e => e.Id == id)
+                .Select(e => new Employee
+                {
+                    Id = e.Id,
+                    FirstName = e.FirstName,
+                    LastName = e.LastName,
+                    Email = e.Email,
+                    Reviews = e.Reviews.ToList(),
+                    ReviewsCount = e.Reviews.Count()
+                })
+                .FirstOrDefault();
         }
-        _context.SaveChanges();
-        return _employee;
+
+        return null;
     }
 
     public void DeleteEmployee(int id)
     {
-        var _employee = _context.EmployeeEntity.Find(id);
-        if (_employee != null)
+        var employee = _context.EmployeeEntity.FirstOrDefault(e => e.Id == id);
+        if (employee is null)
         {
-            _context.EmployeeEntity.Remove(_employee);
-            _context.SaveChanges();
+            return;
         }
+
+        var reviews = _context.ReviewEntity.Where(r => r.EmployeeId == id);
+        _context.ReviewEntity.RemoveRange(reviews);
+        _context.EmployeeEntity.Remove(employee);
+        _context.SaveChanges();
     }
 
     private static IQueryable<Employee> ApplySorting(

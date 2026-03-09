@@ -1,0 +1,51 @@
+@model EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm
+@{
+    ViewData["Title"] = "Delete Review";
+}
+
+<h1 class="mb-3">Delete Review</h1>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title mb-3">Dettagli review</h5>
+        <p class="mb-1"><strong>Id:</strong> @Model.Id</p>
+        <p class="mb-1"><strong>Rate:</strong> @Model.Rate</p>
+        <p class="mb-1"><strong>EmployeeId:</strong> @Model.EmployeeId</p>
+        <p class="mb-0"><strong>Comment:</strong> @Model.Comment</p>
+    </div>
+</div>
+
+<div class="d-flex gap-2">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">
+        Delete
+    </button>
+    <a class="btn btn-secondary"
+       asp-controller="Reviews"
+       asp-action="Index"
+       asp-route-employeeId="@Model.EmployeeId">Annulla</a>
+</div>
+
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmDeleteModalLabel">Conferma eliminazione</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Vuoi davvero eliminare la review <strong>#@Model.Id</strong>?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <form method="post" asp-controller="Reviews" asp-action="DeleteConfirmed">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="Rate" />
+                    <input type="hidden" asp-for="Comment" />
+                    <input type="hidden" asp-for="EmployeeId" />
+                    <button type="submit" class="btn btn-danger">Sì, elimina</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

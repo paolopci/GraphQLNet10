@@ -1,0 +1,46 @@
+@model EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+@{
+    ViewData["Title"] = Model.IsEdit ? "Update Review" : "Add Review";
+    var actionName = Model.IsEdit ? "Edit" : "Create";
+}
+
+<h1 class="mb-3">@ViewData["Title"]</h1>
+
+<form method="post" asp-controller="Reviews" asp-action="@actionName" class="row g-3">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="EmployeeId" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="col-md-2">
+        <label asp-for="Rate" class="form-label"></label>
+        <input asp-for="Rate" class="form-control" type="number" min="1" max="5" />
+        <span asp-validation-for="Rate" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="EmployeeId" class="form-label"></label>
+        <input value="@Model.EmployeeId" class="form-control" type="number" readonly />
+        <span asp-validation-for="EmployeeId" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-12">
+        <label asp-for="Comment" class="form-label"></label>
+        <textarea asp-for="Comment" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Comment" class="text-danger"></span>
+    </div>
+
+    <div class="col-12 d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Salva</button>
+        <a class="btn btn-secondary"
+           asp-controller="Reviews"
+           asp-action="Index"
+           asp-route-employeeId="@Model.EmployeeId">Annulla</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

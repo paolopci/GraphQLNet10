@@ -1,3 +1,4 @@
+using EmployeeManagementGraphQL.Data.Models;
 using EmployeeManagementGraphQL.Data.Models.Paging;
 using EmployeeManagementGraphQL.Data.Repositories;
 using EmployeeManagementGraphQL.GraphQL.Types;
@@ -8,7 +9,9 @@ namespace EmployeeManagementGraphQL.GraphQL.Queries;
 
 public class EmployeeQuery : ObjectGraphType
 {
-    public EmployeeQuery(EmployeeRepository employeeRepository)
+    public EmployeeQuery(
+        EmployeeRepository employeeRepository,
+        ReviewRepository reviewRepository)
     {
         Field<ListGraphType<EmployeeGraphType>>(
             "employees",
@@ -52,6 +55,33 @@ public class EmployeeQuery : ObjectGraphType
             {
                 var id = context.GetArgument<int>("id");
                 return employeeRepository.GetEmployeeById(id);
+            });
+
+        Field<ListGraphType<ReviewGraphType>>(
+            "reviews",
+            "Get all reviews",
+            resolve: _ => reviewRepository.GetAllReviews());
+
+        Field<ReviewGraphType>(
+            "reviewById",
+            "Get review by id",
+            arguments: new QueryArguments(
+                new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id", Description = "Id of review" }),
+            resolve: context =>
+            {
+                var id = context.GetArgument<int>("id");
+                return reviewRepository.GetReviewById(id);
+            });
+
+        Field<ListGraphType<ReviewGraphType>>(
+            "reviewsByEmployeeId",
+            "Get all reviews for an employee",
+            arguments: new QueryArguments(
+                new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "employeeId", Description = "Id of employee" }),
+            resolve: context =>
+            {
+                var employeeId = context.GetArgument<int>("employeeId");
+                return reviewRepository.GetReviewsByEmployeeId(employeeId);
             });
     }
 }
