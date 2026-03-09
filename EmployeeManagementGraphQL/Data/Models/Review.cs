@@ -13,13 +13,13 @@ namespace EmployeeManagementGraphQL.Data.Models
         public int Rate { get; set; }
 
         [Required]
-        public string Comment { get; set; }
+        public string Comment { get; set; } = string.Empty;
 
 
         public int EmployeeId { get; set; }
 
         [ForeignKey("EmployeeId")]
         [Required]
-        public Employee Employee { get; set; }
+        public Employee? Employee { get; set; }
     }
 }
