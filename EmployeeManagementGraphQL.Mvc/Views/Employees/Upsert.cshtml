@@ -1,0 +1,52 @@
+@model EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm
+@{
+    ViewData["Title"] = Model.IsEdit ? "Update Employee" : "Add Employee";
+    var actionName = Model.IsEdit ? "Edit" : "Create";
+}
+
+<h1 class="mb-3">@ViewData["Title"]</h1>
+
+<form method="post" asp-controller="Employees" asp-action="@actionName" class="row g-3">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Page" />
+    <input type="hidden" asp-for="PageSize" />
+    <input type="hidden" asp-for="SortField" />
+    <input type="hidden" asp-for="SortDir" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="col-md-4">
+        <label asp-for="FirstName" class="form-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="LastName" class="form-label"></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="col-12 d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Salva</button>
+        <a class="btn btn-secondary"
+           asp-controller="Employees"
+           asp-action="Index"
+           asp-route-page="@Model.Page"
+           asp-route-pageSize="@Model.PageSize"
+           asp-route-sortField="@Model.SortField"
+           asp-route-sortDir="@Model.SortDir">Annulla</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
