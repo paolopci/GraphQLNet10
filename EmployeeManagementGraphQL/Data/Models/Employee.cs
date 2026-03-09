@@ -17,5 +17,8 @@ namespace EmployeeManagementGraphQL.Data.Models
 
         public List<Review> Reviews { get; set; } = [];
 
+        [NotMapped]
+        public int ReviewsCount { get; set; }
+
     }
 }
