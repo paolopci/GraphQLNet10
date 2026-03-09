@@ -29,12 +29,15 @@ builder.Services.AddDbContext<EntityDatabaseContext>(options =>
         sqlOptions.EnableRetryOnFailure()));
 
 builder.Services.AddScoped<EmployeeRepository>();
+builder.Services.AddScoped<ReviewRepository>();
 builder.Services.AddScoped<EmployeeQuery>();
 builder.Services.AddScoped<EmployeeMutation>();
 builder.Services.AddScoped<EmployeeGraphType>();
+builder.Services.AddScoped<ReviewGraphType>();
 builder.Services.AddScoped<EmployeePagedResultGraphType>();
 builder.Services.AddScoped<PageInfoGraphType>();
 builder.Services.AddScoped<EmployeeInputType>();
+builder.Services.AddScoped<ReviewInputType>();
 builder.Services.AddScoped<EmployeeSortFieldEnumType>();
 builder.Services.AddScoped<SortDirectionEnumType>();
 builder.Services.AddScoped<EmployeeSortInputType>();

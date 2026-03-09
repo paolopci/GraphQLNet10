@@ -16,6 +16,7 @@ Obiettivo: mantenere un flusso di lavoro chiaro, coerente e manutenibile per API
 
 ## 3. Workflow Operativo
 
+0. Leggi sempre `AGENTS.md` come primissima azione di ogni nuova richiesta sul progetto, prima di analisi, piano, uso tool o modifiche.
 1. Analizza il progetto e identifica la modifica da eseguire.
 2. Presenta una checklist concettuale (1-7 punti):
    - step aperti: `🟦`
@@ -61,6 +62,7 @@ Obiettivo: mantenere un flusso di lavoro chiaro, coerente e manutenibile per API
 10. Per ogni chiamata a una skill che può modificare dati o innescare operazioni irreversibili, richiedi una conferma esplicita dedicata e attendi una risposta chiara prima di procedere.
 11. Dopo la richiesta di conferma, non avviare alcuna skill finché l'utente non risponde in modo valido e inequivocabile.
 12. Dopo ogni conferma ricevuta, valida in 1-2 righe che la skill è stata autorizzata correttamente e solo dopo procedi con l'esecuzione.
+13. Hard stop di processo: se non hai ancora letto `AGENTS.md` nella richiesta corrente, non puoi proporre checklist, non puoi usare tool e non puoi eseguire attività operative.
 
 ## 4. Struttura del Progetto e Organizzazione dei Moduli
 
@@ -84,7 +86,7 @@ Quando si aggiungono test, posizionarli in una cartella parallela come `tests/Em
 - `dotnet watch --project EmployeeManagementGraphQL run`: esegui con hot reload.
 - `dotnet test`: esegui test (dopo l'aggiunta di un progetto di test).
 
-Stato attuale: `dotnet build` fallisce a causa della mancata risoluzione dell'estensione `UseGraphiQL` in `Program.cs`; correggi questo prima di aspettarsi una CI verde.
+Stato attuale: verificare sempre lo stato reale della build con `dotnet build Employee.slnx` prima di trarre conclusioni su errori o regressioni.
 
 ## 6. Stile di Codifica e Convenzioni di Denominazione
 

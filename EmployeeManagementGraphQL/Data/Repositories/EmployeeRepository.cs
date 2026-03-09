@@ -67,12 +67,16 @@ public class EmployeeRepository
 
     public void DeleteEmployee(int id)
     {
-        var _employee = _context.EmployeeEntity.Find(id);
-        if (_employee != null)
+        var employee = _context.EmployeeEntity.FirstOrDefault(e => e.Id == id);
+        if (employee is null)
         {
-            _context.EmployeeEntity.Remove(_employee);
-            _context.SaveChanges();
+            return;
         }
+
+        var reviews = _context.ReviewEntity.Where(r => r.EmployeeId == id);
+        _context.ReviewEntity.RemoveRange(reviews);
+        _context.EmployeeEntity.Remove(employee);
+        _context.SaveChanges();
     }
 
     private static IQueryable<Employee> ApplySorting(

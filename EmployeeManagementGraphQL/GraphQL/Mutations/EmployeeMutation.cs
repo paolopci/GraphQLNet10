@@ -8,7 +8,9 @@ namespace EmployeeManagementGraphQL.GraphQL.Mutations;
 
 public class EmployeeMutation : ObjectGraphType
 {
-    public EmployeeMutation(EmployeeRepository employeeRepository)
+    public EmployeeMutation(
+        EmployeeRepository employeeRepository,
+        ReviewRepository reviewRepository)
     {
         Field<EmployeeGraphType>(
             "addEmployee",
@@ -90,6 +92,92 @@ public class EmployeeMutation : ObjectGraphType
 
                 employeeRepository.DeleteEmployee(id);
                 return true;
+            });
+
+        Field<ReviewGraphType>(
+            "addReview",
+            "Add a new review",
+            arguments: new QueryArguments(
+                new QueryArgument<NonNullGraphType<ReviewInputType>>
+                {
+                    Name = "input",
+                    Description = "Review data to create."
+                }),
+            resolve: context =>
+            {
+                var input = context.GetArgument<Review>("input");
+                if (input is null)
+                {
+                    throw new ExecutionError("The 'input' argument is required.");
+                }
+
+                if (!reviewRepository.EmployeeExists(input.EmployeeId))
+                {
+                    throw new ExecutionError($"Employee with id {input.EmployeeId} does not exist.");
+                }
+
+                var review = new Review
+                {
+                    Rate = input.Rate,
+                    Comment = input.Comment,
+                    EmployeeId = input.EmployeeId
+                };
+
+                return reviewRepository.AddReview(review);
+            });
+
+        Field<ReviewGraphType>(
+            "updateReview",
+            "Update an existing review",
+            arguments: new QueryArguments(
+                new QueryArgument<NonNullGraphType<IntGraphType>>
+                {
+                    Name = "id",
+                    Description = "Review id to update."
+                },
+                new QueryArgument<NonNullGraphType<ReviewInputType>>
+                {
+                    Name = "input",
+                    Description = "Review data to update."
+                }),
+            resolve: context =>
+            {
+                var id = context.GetArgument<int>("id");
+                var input = context.GetArgument<Review>("input");
+
+                if (input is null)
+                {
+                    throw new ExecutionError("The 'input' argument is required.");
+                }
+
+                if (!reviewRepository.EmployeeExists(input.EmployeeId))
+                {
+                    throw new ExecutionError($"Employee with id {input.EmployeeId} does not exist.");
+                }
+
+                var review = new Review
+                {
+                    Rate = input.Rate,
+                    Comment = input.Comment,
+                    EmployeeId = input.EmployeeId
+                };
+
+                return reviewRepository.UpdateReview(id, review);
+            });
+
+        Field<NonNullGraphType<BooleanGraphType>>(
+            "deleteReview",
+            "Delete a review by id",
+            arguments: new QueryArguments(
+                new QueryArgument<NonNullGraphType<IntGraphType>>
+                {
+                    Name = "id",
+                    Description = "Review id to delete."
+                }),
+            resolve: context =>
+            {
+                var id = context.GetArgument<int>("id");
+                return reviewRepository.DeleteReview(id);
             });
     }
 }
