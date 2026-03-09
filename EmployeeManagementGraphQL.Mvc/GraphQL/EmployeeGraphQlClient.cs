@@ -64,6 +64,67 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
         }
         """;
 
+    private const string ReviewsQuery = """
+        query Reviews {
+          reviews {
+            id
+            rate
+            comment
+            employeeId
+          }
+        }
+        """;
+
+    private const string ReviewsByEmployeeIdQuery = """
+        query ReviewsByEmployeeId($employeeId: Int!) {
+          reviewsByEmployeeId(employeeId: $employeeId) {
+            id
+            rate
+            comment
+            employeeId
+          }
+        }
+        """;
+
+    private const string ReviewByIdQuery = """
+        query ReviewById($id: Int!) {
+          reviewById(id: $id) {
+            id
+            rate
+            comment
+            employeeId
+          }
+        }
+        """;
+
+    private const string AddReviewMutation = """
+        mutation AddReview($input: ReviewInput!) {
+          addReview(input: $input) {
+            id
+            rate
+            comment
+            employeeId
+          }
+        }
+        """;
+
+    private const string UpdateReviewMutation = """
+        mutation UpdateReview($id: Int!, $input: ReviewInput!) {
+          updateReview(id: $id, input: $input) {
+            id
+            rate
+            comment
+            employeeId
+          }
+        }
+        """;
+
+    private const string DeleteReviewMutation = """
+        mutation DeleteReview($id: Int!) {
+          deleteReview(id: $id)
+        }
+        """;
+
     public async Task<EmployeePagedQueryResult> GetEmployeesPagedAsync(
         int page,
         int pageSize,
@@ -425,6 +486,504 @@ public sealed class EmployeeGraphQlClient(HttpClient httpClient) : IEmployeeGrap
             ErrorMessage = responseBody.Data?.DeleteEmployee == true
                 ? null
                 : "Delete non eseguita: dipendente non trovato."
+        };
+    }
+
+    public async Task<ReviewsQueryResult> GetReviewsAsync(
+        CancellationToken cancellationToken = default)
+    {
+        var request = new GraphQlRequest<object>
+        {
+            Query = ReviewsQuery,
+            Variables = new { }
+        };
+
+        GraphQlResponse<ReviewsResponseData>? responseBody;
+
+        try
+        {
+            using var response = await httpClient.PostAsJsonAsync("/graphql", request, cancellationToken);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return new ReviewsQueryResult
+                {
+                    Success = false,
+                    ErrorMessage = $"Errore HTTP verso GraphQL: {(int)response.StatusCode} {response.ReasonPhrase}"
+                };
+            }
+
+            responseBody = await response.Content.ReadFromJsonAsync<GraphQlResponse<ReviewsResponseData>>(cancellationToken: cancellationToken);
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException)
+        {
+            return new ReviewsQueryResult
+            {
+                Success = false,
+                ErrorMessage = $"Impossibile contattare il backend GraphQL: {ex.Message}"
+            };
+        }
+
+        if (responseBody is null)
+        {
+            return new ReviewsQueryResult
+            {
+                Success = false,
+                ErrorMessage = "Risposta GraphQL non valida o non deserializzabile."
+            };
+        }
+
+        if (responseBody.Errors is { Count: > 0 })
+        {
+            var errorMessage = string.Join(" | ", responseBody.Errors.Select(error => error.Message));
+            return new ReviewsQueryResult
+            {
+                Success = false,
+                ErrorMessage = $"GraphQL ha restituito errori: {errorMessage}"
+            };
+        }
+
+        return new ReviewsQueryResult
+        {
+            Success = true,
+            Reviews = responseBody.Data?.Reviews ?? []
+        };
+    }
+
+    public async Task<ReviewsQueryResult> GetReviewsByEmployeeIdAsync(
+        int employeeId,
+        CancellationToken cancellationToken = default)
+    {
+        if (employeeId <= 0)
+        {
+            return new ReviewsQueryResult
+            {
+                Success = false,
+                ErrorMessage = "EmployeeId non valido."
+            };
+        }
+
+        var request = new GraphQlRequest<ReviewsByEmployeeIdVariables>
+        {
+            Query = ReviewsByEmployeeIdQuery,
+            Variables = new ReviewsByEmployeeIdVariables
+            {
+                EmployeeId = employeeId
+            }
+        };
+
+        GraphQlResponse<ReviewsByEmployeeIdResponseData>? responseBody;
+
+        try
+        {
+            using var response = await httpClient.PostAsJsonAsync("/graphql", request, cancellationToken);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return new ReviewsQueryResult
+                {
+                    Success = false,
+                    ErrorMessage = $"Errore HTTP verso GraphQL: {(int)response.StatusCode} {response.ReasonPhrase}"
+                };
+            }
+
+            responseBody = await response.Content.ReadFromJsonAsync<GraphQlResponse<ReviewsByEmployeeIdResponseData>>(cancellationToken: cancellationToken);
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException)
+        {
+            return new ReviewsQueryResult
+            {
+                Success = false,
+                ErrorMessage = $"Impossibile contattare il backend GraphQL: {ex.Message}"
+            };
+        }
+
+        if (responseBody is null)
+        {
+            return new ReviewsQueryResult
+            {
+                Success = false,
+                ErrorMessage = "Risposta GraphQL non valida o non deserializzabile."
+            };
+        }
+
+        if (responseBody.Errors is { Count: > 0 })
+        {
+            var errorMessage = string.Join(" | ", responseBody.Errors.Select(error => error.Message));
+            return new ReviewsQueryResult
+            {
+                Success = false,
+                ErrorMessage = $"GraphQL ha restituito errori: {errorMessage}"
+            };
+        }
+
+        return new ReviewsQueryResult
+        {
+            Success = true,
+            Reviews = responseBody.Data?.ReviewsByEmployeeId ?? []
+        };
+    }
+
+    public async Task<ReviewQueryResult> GetReviewByIdAsync(
+        int id,
+        CancellationToken cancellationToken = default)
+    {
+        if (id <= 0)
+        {
+            return new ReviewQueryResult
+            {
+                Success = false,
+                ErrorMessage = "Id review non valido."
+            };
+        }
+
+        var request = new GraphQlRequest<ReviewByIdVariables>
+        {
+            Query = ReviewByIdQuery,
+            Variables = new ReviewByIdVariables
+            {
+                Id = id
+            }
+        };
+
+        GraphQlResponse<ReviewByIdResponseData>? responseBody;
+
+        try
+        {
+            using var response = await httpClient.PostAsJsonAsync("/graphql", request, cancellationToken);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return new ReviewQueryResult
+                {
+                    Success = false,
+                    ErrorMessage = $"Errore HTTP verso GraphQL: {(int)response.StatusCode} {response.ReasonPhrase}"
+                };
+            }
+
+            responseBody = await response.Content.ReadFromJsonAsync<GraphQlResponse<ReviewByIdResponseData>>(cancellationToken: cancellationToken);
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException)
+        {
+            return new ReviewQueryResult
+            {
+                Success = false,
+                ErrorMessage = $"Impossibile contattare il backend GraphQL: {ex.Message}"
+            };
+        }
+
+        if (responseBody is null)
+        {
+            return new ReviewQueryResult
+            {
+                Success = false,
+                ErrorMessage = "Risposta GraphQL non valida o non deserializzabile."
+            };
+        }
+
+        if (responseBody.Errors is { Count: > 0 })
+        {
+            var errorMessage = string.Join(" | ", responseBody.Errors.Select(error => error.Message));
+            return new ReviewQueryResult
+            {
+                Success = false,
+                ErrorMessage = $"GraphQL ha restituito errori: {errorMessage}"
+            };
+        }
+
+        return new ReviewQueryResult
+        {
+            Success = true,
+            Review = responseBody.Data?.ReviewById
+        };
+    }
+
+    public async Task<ReviewMutationResult> AddReviewAsync(
+        int rate,
+        string comment,
+        int employeeId,
+        CancellationToken cancellationToken = default)
+    {
+        if (rate <= 0)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "Rate non valido."
+            };
+        }
+
+        if (string.IsNullOrWhiteSpace(comment))
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "Commento obbligatorio."
+            };
+        }
+
+        if (employeeId <= 0)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "EmployeeId non valido."
+            };
+        }
+
+        var request = new GraphQlRequest<AddReviewVariables>
+        {
+            Query = AddReviewMutation,
+            Variables = new AddReviewVariables
+            {
+                Input = new ReviewInputVariables
+                {
+                    Rate = rate,
+                    Comment = comment,
+                    EmployeeId = employeeId
+                }
+            }
+        };
+
+        GraphQlResponse<AddReviewResponseData>? responseBody;
+
+        try
+        {
+            using var response = await httpClient.PostAsJsonAsync("/graphql", request, cancellationToken);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return new ReviewMutationResult
+                {
+                    Success = false,
+                    ErrorMessage = $"Errore HTTP verso GraphQL: {(int)response.StatusCode} {response.ReasonPhrase}"
+                };
+            }
+
+            responseBody = await response.Content.ReadFromJsonAsync<GraphQlResponse<AddReviewResponseData>>(cancellationToken: cancellationToken);
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = $"Impossibile contattare il backend GraphQL: {ex.Message}"
+            };
+        }
+
+        if (responseBody is null)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "Risposta GraphQL non valida o non deserializzabile."
+            };
+        }
+
+        if (responseBody.Errors is { Count: > 0 })
+        {
+            var errorMessage = string.Join(" | ", responseBody.Errors.Select(error => error.Message));
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = $"GraphQL ha restituito errori: {errorMessage}"
+            };
+        }
+
+        var review = responseBody.Data?.AddReview;
+        return new ReviewMutationResult
+        {
+            Success = review is not null,
+            ErrorMessage = review is null ? "Add review non eseguita." : null,
+            Review = review
+        };
+    }
+
+    public async Task<ReviewMutationResult> UpdateReviewAsync(
+        int id,
+        int rate,
+        string comment,
+        int employeeId,
+        CancellationToken cancellationToken = default)
+    {
+        if (id <= 0)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "Id review non valido."
+            };
+        }
+
+        if (rate <= 0)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "Rate non valido."
+            };
+        }
+
+        if (string.IsNullOrWhiteSpace(comment))
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "Commento obbligatorio."
+            };
+        }
+
+        if (employeeId <= 0)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "EmployeeId non valido."
+            };
+        }
+
+        var request = new GraphQlRequest<UpdateReviewVariables>
+        {
+            Query = UpdateReviewMutation,
+            Variables = new UpdateReviewVariables
+            {
+                Id = id,
+                Input = new ReviewInputVariables
+                {
+                    Rate = rate,
+                    Comment = comment,
+                    EmployeeId = employeeId
+                }
+            }
+        };
+
+        GraphQlResponse<UpdateReviewResponseData>? responseBody;
+
+        try
+        {
+            using var response = await httpClient.PostAsJsonAsync("/graphql", request, cancellationToken);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return new ReviewMutationResult
+                {
+                    Success = false,
+                    ErrorMessage = $"Errore HTTP verso GraphQL: {(int)response.StatusCode} {response.ReasonPhrase}"
+                };
+            }
+
+            responseBody = await response.Content.ReadFromJsonAsync<GraphQlResponse<UpdateReviewResponseData>>(cancellationToken: cancellationToken);
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = $"Impossibile contattare il backend GraphQL: {ex.Message}"
+            };
+        }
+
+        if (responseBody is null)
+        {
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = "Risposta GraphQL non valida o non deserializzabile."
+            };
+        }
+
+        if (responseBody.Errors is { Count: > 0 })
+        {
+            var errorMessage = string.Join(" | ", responseBody.Errors.Select(error => error.Message));
+            return new ReviewMutationResult
+            {
+                Success = false,
+                ErrorMessage = $"GraphQL ha restituito errori: {errorMessage}"
+            };
+        }
+
+        var review = responseBody.Data?.UpdateReview;
+        return new ReviewMutationResult
+        {
+            Success = review is not null,
+            ErrorMessage = review is null ? "Update review non eseguita." : null,
+            Review = review
+        };
+    }
+
+    public async Task<GraphQlOperationResult> DeleteReviewAsync(
+        int id,
+        CancellationToken cancellationToken = default)
+    {
+        if (id <= 0)
+        {
+            return new GraphQlOperationResult
+            {
+                Success = false,
+                ErrorMessage = "Id review non valido."
+            };
+        }
+
+        var request = new GraphQlRequest<DeleteReviewVariables>
+        {
+            Query = DeleteReviewMutation,
+            Variables = new DeleteReviewVariables
+            {
+                Id = id
+            }
+        };
+
+        GraphQlResponse<DeleteReviewResponseData>? responseBody;
+
+        try
+        {
+            using var response = await httpClient.PostAsJsonAsync("/graphql", request, cancellationToken);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return new GraphQlOperationResult
+                {
+                    Success = false,
+                    ErrorMessage = $"Errore HTTP verso GraphQL: {(int)response.StatusCode} {response.ReasonPhrase}"
+                };
+            }
+
+            responseBody = await response.Content.ReadFromJsonAsync<GraphQlResponse<DeleteReviewResponseData>>(cancellationToken: cancellationToken);
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException)
+        {
+            return new GraphQlOperationResult
+            {
+                Success = false,
+                ErrorMessage = $"Impossibile contattare il backend GraphQL: {ex.Message}"
+            };
+        }
+
+        if (responseBody is null)
+        {
+            return new GraphQlOperationResult
+            {
+                Success = false,
+                ErrorMessage = "Risposta GraphQL non valida o non deserializzabile."
+            };
+        }
+
+        if (responseBody.Errors is { Count: > 0 })
+        {
+            var errorMessage = string.Join(" | ", responseBody.Errors.Select(error => error.Message));
+            return new GraphQlOperationResult
+            {
+                Success = false,
+                ErrorMessage = $"GraphQL ha restituito errori: {errorMessage}"
+            };
+        }
+
+        return new GraphQlOperationResult
+        {
+            Success = responseBody.Data?.DeleteReview ?? false,
+            ErrorMessage = responseBody.Data?.DeleteReview == true
+                ? null
+                : "Delete review non eseguita: review non trovata."
         };
     }
 
