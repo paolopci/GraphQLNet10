@@ -102,3 +102,91 @@ public sealed class EmployeePagedQueryResult
 
     public PageInfoVm PageInfo { get; init; } = new();
 }
+
+public sealed class DeleteEmployeeVariables
+{
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+}
+
+public sealed class DeleteEmployeeResponseData
+{
+    [JsonPropertyName("deleteEmployee")]
+    public bool DeleteEmployee { get; init; }
+}
+
+public sealed class GraphQlOperationResult
+{
+    public bool Success { get; init; }
+
+    public string? ErrorMessage { get; init; }
+}
+
+public sealed class EmployeeInputVariables
+{
+    [JsonPropertyName("firstName")]
+    public required string FirstName { get; init; }
+
+    [JsonPropertyName("lastName")]
+    public required string LastName { get; init; }
+
+    [JsonPropertyName("email")]
+    public required string Email { get; init; }
+}
+
+public sealed class AddEmployeeVariables
+{
+    [JsonPropertyName("input")]
+    public required EmployeeInputVariables Input { get; init; }
+}
+
+public sealed class UpdateEmployeeVariables
+{
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+
+    [JsonPropertyName("input")]
+    public required EmployeeInputVariables Input { get; init; }
+}
+
+public sealed class EmployeeByIdVariables
+{
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+}
+
+public sealed class AddEmployeeResponseData
+{
+    [JsonPropertyName("addEmployee")]
+    public EmployeeRowVm? AddEmployee { get; init; }
+}
+
+public sealed class UpdateEmployeeResponseData
+{
+    [JsonPropertyName("updateEmployee")]
+    public EmployeeRowVm? UpdateEmployee { get; init; }
+}
+
+public sealed class EmployeeByIdResponseData
+{
+    [JsonPropertyName("employeeById")]
+    public EmployeeRowVm? EmployeeById { get; init; }
+}
+
+public sealed class EmployeeMutationResult
+{
+    public bool Success { get; init; }
+
+    public string? ErrorMessage { get; init; }
+
+    public EmployeeRowVm? Employee { get; init; }
+}
+
+public sealed class EmployeeQueryResult
+{
+    public bool Success { get; init; }
+
+    public string? ErrorMessage { get; init; }
+
+    public EmployeeRowVm? Employee { get; init; }
+}

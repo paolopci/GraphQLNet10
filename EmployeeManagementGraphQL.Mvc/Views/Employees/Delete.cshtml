@@ -1,0 +1,55 @@
+@model EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm
+@{
+    ViewData["Title"] = "Delete Employee";
+}
+
+<h1 class="mb-3">Delete Employee</h1>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title mb-3">Dettagli dipendente</h5>
+        <p class="mb-1"><strong>Id:</strong> @Model.Id</p>
+        <p class="mb-1"><strong>First Name:</strong> @Model.FirstName</p>
+        <p class="mb-1"><strong>Last Name:</strong> @Model.LastName</p>
+        <p class="mb-0"><strong>Email:</strong> @Model.Email</p>
+    </div>
+</div>
+
+<div class="d-flex gap-2">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">
+        Delete
+    </button>
+    <a class="btn btn-secondary"
+       asp-controller="Employees"
+       asp-action="Index"
+       asp-route-page="@Model.Page"
+       asp-route-pageSize="@Model.PageSize"
+       asp-route-sortField="@Model.SortField"
+       asp-route-sortDir="@Model.SortDir">Annulla</a>
+</div>
+
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmDeleteModalLabel">Conferma eliminazione</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Vuoi davvero eliminare il dipendente <strong>@Model.FirstName @Model.LastName</strong>?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <form method="post" asp-controller="Employees" asp-action="DeleteConfirmed">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="Page" />
+                    <input type="hidden" asp-for="PageSize" />
+                    <input type="hidden" asp-for="SortField" />
+                    <input type="hidden" asp-for="SortDir" />
+                    <button type="submit" class="btn btn-danger">Sì, elimina</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

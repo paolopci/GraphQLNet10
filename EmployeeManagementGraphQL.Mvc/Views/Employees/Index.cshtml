@@ -28,6 +28,16 @@
 
 <h1 class="mb-3">Elenco Dipendenti (Demo GraphQL)</h1>
 
+<div class="mb-3">
+    <a class="btn btn-primary"
+       asp-controller="Employees"
+       asp-action="Create"
+       asp-route-page="@Model.Page"
+       asp-route-pageSize="@Model.PageSize"
+       asp-route-sortField="@Model.SortField"
+       asp-route-sortDir="@Model.SortDir">Add Employee</a>
+</div>
+
 @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
 {
     <div class="alert alert-danger" role="alert">
@@ -142,13 +152,14 @@
                         Email @SortIcon("email")
                     </a>
                 </th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             @if (Model.Items.Count == 0)
             {
                 <tr>
-                    <td colspan="4" class="text-center">Nessun dato disponibile.</td>
+                    <td colspan="5" class="text-center">Nessun dato disponibile.</td>
                 </tr>
             }
             else
@@ -160,6 +171,26 @@
                         <td>@employee.FirstName</td>
                         <td>@employee.LastName</td>
                         <td>@employee.Email</td>
+                        <td>
+                            <div class="employee-actions">
+                                <a class="btn btn-sm employee-action-edit"
+                                   asp-controller="Employees"
+                                   asp-action="Edit"
+                                   asp-route-id="@employee.Id"
+                                   asp-route-page="@Model.Page"
+                                   asp-route-pageSize="@Model.PageSize"
+                                   asp-route-sortField="@Model.SortField"
+                                   asp-route-sortDir="@Model.SortDir">Edit</a>
+                                <a class="btn btn-sm employee-action-delete"
+                                   asp-controller="Employees"
+                                   asp-action="Delete"
+                                   asp-route-id="@employee.Id"
+                                   asp-route-page="@Model.Page"
+                                   asp-route-pageSize="@Model.PageSize"
+                                   asp-route-sortField="@Model.SortField"
+                                   asp-route-sortDir="@Model.SortDir">Delete</a>
+                            </div>
+                        </td>
                     </tr>
                 }
             }

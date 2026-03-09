@@ -29,3 +29,39 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.employee-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.employee-delete-form {
+  margin: 0;
+}
+
+.employee-action-edit {
+  background-color: #198754;
+  border-color: #198754;
+  color: #fff;
+}
+
+.employee-action-edit:hover,
+.employee-action-edit:focus {
+  background-color: #157347;
+  border-color: #146c43;
+  color: #fff;
+}
+
+.employee-action-delete {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.employee-action-delete:hover,
+.employee-action-delete:focus {
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+  color: #fff;
+}
