@@ -1,0 +1,2 @@
+
+{"items":[{"name":"Home","href":"docs/index.html","topicHref":"docs/index.html"},{"name":"API","href":"docs/api/index.html","topicHref":"docs/api/index.html"},{"name":"Frontend","items":[{"name":"MVC","href":"docs/frontend/angular/index.html","topicHref":"docs/frontend/angular/index.html"},{"name":"Blazor","href":"docs/frontend/blazor/index.html","topicHref":"docs/frontend/blazor/index.html"}]},{"name":"Architecture","href":"docs/architecture/index.html","topicHref":"docs/architecture/index.html"}],"pdf":false}

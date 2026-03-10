@@ -1,0 +1,1416 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+  commentId: T:EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+  id: EmployeeSchema
+  parent: EmployeeManagementGraphQL.GraphQL.Schemas
+  children:
+  - EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.#ctor(System.IServiceProvider,EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery,EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation)
+  langs:
+  - csharp
+  - vb
+  name: EmployeeSchema
+  nameWithType: EmployeeSchema
+  fullName: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.GraphQL.Schemas
+  syntax:
+    content: 'public class EmployeeSchema : Schema, ISchema, IProvideMetadata, IProvideDescription, IServiceProvider, IDisposable'
+    content.vb: Public Class EmployeeSchema Inherits Schema Implements ISchema, IProvideMetadata, IProvideDescription, IServiceProvider, IDisposable
+  inheritance:
+  - System.Object
+  - GraphQL.Utilities.MetadataProvider
+  - GraphQL.Types.Schema
+  implements:
+  - GraphQL.Types.ISchema
+  - GraphQL.Types.IProvideMetadata
+  - GraphQL.Types.IProvideDescription
+  - System.IServiceProvider
+  - System.IDisposable
+  inheritedMembers:
+  - GraphQL.Types.Schema.For(System.String,System.Action{GraphQL.Utilities.SchemaBuilder})
+  - GraphQL.Types.Schema.For``1(System.String,System.Action{{TSchemaBuilder}})
+  - GraphQL.Types.Schema.Initialize
+  - GraphQL.Types.Schema.RegisterVisitor(GraphQL.Utilities.ISchemaNodeVisitor)
+  - GraphQL.Types.Schema.RegisterVisitor(System.Type)
+  - GraphQL.Types.Schema.RegisterType(GraphQL.Types.IGraphType)
+  - GraphQL.Types.Schema.RegisterType(System.Type)
+  - GraphQL.Types.Schema.RegisterTypes(System.Type[])
+  - GraphQL.Types.Schema.RegisterTypeMapping(System.Type,System.Type)
+  - GraphQL.Types.Schema.Dispose
+  - GraphQL.Types.Schema.Dispose(System.Boolean)
+  - GraphQL.Types.Schema.CreateSchemaTypes
+  - GraphQL.Types.Schema.Validate
+  - GraphQL.Types.Schema.Features
+  - GraphQL.Types.Schema.NameConverter
+  - GraphQL.Types.Schema.FieldMiddleware
+  - GraphQL.Types.Schema.Initialized
+  - GraphQL.Types.Schema.Description
+  - GraphQL.Types.Schema.Query
+  - GraphQL.Types.Schema.Mutation
+  - GraphQL.Types.Schema.Subscription
+  - GraphQL.Types.Schema.Filter
+  - GraphQL.Types.Schema.Comparer
+  - GraphQL.Types.Schema.Directives
+  - GraphQL.Types.Schema.AllTypes
+  - GraphQL.Types.Schema.AdditionalTypes
+  - GraphQL.Types.Schema.AdditionalTypeInstances
+  - GraphQL.Types.Schema.SchemaMetaFieldType
+  - GraphQL.Types.Schema.TypeMetaFieldType
+  - GraphQL.Types.Schema.TypeNameMetaFieldType
+  - GraphQL.Types.Schema.TypeMappings
+  - GraphQL.Types.Schema.BuiltInTypeMappings
+  - GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,{TType})
+  - GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{{TType}})
+  - GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+  - GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  - GraphQL.Utilities.MetadataProvider.Metadata
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.#ctor(System.IServiceProvider,EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery,EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation)
+  commentId: M:EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.#ctor(System.IServiceProvider,EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery,EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation)
+  id: '#ctor(System.IServiceProvider,EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery,EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation)'
+  parent: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+  langs:
+  - csharp
+  - vb
+  name: EmployeeSchema(IServiceProvider, EmployeeQuery, EmployeeMutation)
+  nameWithType: EmployeeSchema.EmployeeSchema(IServiceProvider, EmployeeQuery, EmployeeMutation)
+  fullName: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.EmployeeSchema(System.IServiceProvider, EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery, EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation)
+  type: Constructor
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.GraphQL.Schemas
+  syntax:
+    content: public EmployeeSchema(IServiceProvider serviceProvider, EmployeeQuery query, EmployeeMutation mutation)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    - id: query
+      type: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+    - id: mutation
+      type: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+    content.vb: Public Sub New(serviceProvider As IServiceProvider, query As EmployeeQuery, mutation As EmployeeMutation)
+  overload: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.#ctor*
+  nameWithType.vb: EmployeeSchema.New(IServiceProvider, EmployeeQuery, EmployeeMutation)
+  fullName.vb: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.New(System.IServiceProvider, EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery, EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation)
+  name.vb: New(IServiceProvider, EmployeeQuery, EmployeeMutation)
+references:
+- uid: EmployeeManagementGraphQL.GraphQL.Schemas
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Schemas
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.GraphQL.Schemas
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Schemas
+  fullName: EmployeeManagementGraphQL.GraphQL.Schemas
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Schemas
+    name: Schemas
+    href: EmployeeManagementGraphQL.GraphQL.Schemas.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Schemas
+    name: Schemas
+    href: EmployeeManagementGraphQL.GraphQL.Schemas.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: GraphQL.Utilities.MetadataProvider
+  commentId: T:GraphQL.Utilities.MetadataProvider
+  parent: GraphQL.Utilities
+  isExternal: true
+  name: MetadataProvider
+  nameWithType: MetadataProvider
+  fullName: GraphQL.Utilities.MetadataProvider
+- uid: GraphQL.Types.Schema
+  commentId: T:GraphQL.Types.Schema
+  parent: GraphQL.Types
+  isExternal: true
+  name: Schema
+  nameWithType: Schema
+  fullName: GraphQL.Types.Schema
+- uid: GraphQL.Types.ISchema
+  commentId: T:GraphQL.Types.ISchema
+  parent: GraphQL.Types
+  isExternal: true
+  name: ISchema
+  nameWithType: ISchema
+  fullName: GraphQL.Types.ISchema
+- uid: GraphQL.Types.IProvideMetadata
+  commentId: T:GraphQL.Types.IProvideMetadata
+  parent: GraphQL.Types
+  isExternal: true
+  name: IProvideMetadata
+  nameWithType: IProvideMetadata
+  fullName: GraphQL.Types.IProvideMetadata
+- uid: GraphQL.Types.IProvideDescription
+  commentId: T:GraphQL.Types.IProvideDescription
+  parent: GraphQL.Types
+  isExternal: true
+  name: IProvideDescription
+  nameWithType: IProvideDescription
+  fullName: GraphQL.Types.IProvideDescription
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: GraphQL.Types.Schema.For(System.String,System.Action{GraphQL.Utilities.SchemaBuilder})
+  commentId: M:GraphQL.Types.Schema.For(System.String,System.Action{GraphQL.Utilities.SchemaBuilder})
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: For(string, Action<SchemaBuilder>)
+  nameWithType: Schema.For(string, Action<SchemaBuilder>)
+  fullName: GraphQL.Types.Schema.For(string, System.Action<GraphQL.Utilities.SchemaBuilder>)
+  nameWithType.vb: Schema.For(String, Action(Of SchemaBuilder))
+  fullName.vb: GraphQL.Types.Schema.For(String, System.Action(Of GraphQL.Utilities.SchemaBuilder))
+  name.vb: For(String, Action(Of SchemaBuilder))
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.For(System.String,System.Action{GraphQL.Utilities.SchemaBuilder})
+    name: For
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: GraphQL.Utilities.SchemaBuilder
+    name: SchemaBuilder
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.For(System.String,System.Action{GraphQL.Utilities.SchemaBuilder})
+    name: For
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.Utilities.SchemaBuilder
+    name: SchemaBuilder
+    isExternal: true
+  - name: )
+  - name: )
+- uid: GraphQL.Types.Schema.For``1(System.String,System.Action{{TSchemaBuilder}})
+  commentId: M:GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+  parent: GraphQL.Types.Schema
+  definition: GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: For<TSchemaBuilder>(string, Action<TSchemaBuilder>)
+  nameWithType: Schema.For<TSchemaBuilder>(string, Action<TSchemaBuilder>)
+  fullName: GraphQL.Types.Schema.For<TSchemaBuilder>(string, System.Action<TSchemaBuilder>)
+  nameWithType.vb: Schema.For(Of TSchemaBuilder)(String, Action(Of TSchemaBuilder))
+  fullName.vb: GraphQL.Types.Schema.For(Of TSchemaBuilder)(String, System.Action(Of TSchemaBuilder))
+  name.vb: For(Of TSchemaBuilder)(String, Action(Of TSchemaBuilder))
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+    name: For
+    isExternal: true
+  - name: <
+  - name: TSchemaBuilder
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TSchemaBuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+    name: For
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSchemaBuilder
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSchemaBuilder
+  - name: )
+  - name: )
+- uid: GraphQL.Types.Schema.Initialize
+  commentId: M:GraphQL.Types.Schema.Initialize
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Initialize()
+  nameWithType: Schema.Initialize()
+  fullName: GraphQL.Types.Schema.Initialize()
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.Initialize
+    name: Initialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.Initialize
+    name: Initialize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: GraphQL.Types.Schema.RegisterVisitor(GraphQL.Utilities.ISchemaNodeVisitor)
+  commentId: M:GraphQL.Types.Schema.RegisterVisitor(GraphQL.Utilities.ISchemaNodeVisitor)
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: RegisterVisitor(ISchemaNodeVisitor)
+  nameWithType: Schema.RegisterVisitor(ISchemaNodeVisitor)
+  fullName: GraphQL.Types.Schema.RegisterVisitor(GraphQL.Utilities.ISchemaNodeVisitor)
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.RegisterVisitor(GraphQL.Utilities.ISchemaNodeVisitor)
+    name: RegisterVisitor
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Utilities.ISchemaNodeVisitor
+    name: ISchemaNodeVisitor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.RegisterVisitor(GraphQL.Utilities.ISchemaNodeVisitor)
+    name: RegisterVisitor
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Utilities.ISchemaNodeVisitor
+    name: ISchemaNodeVisitor
+    isExternal: true
+  - name: )
+- uid: GraphQL.Types.Schema.RegisterVisitor(System.Type)
+  commentId: M:GraphQL.Types.Schema.RegisterVisitor(System.Type)
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: RegisterVisitor(Type)
+  nameWithType: Schema.RegisterVisitor(Type)
+  fullName: GraphQL.Types.Schema.RegisterVisitor(System.Type)
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.RegisterVisitor(System.Type)
+    name: RegisterVisitor
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.RegisterVisitor(System.Type)
+    name: RegisterVisitor
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: GraphQL.Types.Schema.RegisterType(GraphQL.Types.IGraphType)
+  commentId: M:GraphQL.Types.Schema.RegisterType(GraphQL.Types.IGraphType)
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: RegisterType(IGraphType)
+  nameWithType: Schema.RegisterType(IGraphType)
+  fullName: GraphQL.Types.Schema.RegisterType(GraphQL.Types.IGraphType)
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.RegisterType(GraphQL.Types.IGraphType)
+    name: RegisterType
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IGraphType
+    name: IGraphType
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.RegisterType(GraphQL.Types.IGraphType)
+    name: RegisterType
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IGraphType
+    name: IGraphType
+    isExternal: true
+  - name: )
+- uid: GraphQL.Types.Schema.RegisterType(System.Type)
+  commentId: M:GraphQL.Types.Schema.RegisterType(System.Type)
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: RegisterType(Type)
+  nameWithType: Schema.RegisterType(Type)
+  fullName: GraphQL.Types.Schema.RegisterType(System.Type)
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.RegisterType(System.Type)
+    name: RegisterType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.RegisterType(System.Type)
+    name: RegisterType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: GraphQL.Types.Schema.RegisterTypes(System.Type[])
+  commentId: M:GraphQL.Types.Schema.RegisterTypes(System.Type[])
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: RegisterTypes(params Type[])
+  nameWithType: Schema.RegisterTypes(params Type[])
+  fullName: GraphQL.Types.Schema.RegisterTypes(params System.Type[])
+  nameWithType.vb: Schema.RegisterTypes(ParamArray Type())
+  fullName.vb: GraphQL.Types.Schema.RegisterTypes(ParamArray System.Type())
+  name.vb: RegisterTypes(ParamArray Type())
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.RegisterTypes(System.Type[])
+    name: RegisterTypes
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.RegisterTypes(System.Type[])
+    name: RegisterTypes
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: GraphQL.Types.Schema.RegisterTypeMapping(System.Type,System.Type)
+  commentId: M:GraphQL.Types.Schema.RegisterTypeMapping(System.Type,System.Type)
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: RegisterTypeMapping(Type, Type)
+  nameWithType: Schema.RegisterTypeMapping(Type, Type)
+  fullName: GraphQL.Types.Schema.RegisterTypeMapping(System.Type, System.Type)
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.RegisterTypeMapping(System.Type,System.Type)
+    name: RegisterTypeMapping
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.RegisterTypeMapping(System.Type,System.Type)
+    name: RegisterTypeMapping
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: GraphQL.Types.Schema.Dispose
+  commentId: M:GraphQL.Types.Schema.Dispose
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Dispose()
+  nameWithType: Schema.Dispose()
+  fullName: GraphQL.Types.Schema.Dispose()
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+- uid: GraphQL.Types.Schema.Dispose(System.Boolean)
+  commentId: M:GraphQL.Types.Schema.Dispose(System.Boolean)
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Dispose(bool)
+  nameWithType: Schema.Dispose(bool)
+  fullName: GraphQL.Types.Schema.Dispose(bool)
+  nameWithType.vb: Schema.Dispose(Boolean)
+  fullName.vb: GraphQL.Types.Schema.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: GraphQL.Types.Schema.CreateSchemaTypes
+  commentId: M:GraphQL.Types.Schema.CreateSchemaTypes
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: CreateSchemaTypes()
+  nameWithType: Schema.CreateSchemaTypes()
+  fullName: GraphQL.Types.Schema.CreateSchemaTypes()
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.CreateSchemaTypes
+    name: CreateSchemaTypes
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.CreateSchemaTypes
+    name: CreateSchemaTypes
+    isExternal: true
+  - name: (
+  - name: )
+- uid: GraphQL.Types.Schema.Validate
+  commentId: M:GraphQL.Types.Schema.Validate
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Validate()
+  nameWithType: Schema.Validate()
+  fullName: GraphQL.Types.Schema.Validate()
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.Validate
+    name: Validate
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.Validate
+    name: Validate
+    isExternal: true
+  - name: (
+  - name: )
+- uid: GraphQL.Types.Schema.Features
+  commentId: P:GraphQL.Types.Schema.Features
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Features
+  nameWithType: Schema.Features
+  fullName: GraphQL.Types.Schema.Features
+- uid: GraphQL.Types.Schema.NameConverter
+  commentId: P:GraphQL.Types.Schema.NameConverter
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: NameConverter
+  nameWithType: Schema.NameConverter
+  fullName: GraphQL.Types.Schema.NameConverter
+- uid: GraphQL.Types.Schema.FieldMiddleware
+  commentId: P:GraphQL.Types.Schema.FieldMiddleware
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: FieldMiddleware
+  nameWithType: Schema.FieldMiddleware
+  fullName: GraphQL.Types.Schema.FieldMiddleware
+- uid: GraphQL.Types.Schema.Initialized
+  commentId: P:GraphQL.Types.Schema.Initialized
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Initialized
+  nameWithType: Schema.Initialized
+  fullName: GraphQL.Types.Schema.Initialized
+- uid: GraphQL.Types.Schema.Description
+  commentId: P:GraphQL.Types.Schema.Description
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Description
+  nameWithType: Schema.Description
+  fullName: GraphQL.Types.Schema.Description
+- uid: GraphQL.Types.Schema.Query
+  commentId: P:GraphQL.Types.Schema.Query
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Query
+  nameWithType: Schema.Query
+  fullName: GraphQL.Types.Schema.Query
+- uid: GraphQL.Types.Schema.Mutation
+  commentId: P:GraphQL.Types.Schema.Mutation
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Mutation
+  nameWithType: Schema.Mutation
+  fullName: GraphQL.Types.Schema.Mutation
+- uid: GraphQL.Types.Schema.Subscription
+  commentId: P:GraphQL.Types.Schema.Subscription
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Subscription
+  nameWithType: Schema.Subscription
+  fullName: GraphQL.Types.Schema.Subscription
+- uid: GraphQL.Types.Schema.Filter
+  commentId: P:GraphQL.Types.Schema.Filter
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Filter
+  nameWithType: Schema.Filter
+  fullName: GraphQL.Types.Schema.Filter
+- uid: GraphQL.Types.Schema.Comparer
+  commentId: P:GraphQL.Types.Schema.Comparer
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Comparer
+  nameWithType: Schema.Comparer
+  fullName: GraphQL.Types.Schema.Comparer
+- uid: GraphQL.Types.Schema.Directives
+  commentId: P:GraphQL.Types.Schema.Directives
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: Directives
+  nameWithType: Schema.Directives
+  fullName: GraphQL.Types.Schema.Directives
+- uid: GraphQL.Types.Schema.AllTypes
+  commentId: P:GraphQL.Types.Schema.AllTypes
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: AllTypes
+  nameWithType: Schema.AllTypes
+  fullName: GraphQL.Types.Schema.AllTypes
+- uid: GraphQL.Types.Schema.AdditionalTypes
+  commentId: P:GraphQL.Types.Schema.AdditionalTypes
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: AdditionalTypes
+  nameWithType: Schema.AdditionalTypes
+  fullName: GraphQL.Types.Schema.AdditionalTypes
+- uid: GraphQL.Types.Schema.AdditionalTypeInstances
+  commentId: P:GraphQL.Types.Schema.AdditionalTypeInstances
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: AdditionalTypeInstances
+  nameWithType: Schema.AdditionalTypeInstances
+  fullName: GraphQL.Types.Schema.AdditionalTypeInstances
+- uid: GraphQL.Types.Schema.SchemaMetaFieldType
+  commentId: P:GraphQL.Types.Schema.SchemaMetaFieldType
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: SchemaMetaFieldType
+  nameWithType: Schema.SchemaMetaFieldType
+  fullName: GraphQL.Types.Schema.SchemaMetaFieldType
+- uid: GraphQL.Types.Schema.TypeMetaFieldType
+  commentId: P:GraphQL.Types.Schema.TypeMetaFieldType
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: TypeMetaFieldType
+  nameWithType: Schema.TypeMetaFieldType
+  fullName: GraphQL.Types.Schema.TypeMetaFieldType
+- uid: GraphQL.Types.Schema.TypeNameMetaFieldType
+  commentId: P:GraphQL.Types.Schema.TypeNameMetaFieldType
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: TypeNameMetaFieldType
+  nameWithType: Schema.TypeNameMetaFieldType
+  fullName: GraphQL.Types.Schema.TypeNameMetaFieldType
+- uid: GraphQL.Types.Schema.TypeMappings
+  commentId: P:GraphQL.Types.Schema.TypeMappings
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: TypeMappings
+  nameWithType: Schema.TypeMappings
+  fullName: GraphQL.Types.Schema.TypeMappings
+- uid: GraphQL.Types.Schema.BuiltInTypeMappings
+  commentId: P:GraphQL.Types.Schema.BuiltInTypeMappings
+  parent: GraphQL.Types.Schema
+  isExternal: true
+  name: BuiltInTypeMappings
+  nameWithType: Schema.BuiltInTypeMappings
+  fullName: GraphQL.Types.Schema.BuiltInTypeMappings
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,{TType})
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  parent: GraphQL.Utilities.MetadataProvider
+  definition: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, TType)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, TType)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, TType)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, TType)
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, TType)
+  name.vb: GetMetadata(Of TType)(String, TType)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{{TType}})
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  parent: GraphQL.Utilities.MetadataProvider
+  definition: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, Func<TType>)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, Func<TType>)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, System.Func<TType>)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, Func(Of TType))
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, System.Func(Of TType))
+  name.vb: GetMetadata(Of TType)(String, Func(Of TType))
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+  commentId: M:GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+  parent: GraphQL.Utilities.MetadataProvider
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: HasMetadata(string)
+  nameWithType: MetadataProvider.HasMetadata(string)
+  fullName: GraphQL.Utilities.MetadataProvider.HasMetadata(string)
+  nameWithType.vb: MetadataProvider.HasMetadata(String)
+  fullName.vb: GraphQL.Utilities.MetadataProvider.HasMetadata(String)
+  name.vb: HasMetadata(String)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+    name: HasMetadata
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+    name: HasMetadata
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  commentId: M:GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  parent: GraphQL.Utilities.MetadataProvider
+  isExternal: true
+  name: CopyMetadataTo(IProvideMetadata)
+  nameWithType: MetadataProvider.CopyMetadataTo(IProvideMetadata)
+  fullName: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+    name: CopyMetadataTo
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IProvideMetadata
+    name: IProvideMetadata
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+    name: CopyMetadataTo
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IProvideMetadata
+    name: IProvideMetadata
+    isExternal: true
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.Metadata
+  commentId: P:GraphQL.Utilities.MetadataProvider.Metadata
+  parent: GraphQL.Utilities.MetadataProvider
+  isExternal: true
+  name: Metadata
+  nameWithType: MetadataProvider.Metadata
+  fullName: GraphQL.Utilities.MetadataProvider.Metadata
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GraphQL.Utilities
+  commentId: N:GraphQL.Utilities
+  isExternal: true
+  name: GraphQL.Utilities
+  nameWithType: GraphQL.Utilities
+  fullName: GraphQL.Utilities
+  spec.csharp:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Utilities
+    name: Utilities
+    isExternal: true
+  spec.vb:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Utilities
+    name: Utilities
+    isExternal: true
+- uid: GraphQL.Types
+  commentId: N:GraphQL.Types
+  isExternal: true
+  name: GraphQL.Types
+  nameWithType: GraphQL.Types
+  fullName: GraphQL.Types
+  spec.csharp:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Types
+    name: Types
+    isExternal: true
+  spec.vb:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Types
+    name: Types
+    isExternal: true
+- uid: GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+  commentId: M:GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: For<TSchemaBuilder>(string, Action<TSchemaBuilder>)
+  nameWithType: Schema.For<TSchemaBuilder>(string, Action<TSchemaBuilder>)
+  fullName: GraphQL.Types.Schema.For<TSchemaBuilder>(string, System.Action<TSchemaBuilder>)
+  nameWithType.vb: Schema.For(Of TSchemaBuilder)(String, Action(Of TSchemaBuilder))
+  fullName.vb: GraphQL.Types.Schema.For(Of TSchemaBuilder)(String, System.Action(Of TSchemaBuilder))
+  name.vb: For(Of TSchemaBuilder)(String, Action(Of TSchemaBuilder))
+  spec.csharp:
+  - uid: GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+    name: For
+    isExternal: true
+  - name: <
+  - name: TSchemaBuilder
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TSchemaBuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.Schema.For``1(System.String,System.Action{``0})
+    name: For
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSchemaBuilder
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSchemaBuilder
+  - name: )
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, TType)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, TType)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, TType)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, TType)
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, TType)
+  name.vb: GetMetadata(Of TType)(String, TType)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, Func<TType>)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, Func<TType>)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, System.Func<TType>)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, Func(Of TType))
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, System.Func(Of TType))
+  name.vb: GetMetadata(Of TType)(String, Func(Of TType))
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: )
+- uid: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.#ctor*
+  commentId: Overload:EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.#ctor
+  href: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.html#EmployeeManagementGraphQL_GraphQL_Schemas_EmployeeSchema__ctor_System_IServiceProvider_EmployeeManagementGraphQL_GraphQL_Queries_EmployeeQuery_EmployeeManagementGraphQL_GraphQL_Mutations_EmployeeMutation_
+  name: EmployeeSchema
+  nameWithType: EmployeeSchema.EmployeeSchema
+  fullName: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.EmployeeSchema
+  nameWithType.vb: EmployeeSchema.New
+  fullName.vb: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.New
+  name.vb: New
+- uid: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+  commentId: T:EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+  parent: EmployeeManagementGraphQL.GraphQL.Queries
+  href: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery.html
+  name: EmployeeQuery
+  nameWithType: EmployeeQuery
+  fullName: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+- uid: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+  commentId: T:EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+  parent: EmployeeManagementGraphQL.GraphQL.Mutations
+  href: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation.html
+  name: EmployeeMutation
+  nameWithType: EmployeeMutation
+  fullName: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+- uid: EmployeeManagementGraphQL.GraphQL.Queries
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Queries
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.GraphQL.Queries
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Queries
+  fullName: EmployeeManagementGraphQL.GraphQL.Queries
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Queries
+    name: Queries
+    href: EmployeeManagementGraphQL.GraphQL.Queries.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Queries
+    name: Queries
+    href: EmployeeManagementGraphQL.GraphQL.Queries.html
+- uid: EmployeeManagementGraphQL.GraphQL.Mutations
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Mutations
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.GraphQL.Mutations
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Mutations
+  fullName: EmployeeManagementGraphQL.GraphQL.Mutations
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Mutations
+    name: Mutations
+    href: EmployeeManagementGraphQL.GraphQL.Mutations.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Mutations
+    name: Mutations
+    href: EmployeeManagementGraphQL.GraphQL.Mutations.html

@@ -1,0 +1,280 @@
+### YamlMime:TableOfContent
+items:
+- uid: EmployeeManagementGraphQL
+  name: EmployeeManagementGraphQL
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.WeatherForecast
+    name: WeatherForecast
+    type: Class
+- uid: EmployeeManagementGraphQL.Controllers
+  name: EmployeeManagementGraphQL.Controllers
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Controllers.EmployeeController
+    name: EmployeeController
+    type: Class
+  - uid: EmployeeManagementGraphQL.Controllers.WeatherForecastController
+    name: WeatherForecastController
+    type: Class
+- uid: EmployeeManagementGraphQL.Data
+  name: EmployeeManagementGraphQL.Data
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Data.EntityDatabaseContext
+    name: EntityDatabaseContext
+    type: Class
+- uid: EmployeeManagementGraphQL.Data.Models
+  name: EmployeeManagementGraphQL.Data.Models
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Data.Models.Employee
+    name: Employee
+    type: Class
+  - uid: EmployeeManagementGraphQL.Data.Models.Review
+    name: Review
+    type: Class
+- uid: EmployeeManagementGraphQL.Data.Models.Paging
+  name: EmployeeManagementGraphQL.Data.Models.Paging
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    type: Class
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+    name: EmployeeSortField
+    type: Enum
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.PageInfo
+    name: PageInfo
+    type: Class
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+    name: PagedResult<T>
+    type: Class
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.PaginationRequest
+    name: PaginationRequest
+    type: Class
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+    name: SortDirection
+    type: Enum
+- uid: EmployeeManagementGraphQL.Data.Repositories
+  name: EmployeeManagementGraphQL.Data.Repositories
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+    name: EmployeeRepository
+    type: Class
+  - uid: EmployeeManagementGraphQL.Data.Repositories.ReviewRepository
+    name: ReviewRepository
+    type: Class
+- uid: EmployeeManagementGraphQL.GraphQL.Mutations
+  name: EmployeeManagementGraphQL.GraphQL.Mutations
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+    name: EmployeeMutation
+    type: Class
+- uid: EmployeeManagementGraphQL.GraphQL.Queries
+  name: EmployeeManagementGraphQL.GraphQL.Queries
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+    name: EmployeeQuery
+    type: Class
+- uid: EmployeeManagementGraphQL.GraphQL.Schemas
+  name: EmployeeManagementGraphQL.GraphQL.Schemas
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+    name: EmployeeSchema
+    type: Class
+- uid: EmployeeManagementGraphQL.GraphQL.Types
+  name: EmployeeManagementGraphQL.GraphQL.Types
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeeGraphType
+    name: EmployeeGraphType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeeInputType
+    name: EmployeeInputType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeePagedResultGraphType
+    name: EmployeePagedResultGraphType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortFieldEnumType
+    name: EmployeeSortFieldEnumType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType
+    name: EmployeeSortInputType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.PageInfoGraphType
+    name: PageInfoGraphType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.ReviewGraphType
+    name: ReviewGraphType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.ReviewInputType
+    name: ReviewInputType
+    type: Class
+  - uid: EmployeeManagementGraphQL.GraphQL.Types.SortDirectionEnumType
+    name: SortDirectionEnumType
+    type: Class
+- uid: EmployeeManagementGraphQL.Mvc.Controllers
+  name: EmployeeManagementGraphQL.Mvc.Controllers
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController
+    name: EmployeesController
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Controllers.HomeController
+    name: HomeController
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController
+    name: ReviewsController
+    type: Class
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL
+  name: EmployeeManagementGraphQL.Mvc.GraphQL
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData
+    name: AddEmployeeResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables
+    name: AddEmployeeVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData
+    name: AddReviewResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables
+    name: AddReviewVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData
+    name: DeleteEmployeeResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables
+    name: DeleteEmployeeVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData
+    name: DeleteReviewResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables
+    name: DeleteReviewVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData
+    name: EmployeeByIdResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables
+    name: EmployeeByIdVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+    name: EmployeeGraphQlClient
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables
+    name: EmployeeInputVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult
+    name: EmployeeMutationResult
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult
+    name: EmployeePagedQueryResult
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult
+    name: EmployeeQueryResult
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm
+    name: EmployeeRowVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload
+    name: EmployeesPagedPayload
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData
+    name: EmployeesPagedResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+    name: EmployeesPagedVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError
+    name: GraphQlError
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult
+    name: GraphQlOperationResult
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest`1
+    name: GraphQlRequest<TVariables>
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+    name: GraphQlResponse<TData>
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+    name: IEmployeeGraphQlClient
+    type: Interface
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm
+    name: PageInfoVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData
+    name: ReviewByIdResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables
+    name: ReviewByIdVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables
+    name: ReviewInputVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult
+    name: ReviewMutationResult
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult
+    name: ReviewQueryResult
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm
+    name: ReviewRowVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData
+    name: ReviewsByEmployeeIdResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables
+    name: ReviewsByEmployeeIdVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult
+    name: ReviewsQueryResult
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData
+    name: ReviewsResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData
+    name: UpdateEmployeeResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables
+    name: UpdateEmployeeVariables
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData
+    name: UpdateReviewResponseData
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables
+    name: UpdateReviewVariables
+    type: Class
+- uid: EmployeeManagementGraphQL.Mvc.Models
+  name: EmployeeManagementGraphQL.Mvc.Models
+  type: Namespace
+  items:
+  - uid: EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm
+    name: EmployeeDeleteVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm
+    name: EmployeeUpsertVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm
+    name: EmployeesIndexVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel
+    name: ErrorViewModel
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm
+    name: ReviewDeleteVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+    name: ReviewUpsertVm
+    type: Class
+  - uid: EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm
+    name: ReviewsIndexVm
+    type: Class
+memberLayout: SamePage

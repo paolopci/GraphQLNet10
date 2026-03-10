@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  id: ReviewUpsertVm
+  parent: EmployeeManagementGraphQL.Mvc.Models
+  children:
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate
+  langs:
+  - csharp
+  - vb
+  name: ReviewUpsertVm
+  nameWithType: ReviewUpsertVm
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.Models
+  syntax:
+    content: public sealed class ReviewUpsertVm
+    content.vb: Public NotInheritable Class ReviewUpsertVm
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id
+  commentId: P:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id
+  id: Id
+  parent: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ReviewUpsertVm.Id
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.Models
+  syntax:
+    content: public int? Id { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Id As Integer?
+  overload: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id*
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate
+  commentId: P:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate
+  id: Rate
+  parent: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  langs:
+  - csharp
+  - vb
+  name: Rate
+  nameWithType: ReviewUpsertVm.Rate
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.Models
+  syntax:
+    content: >-
+      [Display(Name = "Rate")]
+
+      [Range(1, 5, ErrorMessage = "Il rate deve essere tra 1 e 5.")]
+
+      public int Rate { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Display(Name:="Rate")>
+
+      <Range(1, 5, ErrorMessage:="Il rate deve essere tra 1 e 5.")>
+
+      Public Property Rate As Integer
+  overload: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Rate
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+    - type: System.Int32
+      value: 5
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Il rate deve essere tra 1 e 5.
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment
+  commentId: P:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment
+  id: Comment
+  parent: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: ReviewUpsertVm.Comment
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.Models
+  syntax:
+    content: >-
+      [Display(Name = "Comment")]
+
+      [Required(ErrorMessage = "Il commento è obbligatorio.")]
+
+      [StringLength(500, ErrorMessage = "Il commento non può superare 500 caratteri.")]
+
+      public string Comment { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Display(Name:="Comment")>
+
+      <Required(ErrorMessage:="Il commento è obbligatorio.")>
+
+      <StringLength(500, ErrorMessage:="Il commento non può superare 500 caratteri.")>
+
+      Public Property Comment As String
+  overload: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Comment
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Il commento è obbligatorio.
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 500
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Il commento non può superare 500 caratteri.
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId
+  commentId: P:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId
+  id: EmployeeId
+  parent: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  langs:
+  - csharp
+  - vb
+  name: EmployeeId
+  nameWithType: ReviewUpsertVm.EmployeeId
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.Models
+  syntax:
+    content: >-
+      [Display(Name = "Employee Id")]
+
+      [Range(1, 2147483647, ErrorMessage = "EmployeeId non valido.")]
+
+      public int EmployeeId { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Display(Name:="Employee Id")>
+
+      <Range(1, 2147483647, ErrorMessage:="EmployeeId non valido.")>
+
+      Public Property EmployeeId As Integer
+  overload: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Employee Id
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+    - type: System.Int32
+      value: 2147483647
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: EmployeeId non valido.
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit
+  commentId: P:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit
+  id: IsEdit
+  parent: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  langs:
+  - csharp
+  - vb
+  name: IsEdit
+  nameWithType: ReviewUpsertVm.IsEdit
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.Models
+  syntax:
+    content: public bool IsEdit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEdit As Boolean
+  overload: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit*
+references:
+- uid: EmployeeManagementGraphQL.Mvc.Models
+  commentId: N:EmployeeManagementGraphQL.Mvc.Models
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Mvc.Models
+  nameWithType: EmployeeManagementGraphQL.Mvc.Models
+  fullName: EmployeeManagementGraphQL.Mvc.Models
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Mvc.Models.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Mvc.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.html#EmployeeManagementGraphQL_Mvc_Models_ReviewUpsertVm_Id
+  name: Id
+  nameWithType: ReviewUpsertVm.Id
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Id
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.html#EmployeeManagementGraphQL_Mvc_Models_ReviewUpsertVm_Rate
+  name: Rate
+  nameWithType: ReviewUpsertVm.Rate
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Rate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.html#EmployeeManagementGraphQL_Mvc_Models_ReviewUpsertVm_Comment
+  name: Comment
+  nameWithType: ReviewUpsertVm.Comment
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.Comment
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.html#EmployeeManagementGraphQL_Mvc_Models_ReviewUpsertVm_EmployeeId
+  name: EmployeeId
+  nameWithType: ReviewUpsertVm.EmployeeId
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.EmployeeId
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.html#EmployeeManagementGraphQL_Mvc_Models_ReviewUpsertVm_IsEdit
+  name: IsEdit
+  nameWithType: ReviewUpsertVm.IsEdit
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.IsEdit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

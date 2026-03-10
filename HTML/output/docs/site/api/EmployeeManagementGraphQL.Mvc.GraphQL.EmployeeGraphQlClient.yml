@@ -1,0 +1,1767 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  id: EmployeeGraphQlClient
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  children:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.#ctor(System.Net.Http.HttpClient)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: EmployeeGraphQlClient
+  nameWithType: EmployeeGraphQlClient
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: 'public sealed class EmployeeGraphQlClient : IEmployeeGraphQlClient'
+    content.vb: Public NotInheritable Class EmployeeGraphQlClient Implements IEmployeeGraphQlClient
+  inheritance:
+  - System.Object
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.#ctor(System.Net.Http.HttpClient)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: EmployeeGraphQlClient(HttpClient)
+  nameWithType: EmployeeGraphQlClient.EmployeeGraphQlClient(HttpClient)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.EmployeeGraphQlClient(System.Net.Http.HttpClient)
+  type: Constructor
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: public EmployeeGraphQlClient(HttpClient httpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+    content.vb: Public Sub New(httpClient As HttpClient)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.#ctor*
+  nameWithType.vb: EmployeeGraphQlClient.New(HttpClient)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.New(System.Net.Http.HttpClient)
+  name.vb: New(HttpClient)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+  id: GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: GetEmployeesPagedAsync(int, int, string, string, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.GetEmployeesPagedAsync(int, int, string, string, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync(int, int, string, string, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<EmployeePagedQueryResult> GetEmployeesPagedAsync(int page, int pageSize, string sortField, string sortDir, CancellationToken cancellationToken = default)
+    parameters:
+    - id: page
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    - id: sortField
+      type: System.String
+    - id: sortDir
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult}
+    content.vb: Public Function GetEmployeesPagedAsync(page As Integer, pageSize As Integer, sortField As String, sortDir As String, cancellationToken As CancellationToken = Nothing) As Task(Of EmployeePagedQueryResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.GetEmployeesPagedAsync(Integer, Integer, String, String, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync(Integer, Integer, String, String, System.Threading.CancellationToken)
+  name.vb: GetEmployeesPagedAsync(Integer, Integer, String, String, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+  id: GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: GetEmployeeByIdAsync(int, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.GetEmployeeByIdAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync(int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<EmployeeQueryResult> GetEmployeeByIdAsync(int id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult}
+    content.vb: Public Function GetEmployeeByIdAsync(id As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of EmployeeQueryResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.GetEmployeeByIdAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync(Integer, System.Threading.CancellationToken)
+  name.vb: GetEmployeeByIdAsync(Integer, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: AddEmployeeAsync(string, string, string, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.AddEmployeeAsync(string, string, string, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync(string, string, string, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<EmployeeMutationResult> AddEmployeeAsync(string firstName, string lastName, string email, CancellationToken cancellationToken = default)
+    parameters:
+    - id: firstName
+      type: System.String
+    - id: lastName
+      type: System.String
+    - id: email
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult}
+    content.vb: Public Function AddEmployeeAsync(firstName As String, lastName As String, email As String, cancellationToken As CancellationToken = Nothing) As Task(Of EmployeeMutationResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.AddEmployeeAsync(String, String, String, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync(String, String, String, System.Threading.CancellationToken)
+  name.vb: AddEmployeeAsync(String, String, String, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateEmployeeAsync(int, string, string, string, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.UpdateEmployeeAsync(int, string, string, string, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync(int, string, string, string, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<EmployeeMutationResult> UpdateEmployeeAsync(int id, string firstName, string lastName, string email, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: firstName
+      type: System.String
+    - id: lastName
+      type: System.String
+    - id: email
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult}
+    content.vb: Public Function UpdateEmployeeAsync(id As Integer, firstName As String, lastName As String, email As String, cancellationToken As CancellationToken = Nothing) As Task(Of EmployeeMutationResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.UpdateEmployeeAsync(Integer, String, String, String, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync(Integer, String, String, String, System.Threading.CancellationToken)
+  name.vb: UpdateEmployeeAsync(Integer, String, String, String, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+  id: DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteEmployeeAsync(int, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.DeleteEmployeeAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync(int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<GraphQlOperationResult> DeleteEmployeeAsync(int id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult}
+    content.vb: Public Function DeleteEmployeeAsync(id As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of GraphQlOperationResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.DeleteEmployeeAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync(Integer, System.Threading.CancellationToken)
+  name.vb: DeleteEmployeeAsync(Integer, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+  id: GetReviewsAsync(System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: GetReviewsAsync(CancellationToken)
+  nameWithType: EmployeeGraphQlClient.GetReviewsAsync(CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<ReviewsQueryResult> GetReviewsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult}
+    content.vb: Public Function GetReviewsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of ReviewsQueryResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+  id: GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: GetReviewsByEmployeeIdAsync(int, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<ReviewsQueryResult> GetReviewsByEmployeeIdAsync(int employeeId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: employeeId
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult}
+    content.vb: Public Function GetReviewsByEmployeeIdAsync(employeeId As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of ReviewsQueryResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(Integer, System.Threading.CancellationToken)
+  name.vb: GetReviewsByEmployeeIdAsync(Integer, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+  id: GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: GetReviewByIdAsync(int, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.GetReviewByIdAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync(int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<ReviewQueryResult> GetReviewByIdAsync(int id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult}
+    content.vb: Public Function GetReviewByIdAsync(id As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of ReviewQueryResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.GetReviewByIdAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync(Integer, System.Threading.CancellationToken)
+  name.vb: GetReviewByIdAsync(Integer, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  id: AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: AddReviewAsync(int, string, int, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.AddReviewAsync(int, string, int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync(int, string, int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<ReviewMutationResult> AddReviewAsync(int rate, string comment, int employeeId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: rate
+      type: System.Int32
+    - id: comment
+      type: System.String
+    - id: employeeId
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult}
+    content.vb: Public Function AddReviewAsync(rate As Integer, comment As String, employeeId As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of ReviewMutationResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.AddReviewAsync(Integer, String, Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync(Integer, String, Integer, System.Threading.CancellationToken)
+  name.vb: AddReviewAsync(Integer, String, Integer, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  id: UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateReviewAsync(int, int, string, int, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.UpdateReviewAsync(int, int, string, int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync(int, int, string, int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<ReviewMutationResult> UpdateReviewAsync(int id, int rate, string comment, int employeeId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: rate
+      type: System.Int32
+    - id: comment
+      type: System.String
+    - id: employeeId
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult}
+    content.vb: Public Function UpdateReviewAsync(id As Integer, rate As Integer, comment As String, employeeId As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of ReviewMutationResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.UpdateReviewAsync(Integer, Integer, String, Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync(Integer, Integer, String, Integer, System.Threading.CancellationToken)
+  name.vb: UpdateReviewAsync(Integer, Integer, String, Integer, CancellationToken)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+  id: DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteReviewAsync(int, CancellationToken)
+  nameWithType: EmployeeGraphQlClient.DeleteReviewAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync(int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  example: []
+  syntax:
+    content: public Task<GraphQlOperationResult> DeleteReviewAsync(int id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult}
+    content.vb: Public Function DeleteReviewAsync(id As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of GraphQlOperationResult)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync*
+  implements:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: EmployeeGraphQlClient.DeleteReviewAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync(Integer, System.Threading.CancellationToken)
+  name.vb: DeleteReviewAsync(Integer, CancellationToken)
+references:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL
+  commentId: N:EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Mvc.GraphQL
+  nameWithType: EmployeeManagementGraphQL.Mvc.GraphQL
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html
+  name: IEmployeeGraphQlClient
+  nameWithType: IEmployeeGraphQlClient
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.#ctor*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.#ctor
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient__ctor_System_Net_Http_HttpClient_
+  name: EmployeeGraphQlClient
+  nameWithType: EmployeeGraphQlClient.EmployeeGraphQlClient
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.EmployeeGraphQlClient
+  nameWithType.vb: EmployeeGraphQlClient.New
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.New
+  name.vb: New
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_GetEmployeesPagedAsync_System_Int32_System_Int32_System_String_System_String_System_Threading_CancellationToken_
+  name: GetEmployeesPagedAsync
+  nameWithType: EmployeeGraphQlClient.GetEmployeesPagedAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeesPagedAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetEmployeesPagedAsync_System_Int32_System_Int32_System_String_System_String_System_Threading_CancellationToken_
+  name: GetEmployeesPagedAsync(int, int, string, string, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.GetEmployeesPagedAsync(int, int, string, string, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeesPagedAsync(int, int, string, string, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.GetEmployeesPagedAsync(Integer, Integer, String, String, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeesPagedAsync(Integer, Integer, String, String, System.Threading.CancellationToken)
+  name.vb: GetEmployeesPagedAsync(Integer, Integer, String, String, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+    name: GetEmployeesPagedAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetEmployeesPagedAsync_System_Int32_System_Int32_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeesPagedAsync(System.Int32,System.Int32,System.String,System.String,System.Threading.CancellationToken)
+    name: GetEmployeesPagedAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetEmployeesPagedAsync_System_Int32_System_Int32_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult}
+  commentId: T:System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<EmployeePagedQueryResult>
+  nameWithType: Task<EmployeePagedQueryResult>
+  fullName: System.Threading.Tasks.Task<EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult>
+  nameWithType.vb: Task(Of EmployeePagedQueryResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult)
+  name.vb: Task(Of EmployeePagedQueryResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult
+    name: EmployeePagedQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult
+    name: EmployeePagedQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_GetEmployeeByIdAsync_System_Int32_System_Threading_CancellationToken_
+  name: GetEmployeeByIdAsync
+  nameWithType: EmployeeGraphQlClient.GetEmployeeByIdAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetEmployeeByIdAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetEmployeeByIdAsync_System_Int32_System_Threading_CancellationToken_
+  name: GetEmployeeByIdAsync(int, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.GetEmployeeByIdAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeeByIdAsync(int, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.GetEmployeeByIdAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeeByIdAsync(Integer, System.Threading.CancellationToken)
+  name.vb: GetEmployeeByIdAsync(Integer, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+    name: GetEmployeeByIdAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetEmployeeByIdAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetEmployeeByIdAsync(System.Int32,System.Threading.CancellationToken)
+    name: GetEmployeeByIdAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetEmployeeByIdAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult}
+  commentId: T:System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<EmployeeQueryResult>
+  nameWithType: Task<EmployeeQueryResult>
+  fullName: System.Threading.Tasks.Task<EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult>
+  nameWithType.vb: Task(Of EmployeeQueryResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult)
+  name.vb: Task(Of EmployeeQueryResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult
+    name: EmployeeQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult
+    name: EmployeeQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult.html
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_AddEmployeeAsync_System_String_System_String_System_String_System_Threading_CancellationToken_
+  name: AddEmployeeAsync
+  nameWithType: EmployeeGraphQlClient.AddEmployeeAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddEmployeeAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_AddEmployeeAsync_System_String_System_String_System_String_System_Threading_CancellationToken_
+  name: AddEmployeeAsync(string, string, string, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.AddEmployeeAsync(string, string, string, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddEmployeeAsync(string, string, string, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.AddEmployeeAsync(String, String, String, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddEmployeeAsync(String, String, String, System.Threading.CancellationToken)
+  name.vb: AddEmployeeAsync(String, String, String, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+    name: AddEmployeeAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_AddEmployeeAsync_System_String_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddEmployeeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+    name: AddEmployeeAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_AddEmployeeAsync_System_String_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult}
+  commentId: T:System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<EmployeeMutationResult>
+  nameWithType: Task<EmployeeMutationResult>
+  fullName: System.Threading.Tasks.Task<EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult>
+  nameWithType.vb: Task(Of EmployeeMutationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult)
+  name.vb: Task(Of EmployeeMutationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult
+    name: EmployeeMutationResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult
+    name: EmployeeMutationResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult.html
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_UpdateEmployeeAsync_System_Int32_System_String_System_String_System_String_System_Threading_CancellationToken_
+  name: UpdateEmployeeAsync
+  nameWithType: EmployeeGraphQlClient.UpdateEmployeeAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateEmployeeAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_UpdateEmployeeAsync_System_Int32_System_String_System_String_System_String_System_Threading_CancellationToken_
+  name: UpdateEmployeeAsync(int, string, string, string, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.UpdateEmployeeAsync(int, string, string, string, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateEmployeeAsync(int, string, string, string, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.UpdateEmployeeAsync(Integer, String, String, String, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateEmployeeAsync(Integer, String, String, String, System.Threading.CancellationToken)
+  name.vb: UpdateEmployeeAsync(Integer, String, String, String, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+    name: UpdateEmployeeAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_UpdateEmployeeAsync_System_Int32_System_String_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateEmployeeAsync(System.Int32,System.String,System.String,System.String,System.Threading.CancellationToken)
+    name: UpdateEmployeeAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_UpdateEmployeeAsync_System_Int32_System_String_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_DeleteEmployeeAsync_System_Int32_System_Threading_CancellationToken_
+  name: DeleteEmployeeAsync
+  nameWithType: EmployeeGraphQlClient.DeleteEmployeeAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteEmployeeAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_DeleteEmployeeAsync_System_Int32_System_Threading_CancellationToken_
+  name: DeleteEmployeeAsync(int, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.DeleteEmployeeAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteEmployeeAsync(int, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.DeleteEmployeeAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteEmployeeAsync(Integer, System.Threading.CancellationToken)
+  name.vb: DeleteEmployeeAsync(Integer, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+    name: DeleteEmployeeAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_DeleteEmployeeAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteEmployeeAsync(System.Int32,System.Threading.CancellationToken)
+    name: DeleteEmployeeAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_DeleteEmployeeAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult}
+  commentId: T:System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GraphQlOperationResult>
+  nameWithType: Task<GraphQlOperationResult>
+  fullName: System.Threading.Tasks.Task<EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult>
+  nameWithType.vb: Task(Of GraphQlOperationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult)
+  name.vb: Task(Of GraphQlOperationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult
+    name: GraphQlOperationResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult
+    name: GraphQlOperationResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult.html
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_GetReviewsAsync_System_Threading_CancellationToken_
+  name: GetReviewsAsync
+  nameWithType: EmployeeGraphQlClient.GetReviewsAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewsAsync_System_Threading_CancellationToken_
+  name: GetReviewsAsync(CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.GetReviewsAsync(CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+    name: GetReviewsAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsAsync(System.Threading.CancellationToken)
+    name: GetReviewsAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult}
+  commentId: T:System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ReviewsQueryResult>
+  nameWithType: Task<ReviewsQueryResult>
+  fullName: System.Threading.Tasks.Task<EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult>
+  nameWithType.vb: Task(Of ReviewsQueryResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult)
+  name.vb: Task(Of ReviewsQueryResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult
+    name: ReviewsQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult
+    name: ReviewsQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult.html
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_GetReviewsByEmployeeIdAsync_System_Int32_System_Threading_CancellationToken_
+  name: GetReviewsByEmployeeIdAsync
+  nameWithType: EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewsByEmployeeIdAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewsByEmployeeIdAsync_System_Int32_System_Threading_CancellationToken_
+  name: GetReviewsByEmployeeIdAsync(int, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(int, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(Integer, System.Threading.CancellationToken)
+  name.vb: GetReviewsByEmployeeIdAsync(Integer, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+    name: GetReviewsByEmployeeIdAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewsByEmployeeIdAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewsByEmployeeIdAsync(System.Int32,System.Threading.CancellationToken)
+    name: GetReviewsByEmployeeIdAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewsByEmployeeIdAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_GetReviewByIdAsync_System_Int32_System_Threading_CancellationToken_
+  name: GetReviewByIdAsync
+  nameWithType: EmployeeGraphQlClient.GetReviewByIdAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.GetReviewByIdAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewByIdAsync_System_Int32_System_Threading_CancellationToken_
+  name: GetReviewByIdAsync(int, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.GetReviewByIdAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewByIdAsync(int, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.GetReviewByIdAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewByIdAsync(Integer, System.Threading.CancellationToken)
+  name.vb: GetReviewByIdAsync(Integer, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+    name: GetReviewByIdAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewByIdAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.GetReviewByIdAsync(System.Int32,System.Threading.CancellationToken)
+    name: GetReviewByIdAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_GetReviewByIdAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult}
+  commentId: T:System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ReviewQueryResult>
+  nameWithType: Task<ReviewQueryResult>
+  fullName: System.Threading.Tasks.Task<EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult>
+  nameWithType.vb: Task(Of ReviewQueryResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult)
+  name.vb: Task(Of ReviewQueryResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult
+    name: ReviewQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult
+    name: ReviewQueryResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult.html
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_AddReviewAsync_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  name: AddReviewAsync
+  nameWithType: EmployeeGraphQlClient.AddReviewAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.AddReviewAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_AddReviewAsync_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  name: AddReviewAsync(int, string, int, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.AddReviewAsync(int, string, int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddReviewAsync(int, string, int, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.AddReviewAsync(Integer, String, Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddReviewAsync(Integer, String, Integer, System.Threading.CancellationToken)
+  name.vb: AddReviewAsync(Integer, String, Integer, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+    name: AddReviewAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_AddReviewAsync_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.AddReviewAsync(System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+    name: AddReviewAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_AddReviewAsync_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult}
+  commentId: T:System.Threading.Tasks.Task{EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ReviewMutationResult>
+  nameWithType: Task<ReviewMutationResult>
+  fullName: System.Threading.Tasks.Task<EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult>
+  nameWithType.vb: Task(Of ReviewMutationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult)
+  name.vb: Task(Of ReviewMutationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult
+    name: ReviewMutationResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult
+    name: ReviewMutationResult
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult.html
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_UpdateReviewAsync_System_Int32_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  name: UpdateReviewAsync
+  nameWithType: EmployeeGraphQlClient.UpdateReviewAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.UpdateReviewAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_UpdateReviewAsync_System_Int32_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  name: UpdateReviewAsync(int, int, string, int, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.UpdateReviewAsync(int, int, string, int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateReviewAsync(int, int, string, int, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.UpdateReviewAsync(Integer, Integer, String, Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateReviewAsync(Integer, Integer, String, Integer, System.Threading.CancellationToken)
+  name.vb: UpdateReviewAsync(Integer, Integer, String, Integer, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+    name: UpdateReviewAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_UpdateReviewAsync_System_Int32_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.UpdateReviewAsync(System.Int32,System.Int32,System.String,System.Int32,System.Threading.CancellationToken)
+    name: UpdateReviewAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_UpdateReviewAsync_System_Int32_System_Int32_System_String_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeeGraphQlClient_DeleteReviewAsync_System_Int32_System_Threading_CancellationToken_
+  name: DeleteReviewAsync
+  nameWithType: EmployeeGraphQlClient.DeleteReviewAsync
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.DeleteReviewAsync
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  isExternal: true
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_DeleteReviewAsync_System_Int32_System_Threading_CancellationToken_
+  name: DeleteReviewAsync(int, CancellationToken)
+  nameWithType: IEmployeeGraphQlClient.DeleteReviewAsync(int, CancellationToken)
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteReviewAsync(int, System.Threading.CancellationToken)
+  nameWithType.vb: IEmployeeGraphQlClient.DeleteReviewAsync(Integer, CancellationToken)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteReviewAsync(Integer, System.Threading.CancellationToken)
+  name.vb: DeleteReviewAsync(Integer, CancellationToken)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+    name: DeleteReviewAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_DeleteReviewAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.DeleteReviewAsync(System.Int32,System.Threading.CancellationToken)
+    name: DeleteReviewAsync
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html#EmployeeManagementGraphQL_Mvc_GraphQL_IEmployeeGraphQlClient_DeleteReviewAsync_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.GraphQL.Schemas
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Schemas
+  id: EmployeeManagementGraphQL.GraphQL.Schemas
+  children:
+  - EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.GraphQL.Schemas
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Schemas
+  fullName: EmployeeManagementGraphQL.GraphQL.Schemas
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL
+references:
+- uid: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+  commentId: T:EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema
+  href: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.html
+  name: EmployeeSchema
+  nameWithType: EmployeeSchema
+  fullName: EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema

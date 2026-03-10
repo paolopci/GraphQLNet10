@@ -1,0 +1,855 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  commentId: T:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  id: EmployeeRepository
+  parent: EmployeeManagementGraphQL.Data.Repositories
+  children:
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.#ctor(EmployeeManagementGraphQL.Data.EntityDatabaseContext)
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee(EmployeeManagementGraphQL.Data.Models.Employee)
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee(System.Int32)
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById(System.Int32)
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged(System.Int32,System.Int32,System.Collections.Generic.IEnumerable{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion})
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee(System.Int32,EmployeeManagementGraphQL.Data.Models.Employee)
+  langs:
+  - csharp
+  - vb
+  name: EmployeeRepository
+  nameWithType: EmployeeRepository
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public class EmployeeRepository
+    content.vb: Public Class EmployeeRepository
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.#ctor(EmployeeManagementGraphQL.Data.EntityDatabaseContext)
+  commentId: M:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.#ctor(EmployeeManagementGraphQL.Data.EntityDatabaseContext)
+  id: '#ctor(EmployeeManagementGraphQL.Data.EntityDatabaseContext)'
+  parent: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  langs:
+  - csharp
+  - vb
+  name: EmployeeRepository(EntityDatabaseContext)
+  nameWithType: EmployeeRepository.EmployeeRepository(EntityDatabaseContext)
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.EmployeeRepository(EmployeeManagementGraphQL.Data.EntityDatabaseContext)
+  type: Constructor
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public EmployeeRepository(EntityDatabaseContext context)
+    parameters:
+    - id: context
+      type: EmployeeManagementGraphQL.Data.EntityDatabaseContext
+    content.vb: Public Sub New(context As EntityDatabaseContext)
+  overload: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.#ctor*
+  nameWithType.vb: EmployeeRepository.New(EntityDatabaseContext)
+  fullName.vb: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.New(EmployeeManagementGraphQL.Data.EntityDatabaseContext)
+  name.vb: New(EntityDatabaseContext)
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees
+  commentId: M:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees
+  id: GetAllEmployees
+  parent: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllEmployees()
+  nameWithType: EmployeeRepository.GetAllEmployees()
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees()
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public List<Employee> GetAllEmployees()
+    return:
+      type: System.Collections.Generic.List{EmployeeManagementGraphQL.Data.Models.Employee}
+    content.vb: Public Function GetAllEmployees() As List(Of Employee)
+  overload: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees*
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged(System.Int32,System.Int32,System.Collections.Generic.IEnumerable{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion})
+  commentId: M:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged(System.Int32,System.Int32,System.Collections.Generic.IEnumerable{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion})
+  id: GetEmployeesPaged(System.Int32,System.Int32,System.Collections.Generic.IEnumerable{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion})
+  parent: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  langs:
+  - csharp
+  - vb
+  name: GetEmployeesPaged(int, int, IEnumerable<EmployeeSortCriterion>?)
+  nameWithType: EmployeeRepository.GetEmployeesPaged(int, int, IEnumerable<EmployeeSortCriterion>?)
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged(int, int, System.Collections.Generic.IEnumerable<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>?)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public PagedResult<Employee> GetEmployeesPaged(int page, int pageSize, IEnumerable<EmployeeSortCriterion>? sortCriteria)
+    parameters:
+    - id: page
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    - id: sortCriteria
+      type: System.Collections.Generic.IEnumerable{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult{EmployeeManagementGraphQL.Data.Models.Employee}
+    content.vb: Public Function GetEmployeesPaged(page As Integer, pageSize As Integer, sortCriteria As IEnumerable(Of EmployeeSortCriterion)) As PagedResult(Of Employee)
+  overload: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged*
+  nameWithType.vb: EmployeeRepository.GetEmployeesPaged(Integer, Integer, IEnumerable(Of EmployeeSortCriterion))
+  fullName.vb: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged(Integer, Integer, System.Collections.Generic.IEnumerable(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion))
+  name.vb: GetEmployeesPaged(Integer, Integer, IEnumerable(Of EmployeeSortCriterion))
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById(System.Int32)
+  commentId: M:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById(System.Int32)
+  id: GetEmployeeById(System.Int32)
+  parent: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  langs:
+  - csharp
+  - vb
+  name: GetEmployeeById(int)
+  nameWithType: EmployeeRepository.GetEmployeeById(int)
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById(int)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public Employee? GetEmployeeById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Employee
+    content.vb: Public Function GetEmployeeById(id As Integer) As Employee
+  overload: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById*
+  nameWithType.vb: EmployeeRepository.GetEmployeeById(Integer)
+  fullName.vb: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById(Integer)
+  name.vb: GetEmployeeById(Integer)
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee(EmployeeManagementGraphQL.Data.Models.Employee)
+  commentId: M:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee(EmployeeManagementGraphQL.Data.Models.Employee)
+  id: AddEmployee(EmployeeManagementGraphQL.Data.Models.Employee)
+  parent: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  langs:
+  - csharp
+  - vb
+  name: AddEmployee(Employee)
+  nameWithType: EmployeeRepository.AddEmployee(Employee)
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee(EmployeeManagementGraphQL.Data.Models.Employee)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public Employee AddEmployee(Employee employee)
+    parameters:
+    - id: employee
+      type: EmployeeManagementGraphQL.Data.Models.Employee
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Employee
+    content.vb: Public Function AddEmployee(employee As Employee) As Employee
+  overload: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee*
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee(System.Int32,EmployeeManagementGraphQL.Data.Models.Employee)
+  commentId: M:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee(System.Int32,EmployeeManagementGraphQL.Data.Models.Employee)
+  id: UpdateEmployee(System.Int32,EmployeeManagementGraphQL.Data.Models.Employee)
+  parent: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateEmployee(int, Employee)
+  nameWithType: EmployeeRepository.UpdateEmployee(int, Employee)
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee(int, EmployeeManagementGraphQL.Data.Models.Employee)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public Employee? UpdateEmployee(int id, Employee employee)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: employee
+      type: EmployeeManagementGraphQL.Data.Models.Employee
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Employee
+    content.vb: Public Function UpdateEmployee(id As Integer, employee As Employee) As Employee
+  overload: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee*
+  nameWithType.vb: EmployeeRepository.UpdateEmployee(Integer, Employee)
+  fullName.vb: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee(Integer, EmployeeManagementGraphQL.Data.Models.Employee)
+  name.vb: UpdateEmployee(Integer, Employee)
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee(System.Int32)
+  commentId: M:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee(System.Int32)
+  id: DeleteEmployee(System.Int32)
+  parent: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteEmployee(int)
+  nameWithType: EmployeeRepository.DeleteEmployee(int)
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee(int)
+  type: Method
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Repositories
+  syntax:
+    content: public void DeleteEmployee(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub DeleteEmployee(id As Integer)
+  overload: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee*
+  nameWithType.vb: EmployeeRepository.DeleteEmployee(Integer)
+  fullName.vb: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee(Integer)
+  name.vb: DeleteEmployee(Integer)
+references:
+- uid: EmployeeManagementGraphQL.Data.Repositories
+  commentId: N:EmployeeManagementGraphQL.Data.Repositories
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data.Repositories
+  nameWithType: EmployeeManagementGraphQL.Data.Repositories
+  fullName: EmployeeManagementGraphQL.Data.Repositories
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Repositories
+    name: Repositories
+    href: EmployeeManagementGraphQL.Data.Repositories.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Repositories
+    name: Repositories
+    href: EmployeeManagementGraphQL.Data.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.#ctor*
+  commentId: Overload:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.#ctor
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html#EmployeeManagementGraphQL_Data_Repositories_EmployeeRepository__ctor_EmployeeManagementGraphQL_Data_EntityDatabaseContext_
+  name: EmployeeRepository
+  nameWithType: EmployeeRepository.EmployeeRepository
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.EmployeeRepository
+  nameWithType.vb: EmployeeRepository.New
+  fullName.vb: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.New
+  name.vb: New
+- uid: EmployeeManagementGraphQL.Data.EntityDatabaseContext
+  commentId: T:EmployeeManagementGraphQL.Data.EntityDatabaseContext
+  parent: EmployeeManagementGraphQL.Data
+  href: EmployeeManagementGraphQL.Data.EntityDatabaseContext.html
+  name: EntityDatabaseContext
+  nameWithType: EntityDatabaseContext
+  fullName: EmployeeManagementGraphQL.Data.EntityDatabaseContext
+- uid: EmployeeManagementGraphQL.Data
+  commentId: N:EmployeeManagementGraphQL.Data
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data
+  nameWithType: EmployeeManagementGraphQL.Data
+  fullName: EmployeeManagementGraphQL.Data
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees*
+  commentId: Overload:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html#EmployeeManagementGraphQL_Data_Repositories_EmployeeRepository_GetAllEmployees
+  name: GetAllEmployees
+  nameWithType: EmployeeRepository.GetAllEmployees
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetAllEmployees
+- uid: System.Collections.Generic.List{EmployeeManagementGraphQL.Data.Models.Employee}
+  commentId: T:System.Collections.Generic.List{EmployeeManagementGraphQL.Data.Models.Employee}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Employee>
+  nameWithType: List<Employee>
+  fullName: System.Collections.Generic.List<EmployeeManagementGraphQL.Data.Models.Employee>
+  nameWithType.vb: List(Of Employee)
+  fullName.vb: System.Collections.Generic.List(Of EmployeeManagementGraphQL.Data.Models.Employee)
+  name.vb: List(Of Employee)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Employee
+    name: Employee
+    href: EmployeeManagementGraphQL.Data.Models.Employee.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Employee
+    name: Employee
+    href: EmployeeManagementGraphQL.Data.Models.Employee.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged*
+  commentId: Overload:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html#EmployeeManagementGraphQL_Data_Repositories_EmployeeRepository_GetEmployeesPaged_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_EmployeeManagementGraphQL_Data_Models_Paging_EmployeeSortCriterion__
+  name: GetEmployeesPaged
+  nameWithType: EmployeeRepository.GetEmployeesPaged
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeesPaged
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IEnumerable{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  commentId: T:System.Collections.Generic.IEnumerable{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EmployeeSortCriterion>
+  nameWithType: IEnumerable<EmployeeSortCriterion>
+  fullName: System.Collections.Generic.IEnumerable<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>
+  nameWithType.vb: IEnumerable(Of EmployeeSortCriterion)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion)
+  name.vb: IEnumerable(Of EmployeeSortCriterion)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult{EmployeeManagementGraphQL.Data.Models.Employee}
+  commentId: T:EmployeeManagementGraphQL.Data.Models.Paging.PagedResult{EmployeeManagementGraphQL.Data.Models.Employee}
+  parent: EmployeeManagementGraphQL.Data.Models.Paging
+  definition: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+  href: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.html
+  name: PagedResult<Employee>
+  nameWithType: PagedResult<Employee>
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult<EmployeeManagementGraphQL.Data.Models.Employee>
+  nameWithType.vb: PagedResult(Of Employee)
+  fullName.vb: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult(Of EmployeeManagementGraphQL.Data.Models.Employee)
+  name.vb: PagedResult(Of Employee)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+    name: PagedResult
+    href: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.html
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Employee
+    name: Employee
+    href: EmployeeManagementGraphQL.Data.Models.Employee.html
+  - name: '>'
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+    name: PagedResult
+    href: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Employee
+    name: Employee
+    href: EmployeeManagementGraphQL.Data.Models.Employee.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+  commentId: T:EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+  href: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.html
+  name: PagedResult<T>
+  nameWithType: PagedResult<T>
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult<T>
+  nameWithType.vb: PagedResult(Of T)
+  fullName.vb: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult(Of T)
+  name.vb: PagedResult(Of T)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+    name: PagedResult
+    href: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult`1
+    name: PagedResult
+    href: EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: EmployeeManagementGraphQL.Data.Models.Paging
+  commentId: N:EmployeeManagementGraphQL.Data.Models.Paging
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data.Models.Paging
+  nameWithType: EmployeeManagementGraphQL.Data.Models.Paging
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging
+    name: Paging
+    href: EmployeeManagementGraphQL.Data.Models.Paging.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging
+    name: Paging
+    href: EmployeeManagementGraphQL.Data.Models.Paging.html
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById*
+  commentId: Overload:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html#EmployeeManagementGraphQL_Data_Repositories_EmployeeRepository_GetEmployeeById_System_Int32_
+  name: GetEmployeeById
+  nameWithType: EmployeeRepository.GetEmployeeById
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.GetEmployeeById
+- uid: EmployeeManagementGraphQL.Data.Models.Employee
+  commentId: T:EmployeeManagementGraphQL.Data.Models.Employee
+  parent: EmployeeManagementGraphQL.Data.Models
+  href: EmployeeManagementGraphQL.Data.Models.Employee.html
+  name: Employee
+  nameWithType: Employee
+  fullName: EmployeeManagementGraphQL.Data.Models.Employee
+- uid: EmployeeManagementGraphQL.Data.Models
+  commentId: N:EmployeeManagementGraphQL.Data.Models
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data.Models
+  nameWithType: EmployeeManagementGraphQL.Data.Models
+  fullName: EmployeeManagementGraphQL.Data.Models
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee*
+  commentId: Overload:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html#EmployeeManagementGraphQL_Data_Repositories_EmployeeRepository_AddEmployee_EmployeeManagementGraphQL_Data_Models_Employee_
+  name: AddEmployee
+  nameWithType: EmployeeRepository.AddEmployee
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.AddEmployee
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee*
+  commentId: Overload:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html#EmployeeManagementGraphQL_Data_Repositories_EmployeeRepository_UpdateEmployee_System_Int32_EmployeeManagementGraphQL_Data_Models_Employee_
+  name: UpdateEmployee
+  nameWithType: EmployeeRepository.UpdateEmployee
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.UpdateEmployee
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee*
+  commentId: Overload:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html#EmployeeManagementGraphQL_Data_Repositories_EmployeeRepository_DeleteEmployee_System_Int32_
+  name: DeleteEmployee
+  nameWithType: EmployeeRepository.DeleteEmployee
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.DeleteEmployee

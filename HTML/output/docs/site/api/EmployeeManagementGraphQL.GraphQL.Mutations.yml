@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.GraphQL.Mutations
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Mutations
+  id: EmployeeManagementGraphQL.GraphQL.Mutations
+  children:
+  - EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.GraphQL.Mutations
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Mutations
+  fullName: EmployeeManagementGraphQL.GraphQL.Mutations
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL
+references:
+- uid: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+  commentId: T:EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+  parent: EmployeeManagementGraphQL.GraphQL.Mutations
+  href: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation.html
+  name: EmployeeMutation
+  nameWithType: EmployeeMutation
+  fullName: EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation
+- uid: EmployeeManagementGraphQL.GraphQL.Mutations
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Mutations
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.GraphQL.Mutations
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Mutations
+  fullName: EmployeeManagementGraphQL.GraphQL.Mutations
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Mutations
+    name: Mutations
+    href: EmployeeManagementGraphQL.GraphQL.Mutations.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Mutations
+    name: Mutations
+    href: EmployeeManagementGraphQL.GraphQL.Mutations.html

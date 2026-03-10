@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Architettura | Technical Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Architettura | Technical Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="Docs Multi-Stack">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="architettura">Architettura</h1>
+
+<h2 id="contesto">Contesto</h2>
+<p>La solution contiene due applicazioni .NET 10:</p>
+<ul>
+<li><code>EmployeeManagementGraphQL</code>: backend API REST + GraphQL + EF Core SQL Server</li>
+<li><code>EmployeeManagementGraphQL.Mvc</code>: frontend MVC che consuma il backend via GraphQL client</li>
+</ul>
+<h2 id="layer-backend">Layer backend</h2>
+<ul>
+<li><code>Controllers</code>: endpoint REST</li>
+<li><code>GraphQL/Queries</code> e <code>GraphQL/Mutations</code>: contratto GraphQL</li>
+<li><code>Data/Repositories</code>: accesso ai dati e logica CRUD</li>
+<li><code>Data/EntityDatabaseContext</code>: persistenza EF Core</li>
+</ul>
+<h2 id="layer-frontend">Layer frontend</h2>
+<ul>
+<li><code>Controllers MVC</code>: orchestrano richieste utente</li>
+<li><code>GraphQL client</code>: richieste <code>POST /graphql</code> e mapping errori</li>
+<li><code>Views + ViewModel</code>: rendering e validazione lato UI</li>
+</ul>
+<h2 id="flusso-principale">Flusso principale</h2>
+<ol>
+<li>Browser invia richiesta al frontend MVC.</li>
+<li>Controller MVC usa <code>EmployeeGraphQlClient</code>.</li>
+<li>Il client invoca backend GraphQL.</li>
+<li>Backend risolve query/mutation su repository/EF Core.</li>
+<li>Il frontend renderizza il risultato in view Razor.</li>
+</ol>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/paolopci/GraphQLNet10/blob/develop/HTML/output/docs/site/docs/architecture/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Generated by dotnet-angular-blazor-docs skill
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1347 @@
+{
+  "source_base_path": "D:/test/GraphQL/Employee/HTML/output/docs/site",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Controllers.EmployeeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Controllers.EmployeeController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Controllers.EmployeeController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Controllers.WeatherForecastController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Controllers.WeatherForecastController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Controllers.WeatherForecastController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.EntityDatabaseContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.EntityDatabaseContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.EntityDatabaseContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Employee.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Employee.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Employee",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.PageInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.PageInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Paging.PageInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.PagedResult-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Paging.PagedResult<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.PaginationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.PaginationRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Paging.PaginationRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Paging.SortDirection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Paging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Paging",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.Review.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.Review.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models.Review",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Repositories.ReviewRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Repositories.ReviewRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Repositories.ReviewRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Mutations.EmployeeMutation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Mutations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Mutations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Mutations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Schemas.EmployeeSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Schemas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Schemas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Schemas",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeGraphType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeGraphType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.EmployeeGraphType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeInputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeInputType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.EmployeeInputType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeePagedResultGraphType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeePagedResultGraphType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.EmployeePagedResultGraphType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortFieldEnumType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortFieldEnumType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortFieldEnumType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.PageInfoGraphType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.PageInfoGraphType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.PageInfoGraphType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.ReviewGraphType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.ReviewGraphType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.ReviewGraphType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.ReviewInputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.ReviewInputType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.ReviewInputType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.SortDirectionEnumType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.SortDirectionEnumType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types.SortDirectionEnumType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.GraphQL.Types.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.GraphQL.Types",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.HomeController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Controllers.HomeController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest<TVariables>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse<TData>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.GraphQL.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.GraphQL",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.Mvc.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.Mvc.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.WeatherForecast.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL.WeatherForecast",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmployeeManagementGraphQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmployeeManagementGraphQL.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "EmployeeManagementGraphQL",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "artifacts/openapi/openapi-v1.json",
+      "output": {
+        "resource": {
+          "relative_path": "artifacts/openapi/openapi-v1.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/frontend/angular/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/frontend/angular/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/frontend/blazor/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/frontend/blazor/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "static/msdocs-theme.css",
+      "output": {
+        "resource": {
+          "relative_path": "static/msdocs-theme.css"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

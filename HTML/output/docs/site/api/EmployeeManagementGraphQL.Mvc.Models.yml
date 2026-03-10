@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Mvc.Models
+  commentId: N:EmployeeManagementGraphQL.Mvc.Models
+  id: EmployeeManagementGraphQL.Mvc.Models
+  children:
+  - EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm
+  - EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm
+  - EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm
+  - EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  - EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.Mvc.Models
+  nameWithType: EmployeeManagementGraphQL.Mvc.Models
+  fullName: EmployeeManagementGraphQL.Mvc.Models
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+references:
+- uid: EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm
+  parent: EmployeeManagementGraphQL.Mvc.Models
+  href: EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm.html
+  name: EmployeeDeleteVm
+  nameWithType: EmployeeDeleteVm
+  fullName: EmployeeManagementGraphQL.Mvc.Models.EmployeeDeleteVm
+- uid: EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm
+  href: EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm.html
+  name: EmployeesIndexVm
+  nameWithType: EmployeesIndexVm
+  fullName: EmployeeManagementGraphQL.Mvc.Models.EmployeesIndexVm
+- uid: EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm
+  parent: EmployeeManagementGraphQL.Mvc.Models
+  href: EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm.html
+  name: EmployeeUpsertVm
+  nameWithType: EmployeeUpsertVm
+  fullName: EmployeeManagementGraphQL.Mvc.Models.EmployeeUpsertVm
+- uid: EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel
+  href: EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel.html
+  name: ErrorViewModel
+  nameWithType: ErrorViewModel
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ErrorViewModel
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm
+  parent: EmployeeManagementGraphQL.Mvc.Models
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm.html
+  name: ReviewDeleteVm
+  nameWithType: ReviewDeleteVm
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewDeleteVm
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm.html
+  name: ReviewsIndexVm
+  nameWithType: ReviewsIndexVm
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewsIndexVm
+- uid: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+  parent: EmployeeManagementGraphQL.Mvc.Models
+  href: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm.html
+  name: ReviewUpsertVm
+  nameWithType: ReviewUpsertVm
+  fullName: EmployeeManagementGraphQL.Mvc.Models.ReviewUpsertVm
+- uid: EmployeeManagementGraphQL.Mvc.Models
+  commentId: N:EmployeeManagementGraphQL.Mvc.Models
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Mvc.Models
+  nameWithType: EmployeeManagementGraphQL.Mvc.Models
+  fullName: EmployeeManagementGraphQL.Mvc.Models
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Mvc.Models.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Mvc.Models.html

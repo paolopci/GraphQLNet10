@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Data.Repositories
+  commentId: N:EmployeeManagementGraphQL.Data.Repositories
+  id: EmployeeManagementGraphQL.Data.Repositories
+  children:
+  - EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  - EmployeeManagementGraphQL.Data.Repositories.ReviewRepository
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.Data.Repositories
+  nameWithType: EmployeeManagementGraphQL.Data.Repositories
+  fullName: EmployeeManagementGraphQL.Data.Repositories
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL
+references:
+- uid: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  commentId: T:EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+  parent: EmployeeManagementGraphQL.Data.Repositories
+  href: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository.html
+  name: EmployeeRepository
+  nameWithType: EmployeeRepository
+  fullName: EmployeeManagementGraphQL.Data.Repositories.EmployeeRepository
+- uid: EmployeeManagementGraphQL.Data.Repositories.ReviewRepository
+  commentId: T:EmployeeManagementGraphQL.Data.Repositories.ReviewRepository
+  parent: EmployeeManagementGraphQL.Data.Repositories
+  href: EmployeeManagementGraphQL.Data.Repositories.ReviewRepository.html
+  name: ReviewRepository
+  nameWithType: ReviewRepository
+  fullName: EmployeeManagementGraphQL.Data.Repositories.ReviewRepository
+- uid: EmployeeManagementGraphQL.Data.Repositories
+  commentId: N:EmployeeManagementGraphQL.Data.Repositories
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data.Repositories
+  nameWithType: EmployeeManagementGraphQL.Data.Repositories
+  fullName: EmployeeManagementGraphQL.Data.Repositories
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Repositories
+    name: Repositories
+    href: EmployeeManagementGraphQL.Data.Repositories.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Repositories
+    name: Repositories
+    href: EmployeeManagementGraphQL.Data.Repositories.html

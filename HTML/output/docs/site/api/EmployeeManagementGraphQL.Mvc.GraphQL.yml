@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL
+  commentId: N:EmployeeManagementGraphQL.Mvc.GraphQL
+  id: EmployeeManagementGraphQL.Mvc.GraphQL
+  children:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError
+  - EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult
+  - EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest`1
+  - EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+  - EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  - EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult
+  - EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables
+  - EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData
+  - EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.Mvc.GraphQL
+  nameWithType: EmployeeManagementGraphQL.Mvc.GraphQL
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+references:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient.html
+  name: EmployeeGraphQlClient
+  nameWithType: EmployeeGraphQlClient
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeGraphQlClient
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest`1
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest`1
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest-1.html
+  name: GraphQlRequest<TVariables>
+  nameWithType: GraphQlRequest<TVariables>
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest<TVariables>
+  nameWithType.vb: GraphQlRequest(Of TVariables)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest(Of TVariables)
+  name.vb: GraphQlRequest(Of TVariables)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest`1
+    name: GraphQlRequest
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest-1.html
+  - name: <
+  - name: TVariables
+  - name: '>'
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest`1
+    name: GraphQlRequest
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TVariables
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse-1.html
+  name: GraphQlResponse<TData>
+  nameWithType: GraphQlResponse<TData>
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse<TData>
+  nameWithType.vb: GraphQlResponse(Of TData)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse(Of TData)
+  name.vb: GraphQlResponse(Of TData)
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+    name: GraphQlResponse
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse-1.html
+  - name: <
+  - name: TData
+  - name: '>'
+  spec.vb:
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+    name: GraphQlResponse
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TData
+  - name: )
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError.html
+  name: GraphQlError
+  nameWithType: GraphQlError
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.html
+  name: EmployeesPagedVariables
+  nameWithType: EmployeesPagedVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData.html
+  name: EmployeesPagedResponseData
+  nameWithType: EmployeesPagedResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload.html
+  name: EmployeesPagedPayload
+  nameWithType: EmployeesPagedPayload
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedPayload
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm.html
+  name: EmployeeRowVm
+  nameWithType: EmployeeRowVm
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeRowVm
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm.html
+  name: PageInfoVm
+  nameWithType: PageInfoVm
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.PageInfoVm
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult.html
+  name: EmployeePagedQueryResult
+  nameWithType: EmployeePagedQueryResult
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeePagedQueryResult
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables.html
+  name: DeleteEmployeeVariables
+  nameWithType: DeleteEmployeeVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData.html
+  name: DeleteEmployeeResponseData
+  nameWithType: DeleteEmployeeResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteEmployeeResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult.html
+  name: GraphQlOperationResult
+  nameWithType: GraphQlOperationResult
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlOperationResult
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables.html
+  name: EmployeeInputVariables
+  nameWithType: EmployeeInputVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeInputVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables.html
+  name: AddEmployeeVariables
+  nameWithType: AddEmployeeVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables.html
+  name: UpdateEmployeeVariables
+  nameWithType: UpdateEmployeeVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables.html
+  name: EmployeeByIdVariables
+  nameWithType: EmployeeByIdVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData.html
+  name: AddEmployeeResponseData
+  nameWithType: AddEmployeeResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.AddEmployeeResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData.html
+  name: UpdateEmployeeResponseData
+  nameWithType: UpdateEmployeeResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateEmployeeResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData.html
+  name: EmployeeByIdResponseData
+  nameWithType: EmployeeByIdResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeByIdResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult.html
+  name: EmployeeMutationResult
+  nameWithType: EmployeeMutationResult
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeMutationResult
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult.html
+  name: EmployeeQueryResult
+  nameWithType: EmployeeQueryResult
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeeQueryResult
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm.html
+  name: ReviewRowVm
+  nameWithType: ReviewRowVm
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewRowVm
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData.html
+  name: ReviewsResponseData
+  nameWithType: ReviewsResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData.html
+  name: ReviewByIdResponseData
+  nameWithType: ReviewByIdResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables.html
+  name: ReviewsByEmployeeIdVariables
+  nameWithType: ReviewsByEmployeeIdVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData.html
+  name: ReviewsByEmployeeIdResponseData
+  nameWithType: ReviewsByEmployeeIdResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsByEmployeeIdResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables.html
+  name: ReviewByIdVariables
+  nameWithType: ReviewByIdVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewByIdVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables.html
+  name: ReviewInputVariables
+  nameWithType: ReviewInputVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewInputVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables.html
+  name: AddReviewVariables
+  nameWithType: AddReviewVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables.html
+  name: UpdateReviewVariables
+  nameWithType: UpdateReviewVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables.html
+  name: DeleteReviewVariables
+  nameWithType: DeleteReviewVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewVariables
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData.html
+  name: AddReviewResponseData
+  nameWithType: AddReviewResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.AddReviewResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData.html
+  name: UpdateReviewResponseData
+  nameWithType: UpdateReviewResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.UpdateReviewResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData.html
+  name: DeleteReviewResponseData
+  nameWithType: DeleteReviewResponseData
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.DeleteReviewResponseData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult.html
+  name: ReviewsQueryResult
+  nameWithType: ReviewsQueryResult
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewsQueryResult
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult.html
+  name: ReviewQueryResult
+  nameWithType: ReviewQueryResult
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewQueryResult
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult.html
+  name: ReviewMutationResult
+  nameWithType: ReviewMutationResult
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.ReviewMutationResult
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient.html
+  name: IEmployeeGraphQlClient
+  nameWithType: IEmployeeGraphQlClient
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.IEmployeeGraphQlClient
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL
+  commentId: N:EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Mvc.GraphQL
+  nameWithType: EmployeeManagementGraphQL.Mvc.GraphQL
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html

@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+  commentId: T:EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+  id: SortDirection
+  parent: EmployeeManagementGraphQL.Data.Models.Paging
+  children:
+  - EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Asc
+  - EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Desc
+  langs:
+  - csharp
+  - vb
+  name: SortDirection
+  nameWithType: SortDirection
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+  type: Enum
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: public enum SortDirection
+    content.vb: Public Enum SortDirection
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Asc
+  commentId: F:EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Asc
+  id: Asc
+  parent: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+  langs:
+  - csharp
+  - vb
+  name: Asc
+  nameWithType: SortDirection.Asc
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Asc
+  type: Field
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: Asc = 0
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Desc
+  commentId: F:EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Desc
+  id: Desc
+  parent: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+  langs:
+  - csharp
+  - vb
+  name: Desc
+  nameWithType: SortDirection.Desc
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.Desc
+  type: Field
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: Desc = 1
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+references:
+- uid: EmployeeManagementGraphQL.Data.Models.Paging
+  commentId: N:EmployeeManagementGraphQL.Data.Models.Paging
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data.Models.Paging
+  nameWithType: EmployeeManagementGraphQL.Data.Models.Paging
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging
+    name: Paging
+    href: EmployeeManagementGraphQL.Data.Models.Paging.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging
+    name: Paging
+    href: EmployeeManagementGraphQL.Data.Models.Paging.html
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+  commentId: T:EmployeeManagementGraphQL.Data.Models.Paging.SortDirection
+  parent: EmployeeManagementGraphQL.Data.Models.Paging
+  href: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection.html
+  name: SortDirection
+  nameWithType: SortDirection
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.SortDirection

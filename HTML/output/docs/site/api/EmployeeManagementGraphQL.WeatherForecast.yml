@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.WeatherForecast
+  commentId: T:EmployeeManagementGraphQL.WeatherForecast
+  id: WeatherForecast
+  parent: EmployeeManagementGraphQL
+  children:
+  - EmployeeManagementGraphQL.WeatherForecast.Date
+  - EmployeeManagementGraphQL.WeatherForecast.Summary
+  - EmployeeManagementGraphQL.WeatherForecast.TemperatureC
+  - EmployeeManagementGraphQL.WeatherForecast.TemperatureF
+  langs:
+  - csharp
+  - vb
+  name: WeatherForecast
+  nameWithType: WeatherForecast
+  fullName: EmployeeManagementGraphQL.WeatherForecast
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL
+  syntax:
+    content: public class WeatherForecast
+    content.vb: Public Class WeatherForecast
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EmployeeManagementGraphQL.WeatherForecast.Date
+  commentId: P:EmployeeManagementGraphQL.WeatherForecast.Date
+  id: Date
+  parent: EmployeeManagementGraphQL.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: WeatherForecast.Date
+  fullName: EmployeeManagementGraphQL.WeatherForecast.Date
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL
+  syntax:
+    content: public DateOnly Date { get; set; }
+    parameters: []
+    return:
+      type: System.DateOnly
+    content.vb: Public Property [Date] As DateOnly
+  overload: EmployeeManagementGraphQL.WeatherForecast.Date*
+- uid: EmployeeManagementGraphQL.WeatherForecast.TemperatureC
+  commentId: P:EmployeeManagementGraphQL.WeatherForecast.TemperatureC
+  id: TemperatureC
+  parent: EmployeeManagementGraphQL.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: TemperatureC
+  nameWithType: WeatherForecast.TemperatureC
+  fullName: EmployeeManagementGraphQL.WeatherForecast.TemperatureC
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL
+  syntax:
+    content: public int TemperatureC { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TemperatureC As Integer
+  overload: EmployeeManagementGraphQL.WeatherForecast.TemperatureC*
+- uid: EmployeeManagementGraphQL.WeatherForecast.TemperatureF
+  commentId: P:EmployeeManagementGraphQL.WeatherForecast.TemperatureF
+  id: TemperatureF
+  parent: EmployeeManagementGraphQL.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: TemperatureF
+  nameWithType: WeatherForecast.TemperatureF
+  fullName: EmployeeManagementGraphQL.WeatherForecast.TemperatureF
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL
+  syntax:
+    content: public int TemperatureF { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TemperatureF As Integer
+  overload: EmployeeManagementGraphQL.WeatherForecast.TemperatureF*
+- uid: EmployeeManagementGraphQL.WeatherForecast.Summary
+  commentId: P:EmployeeManagementGraphQL.WeatherForecast.Summary
+  id: Summary
+  parent: EmployeeManagementGraphQL.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: Summary
+  nameWithType: WeatherForecast.Summary
+  fullName: EmployeeManagementGraphQL.WeatherForecast.Summary
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL
+  syntax:
+    content: public string? Summary { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Summary As String
+  overload: EmployeeManagementGraphQL.WeatherForecast.Summary*
+references:
+- uid: EmployeeManagementGraphQL
+  commentId: N:EmployeeManagementGraphQL
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL
+  nameWithType: EmployeeManagementGraphQL
+  fullName: EmployeeManagementGraphQL
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EmployeeManagementGraphQL.WeatherForecast.Date*
+  commentId: Overload:EmployeeManagementGraphQL.WeatherForecast.Date
+  href: EmployeeManagementGraphQL.WeatherForecast.html#EmployeeManagementGraphQL_WeatherForecast_Date
+  name: Date
+  nameWithType: WeatherForecast.Date
+  fullName: EmployeeManagementGraphQL.WeatherForecast.Date
+- uid: System.DateOnly
+  commentId: T:System.DateOnly
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: System.DateOnly
+- uid: EmployeeManagementGraphQL.WeatherForecast.TemperatureC*
+  commentId: Overload:EmployeeManagementGraphQL.WeatherForecast.TemperatureC
+  href: EmployeeManagementGraphQL.WeatherForecast.html#EmployeeManagementGraphQL_WeatherForecast_TemperatureC
+  name: TemperatureC
+  nameWithType: WeatherForecast.TemperatureC
+  fullName: EmployeeManagementGraphQL.WeatherForecast.TemperatureC
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: EmployeeManagementGraphQL.WeatherForecast.TemperatureF*
+  commentId: Overload:EmployeeManagementGraphQL.WeatherForecast.TemperatureF
+  href: EmployeeManagementGraphQL.WeatherForecast.html#EmployeeManagementGraphQL_WeatherForecast_TemperatureF
+  name: TemperatureF
+  nameWithType: WeatherForecast.TemperatureF
+  fullName: EmployeeManagementGraphQL.WeatherForecast.TemperatureF
+- uid: EmployeeManagementGraphQL.WeatherForecast.Summary*
+  commentId: Overload:EmployeeManagementGraphQL.WeatherForecast.Summary
+  href: EmployeeManagementGraphQL.WeatherForecast.html#EmployeeManagementGraphQL_WeatherForecast_Summary
+  name: Summary
+  nameWithType: WeatherForecast.Summary
+  fullName: EmployeeManagementGraphQL.WeatherForecast.Summary
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

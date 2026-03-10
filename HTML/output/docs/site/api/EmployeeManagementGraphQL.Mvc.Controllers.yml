@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Mvc.Controllers
+  commentId: N:EmployeeManagementGraphQL.Mvc.Controllers
+  id: EmployeeManagementGraphQL.Mvc.Controllers
+  children:
+  - EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController
+  - EmployeeManagementGraphQL.Mvc.Controllers.HomeController
+  - EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.Mvc.Controllers
+  nameWithType: EmployeeManagementGraphQL.Mvc.Controllers
+  fullName: EmployeeManagementGraphQL.Mvc.Controllers
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+references:
+- uid: EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController
+  commentId: T:EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController
+  href: EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController.html
+  name: EmployeesController
+  nameWithType: EmployeesController
+  fullName: EmployeeManagementGraphQL.Mvc.Controllers.EmployeesController
+- uid: EmployeeManagementGraphQL.Mvc.Controllers.HomeController
+  commentId: T:EmployeeManagementGraphQL.Mvc.Controllers.HomeController
+  href: EmployeeManagementGraphQL.Mvc.Controllers.HomeController.html
+  name: HomeController
+  nameWithType: HomeController
+  fullName: EmployeeManagementGraphQL.Mvc.Controllers.HomeController
+- uid: EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController
+  commentId: T:EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController
+  href: EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController.html
+  name: ReviewsController
+  nameWithType: ReviewsController
+  fullName: EmployeeManagementGraphQL.Mvc.Controllers.ReviewsController

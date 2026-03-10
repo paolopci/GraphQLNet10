@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.GraphQL.Queries
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Queries
+  id: EmployeeManagementGraphQL.GraphQL.Queries
+  children:
+  - EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.GraphQL.Queries
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Queries
+  fullName: EmployeeManagementGraphQL.GraphQL.Queries
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL
+references:
+- uid: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+  commentId: T:EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+  parent: EmployeeManagementGraphQL.GraphQL.Queries
+  href: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery.html
+  name: EmployeeQuery
+  nameWithType: EmployeeQuery
+  fullName: EmployeeManagementGraphQL.GraphQL.Queries.EmployeeQuery
+- uid: EmployeeManagementGraphQL.GraphQL.Queries
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Queries
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.GraphQL.Queries
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Queries
+  fullName: EmployeeManagementGraphQL.GraphQL.Queries
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Queries
+    name: Queries
+    href: EmployeeManagementGraphQL.GraphQL.Queries.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Queries
+    name: Queries
+    href: EmployeeManagementGraphQL.GraphQL.Queries.html

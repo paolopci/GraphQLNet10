@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+  id: GraphQlResponse`1
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  children:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Data
+  - EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Errors
+  langs:
+  - csharp
+  - vb
+  name: GraphQlResponse<TData>
+  nameWithType: GraphQlResponse<TData>
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse<TData>
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: public sealed class GraphQlResponse<TData>
+    typeParameters:
+    - id: TData
+    content.vb: Public NotInheritable Class GraphQlResponse(Of TData)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: GraphQlResponse(Of TData)
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse(Of TData)
+  name.vb: GraphQlResponse(Of TData)
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Data
+  commentId: P:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Data
+  id: Data
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: GraphQlResponse<TData>.Data
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse<TData>.Data
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: >-
+      [JsonPropertyName("data")]
+
+      public TData? Data { get; init; }
+    parameters: []
+    return:
+      type: '{TData}'
+    content.vb: >-
+      <JsonPropertyName("data")>
+
+      Public Property Data As TData
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Data*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: data
+  nameWithType.vb: GraphQlResponse(Of TData).Data
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse(Of TData).Data
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Errors
+  commentId: P:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Errors
+  id: Errors
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Errors
+  nameWithType: GraphQlResponse<TData>.Errors
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse<TData>.Errors
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: >-
+      [JsonPropertyName("errors")]
+
+      public List<GraphQlError>? Errors { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError}
+    content.vb: >-
+      <JsonPropertyName("errors")>
+
+      Public Property Errors As List(Of GraphQlError)
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Errors*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: errors
+  nameWithType.vb: GraphQlResponse(Of TData).Errors
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse(Of TData).Errors
+references:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL
+  commentId: N:EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Mvc.GraphQL
+  nameWithType: EmployeeManagementGraphQL.Mvc.GraphQL
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Data*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Data
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse-1.html#EmployeeManagementGraphQL_Mvc_GraphQL_GraphQlResponse_1_Data
+  name: Data
+  nameWithType: GraphQlResponse<TData>.Data
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse<TData>.Data
+  nameWithType.vb: GraphQlResponse(Of TData).Data
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse(Of TData).Data
+- uid: '{TData}'
+  commentId: '!:TData'
+  definition: TData
+  name: TData
+  nameWithType: TData
+  fullName: TData
+- uid: TData
+  commentId: '!:TData'
+  name: TData
+  nameWithType: TData
+  fullName: TData
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Errors*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse`1.Errors
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse-1.html#EmployeeManagementGraphQL_Mvc_GraphQL_GraphQlResponse_1_Errors
+  name: Errors
+  nameWithType: GraphQlResponse<TData>.Errors
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse<TData>.Errors
+  nameWithType.vb: GraphQlResponse(Of TData).Errors
+  fullName.vb: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlResponse(Of TData).Errors
+- uid: System.Collections.Generic.List{EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError}
+  commentId: T:System.Collections.Generic.List{EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GraphQlError>
+  nameWithType: List<GraphQlError>
+  fullName: System.Collections.Generic.List<EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError>
+  nameWithType.vb: List(Of GraphQlError)
+  fullName.vb: System.Collections.Generic.List(Of EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError)
+  name.vb: List(Of GraphQlError)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError
+    name: GraphQlError
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError
+    name: GraphQlError
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.GraphQlError.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

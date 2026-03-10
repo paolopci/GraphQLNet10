@@ -1,0 +1,4232 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType
+  commentId: T:EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType
+  id: EmployeeSortInputType
+  parent: EmployeeManagementGraphQL.GraphQL.Types
+  children:
+  - EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.#ctor
+  langs:
+  - csharp
+  - vb
+  name: EmployeeSortInputType
+  nameWithType: EmployeeSortInputType
+  fullName: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.GraphQL.Types
+  syntax:
+    content: 'public class EmployeeSortInputType : InputObjectGraphType<EmployeeSortCriterion>, IInputObjectGraphType, IComplexGraphType, IGraphType, IProvideMetadata, IProvideDescription, IProvideDeprecationReason, INamedType'
+    content.vb: Public Class EmployeeSortInputType Inherits InputObjectGraphType(Of EmployeeSortCriterion) Implements IInputObjectGraphType, IComplexGraphType, IGraphType, IProvideMetadata, IProvideDescription, IProvideDeprecationReason, INamedType
+  inheritance:
+  - System.Object
+  - GraphQL.Utilities.MetadataProvider
+  - GraphQL.Types.GraphType
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  - GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  implements:
+  - GraphQL.Types.IInputObjectGraphType
+  - GraphQL.Types.IComplexGraphType
+  - GraphQL.Types.IGraphType
+  - GraphQL.Types.IProvideMetadata
+  - GraphQL.Types.IProvideDescription
+  - GraphQL.Types.IProvideDeprecationReason
+  - GraphQL.Types.INamedType
+  inheritedMembers:
+  - GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+  - GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.IsValidDefault(System.Object)
+  - GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ToAST(System.Object)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.HasField(System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.GetField(System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.AddField(GraphQL.Types.FieldType)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{{TReturnType}}},System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``2(System.String)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,{TProperty}}},System.Boolean,System.Type)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,{TProperty}}},System.Boolean,System.Type)
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``1
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``2
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``3
+  - GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Fields
+  - GraphQL.Types.GraphType.ToString
+  - GraphQL.Types.GraphType.Equals(GraphQL.Types.IGraphType)
+  - GraphQL.Types.GraphType.Equals(System.Object)
+  - GraphQL.Types.GraphType.GetHashCode
+  - GraphQL.Types.GraphType.Name
+  - GraphQL.Types.GraphType.Description
+  - GraphQL.Types.GraphType.DeprecationReason
+  - GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,{TType})
+  - GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{{TType}})
+  - GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+  - GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  - GraphQL.Utilities.MetadataProvider.Metadata
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.#ctor
+  commentId: M:EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.#ctor
+  id: '#ctor'
+  parent: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType
+  langs:
+  - csharp
+  - vb
+  name: EmployeeSortInputType()
+  nameWithType: EmployeeSortInputType.EmployeeSortInputType()
+  fullName: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.EmployeeSortInputType()
+  type: Constructor
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.GraphQL.Types
+  syntax:
+    content: public EmployeeSortInputType()
+    content.vb: Public Sub New()
+  overload: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.#ctor*
+  nameWithType.vb: EmployeeSortInputType.New()
+  fullName.vb: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.New()
+  name.vb: New()
+references:
+- uid: EmployeeManagementGraphQL.GraphQL.Types
+  commentId: N:EmployeeManagementGraphQL.GraphQL.Types
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.GraphQL.Types
+  nameWithType: EmployeeManagementGraphQL.GraphQL.Types
+  fullName: EmployeeManagementGraphQL.GraphQL.Types
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Types
+    name: Types
+    href: EmployeeManagementGraphQL.GraphQL.Types.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.GraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.GraphQL.Types
+    name: Types
+    href: EmployeeManagementGraphQL.GraphQL.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: GraphQL.Utilities.MetadataProvider
+  commentId: T:GraphQL.Utilities.MetadataProvider
+  parent: GraphQL.Utilities
+  isExternal: true
+  name: MetadataProvider
+  nameWithType: MetadataProvider
+  fullName: GraphQL.Utilities.MetadataProvider
+- uid: GraphQL.Types.GraphType
+  commentId: T:GraphQL.Types.GraphType
+  parent: GraphQL.Types
+  isExternal: true
+  name: GraphType
+  nameWithType: GraphType
+  fullName: GraphQL.Types.GraphType
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  commentId: T:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  parent: GraphQL.Types
+  definition: GraphQL.Types.ComplexGraphType`1
+  href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  name: ComplexGraphType<EmployeeSortCriterion>
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion)
+  name.vb: ComplexGraphType(Of EmployeeSortCriterion)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1
+    name: ComplexGraphType
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1
+    name: ComplexGraphType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+- uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  commentId: T:GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  parent: GraphQL.Types
+  definition: GraphQL.Types.InputObjectGraphType`1
+  href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  name: InputObjectGraphType<EmployeeSortCriterion>
+  nameWithType: InputObjectGraphType<EmployeeSortCriterion>
+  fullName: GraphQL.Types.InputObjectGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>
+  nameWithType.vb: InputObjectGraphType(Of EmployeeSortCriterion)
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion)
+  name.vb: InputObjectGraphType(Of EmployeeSortCriterion)
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType`1
+    name: InputObjectGraphType
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType`1
+    name: InputObjectGraphType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+- uid: GraphQL.Types.IInputObjectGraphType
+  commentId: T:GraphQL.Types.IInputObjectGraphType
+  parent: GraphQL.Types
+  isExternal: true
+  name: IInputObjectGraphType
+  nameWithType: IInputObjectGraphType
+  fullName: GraphQL.Types.IInputObjectGraphType
+- uid: GraphQL.Types.IComplexGraphType
+  commentId: T:GraphQL.Types.IComplexGraphType
+  parent: GraphQL.Types
+  isExternal: true
+  name: IComplexGraphType
+  nameWithType: IComplexGraphType
+  fullName: GraphQL.Types.IComplexGraphType
+- uid: GraphQL.Types.IGraphType
+  commentId: T:GraphQL.Types.IGraphType
+  parent: GraphQL.Types
+  isExternal: true
+  name: IGraphType
+  nameWithType: IGraphType
+  fullName: GraphQL.Types.IGraphType
+- uid: GraphQL.Types.IProvideMetadata
+  commentId: T:GraphQL.Types.IProvideMetadata
+  parent: GraphQL.Types
+  isExternal: true
+  name: IProvideMetadata
+  nameWithType: IProvideMetadata
+  fullName: GraphQL.Types.IProvideMetadata
+- uid: GraphQL.Types.IProvideDescription
+  commentId: T:GraphQL.Types.IProvideDescription
+  parent: GraphQL.Types
+  isExternal: true
+  name: IProvideDescription
+  nameWithType: IProvideDescription
+  fullName: GraphQL.Types.IProvideDescription
+- uid: GraphQL.Types.IProvideDeprecationReason
+  commentId: T:GraphQL.Types.IProvideDeprecationReason
+  parent: GraphQL.Types
+  isExternal: true
+  name: IProvideDeprecationReason
+  nameWithType: IProvideDeprecationReason
+  fullName: GraphQL.Types.IProvideDeprecationReason
+- uid: GraphQL.Types.INamedType
+  commentId: T:GraphQL.Types.INamedType
+  parent: GraphQL.Types
+  isExternal: true
+  name: INamedType
+  nameWithType: INamedType
+  fullName: GraphQL.Types.INamedType
+- uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.InputObjectGraphType`1.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: ParseDictionary(IDictionary<string, object>)
+  nameWithType: InputObjectGraphType<EmployeeSortCriterion>.ParseDictionary(IDictionary<string, object>)
+  fullName: GraphQL.Types.InputObjectGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.ParseDictionary(System.Collections.Generic.IDictionary<string, object>)
+  nameWithType.vb: InputObjectGraphType(Of EmployeeSortCriterion).ParseDictionary(IDictionary(Of String, Object))
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).ParseDictionary(System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: ParseDictionary(IDictionary(Of String, Object))
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: ParseDictionary
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: ParseDictionary
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.IsValidDefault(System.Object)
+  commentId: M:GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.IsValidDefault(System.Object)
+  parent: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.InputObjectGraphType`1.IsValidDefault(System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: IsValidDefault(object)
+  nameWithType: InputObjectGraphType<EmployeeSortCriterion>.IsValidDefault(object)
+  fullName: GraphQL.Types.InputObjectGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.IsValidDefault(object)
+  nameWithType.vb: InputObjectGraphType(Of EmployeeSortCriterion).IsValidDefault(Object)
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).IsValidDefault(Object)
+  name.vb: IsValidDefault(Object)
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.IsValidDefault(System.Object)
+    name: IsValidDefault
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.IsValidDefault(System.Object)
+    name: IsValidDefault
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ToAST(System.Object)
+  commentId: M:GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ToAST(System.Object)
+  parent: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.InputObjectGraphType`1.ToAST(System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: ToAST(object)
+  nameWithType: InputObjectGraphType<EmployeeSortCriterion>.ToAST(object)
+  fullName: GraphQL.Types.InputObjectGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.ToAST(object)
+  nameWithType.vb: InputObjectGraphType(Of EmployeeSortCriterion).ToAST(Object)
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).ToAST(Object)
+  name.vb: ToAST(Object)
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ToAST(System.Object)
+    name: ToAST
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.ToAST(System.Object)
+    name: ToAST
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.HasField(System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.HasField(System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.HasField(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: HasField(string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.HasField(string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.HasField(string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).HasField(String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).HasField(String)
+  name.vb: HasField(String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.HasField(System.String)
+    name: HasField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.HasField(System.String)
+    name: HasField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.GetField(System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.GetField(System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.GetField(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetField(string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.GetField(string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.GetField(string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).GetField(String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).GetField(String)
+  name.vb: GetField(String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.GetField(System.String)
+    name: GetField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.GetField(System.String)
+    name: GetField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.AddField(GraphQL.Types.FieldType)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.AddField(GraphQL.Types.FieldType)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.AddField(GraphQL.Types.FieldType)
+  name: AddField(FieldType)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.AddField(FieldType)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.AddField(GraphQL.Types.FieldType)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).AddField(FieldType)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).AddField(GraphQL.Types.FieldType)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.AddField(GraphQL.Types.FieldType)
+    name: AddField
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.FieldType
+    name: FieldType
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.AddField(GraphQL.Types.FieldType)
+    name: AddField
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.FieldType
+    name: FieldType
+    isExternal: true
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Field(Type, string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Field(Type, string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Field(System.Type, string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>, object>, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Field(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Field(System.Type, String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion), Object), String)
+  name.vb: Field(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Field<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Field<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Field<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>, object>, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Field(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Field(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion), Object), String)
+  name.vb: Field(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldDelegate<TGraphType>(string, string, QueryArguments, Delegate, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.FieldDelegate<TGraphType>(string, string, QueryArguments, Delegate, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.FieldDelegate<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Delegate, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).FieldDelegate(Of TGraphType)(String, String, QueryArguments, Delegate, String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).FieldDelegate(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Delegate, String)
+  name.vb: FieldDelegate(Of TGraphType)(String, String, QueryArguments, Delegate, String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+    name: FieldDelegate
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+    name: FieldDelegate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FieldAsync(Type, string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, Task<object>>, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.FieldAsync(Type, string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, Task<object>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.FieldAsync(System.Type, string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>, System.Threading.Tasks.Task<object>>, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).FieldAsync(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Task(Of Object)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).FieldAsync(System.Type, String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion), System.Threading.Tasks.Task(Of Object)), String)
+  name.vb: FieldAsync(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Task(Of Object)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, Task<object>>, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.FieldAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, Task<object>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.FieldAsync<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>, System.Threading.Tasks.Task<object>>, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).FieldAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Task(Of Object)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).FieldAsync(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion), System.Threading.Tasks.Task(Of Object)), String)
+  name.vb: FieldAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Task(Of Object)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{{TReturnType}}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{``1}},System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{``1}},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldAsync<TGraphType, TReturnType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, Task<TReturnType>>, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.FieldAsync<TGraphType, TReturnType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, Task<TReturnType>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.FieldAsync<TGraphType, TReturnType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>, System.Threading.Tasks.Task<TReturnType>>, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).FieldAsync(Of TGraphType, TReturnType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Task(Of TReturnType)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).FieldAsync(Of TGraphType, TReturnType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion), System.Threading.Tasks.Task(Of TReturnType)), String)
+  name.vb: FieldAsync(Of TGraphType, TReturnType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Task(Of TReturnType)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{``1}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TReturnType
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Threading.Tasks.Task{``1}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TReturnType
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldSubscribe<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, Func<IResolveEventStreamContext, IObservable<object>>, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.FieldSubscribe<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, Func<IResolveEventStreamContext, IObservable<object>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.FieldSubscribe<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>, object>, System.Func<GraphQL.Subscription.IResolveEventStreamContext, System.IObservable<object>>, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).FieldSubscribe(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), Func(Of IResolveEventStreamContext, IObservable(Of Object)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).FieldSubscribe(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion), Object), System.Func(Of GraphQL.Subscription.IResolveEventStreamContext, System.IObservable(Of Object)), String)
+  name.vb: FieldSubscribe(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), Func(Of IResolveEventStreamContext, IObservable(Of Object)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+    name: FieldSubscribe
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+    name: FieldSubscribe
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldSubscribeAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, Func<IResolveEventStreamContext, Task<IObservable<object>>>, string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.FieldSubscribeAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<EmployeeSortCriterion>, object>, Func<IResolveEventStreamContext, Task<IObservable<object>>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.FieldSubscribeAsync<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>, object>, System.Func<GraphQL.Subscription.IResolveEventStreamContext, System.Threading.Tasks.Task<System.IObservable<object>>>, string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).FieldSubscribeAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), Func(Of IResolveEventStreamContext, Task(Of IObservable(Of Object))), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).FieldSubscribeAsync(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion), Object), System.Func(Of GraphQL.Subscription.IResolveEventStreamContext, System.Threading.Tasks.Task(Of System.IObservable(Of Object))), String)
+  name.vb: FieldSubscribeAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of EmployeeSortCriterion), Object), Func(Of IResolveEventStreamContext, Task(Of IObservable(Of Object))), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+    name: FieldSubscribeAsync
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+    name: FieldSubscribeAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``2(System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``2(System.String)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Field``2(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Field<TGraphType, TReturnType>(string)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Field<TGraphType, TReturnType>(string)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Field<TGraphType, TReturnType>(string)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Field(Of TGraphType, TReturnType)(String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Field(Of TGraphType, TReturnType)(String)
+  name.vb: Field(Of TGraphType, TReturnType)(String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``2(System.String)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``2(System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Field``1
+  name: Field<TGraphType>()
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Field<TGraphType>()
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Field<TGraphType>()
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Field(Of TGraphType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Field(Of TGraphType)()
+  name.vb: Field(Of TGraphType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,{TProperty}}},System.Boolean,System.Type)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,``0}},System.Boolean,System.Type)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Field<TProperty>(string, Expression<Func<EmployeeSortCriterion, TProperty>>, bool, Type)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Field<TProperty>(string, Expression<Func<EmployeeSortCriterion, TProperty>>, bool, Type)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Field<TProperty>(string, System.Linq.Expressions.Expression<System.Func<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion, TProperty>>, bool, System.Type)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Field(Of TProperty)(String, Expression(Of Func(Of EmployeeSortCriterion, TProperty)), Boolean, Type)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Field(Of TProperty)(String, System.Linq.Expressions.Expression(Of System.Func(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion, TProperty)), Boolean, System.Type)
+  name.vb: Field(Of TProperty)(String, Expression(Of Func(Of EmployeeSortCriterion, TProperty)), Boolean, Type)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,{TProperty}}},System.Boolean,System.Type)
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,``0}},System.Boolean,System.Type)
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Field``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Field<TProperty>(Expression<Func<EmployeeSortCriterion, TProperty>>, bool, Type)
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Field<TProperty>(Expression<Func<EmployeeSortCriterion, TProperty>>, bool, Type)
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Field<TProperty>(System.Linq.Expressions.Expression<System.Func<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion, TProperty>>, bool, System.Type)
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Field(Of TProperty)(Expression(Of Func(Of EmployeeSortCriterion, TProperty)), Boolean, Type)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Field(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion, TProperty)), Boolean, System.Type)
+  name.vb: Field(Of TProperty)(Expression(Of Func(Of EmployeeSortCriterion, TProperty)), Boolean, Type)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Field``1(System.Linq.Expressions.Expression{System.Func{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion
+    name: EmployeeSortCriterion
+    href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``1
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``1
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Connection``1
+  name: Connection<TNodeType>()
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Connection<TNodeType>()
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Connection<TNodeType>()
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Connection(Of TNodeType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Connection(Of TNodeType)()
+  name.vb: Connection(Of TNodeType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``1
+    name: Connection
+    isExternal: true
+  - name: <
+  - name: TNodeType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``1
+    name: Connection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNodeType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``2
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``2
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Connection``2
+  name: Connection<TNodeType, TEdgeType>()
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Connection<TNodeType, TEdgeType>()
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Connection<TNodeType, TEdgeType>()
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Connection(Of TNodeType, TEdgeType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Connection(Of TNodeType, TEdgeType)()
+  name.vb: Connection(Of TNodeType, TEdgeType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``2
+    name: Connection
+    isExternal: true
+  - name: <
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``2
+    name: Connection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``3
+  commentId: M:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``3
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Connection``3
+  name: Connection<TNodeType, TEdgeType, TConnectionType>()
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Connection<TNodeType, TEdgeType, TConnectionType>()
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Connection<TNodeType, TEdgeType, TConnectionType>()
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Connection(Of TNodeType, TEdgeType, TConnectionType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Connection(Of TNodeType, TEdgeType, TConnectionType)()
+  name.vb: Connection(Of TNodeType, TEdgeType, TConnectionType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``3
+    name: Connection
+    isExternal: true
+  - name: <
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: ','
+  - name: " "
+  - name: TConnectionType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Connection``3
+    name: Connection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: ','
+  - name: " "
+  - name: TConnectionType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Fields
+  commentId: P:GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}.Fields
+  parent: GraphQL.Types.ComplexGraphType{EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion}
+  definition: GraphQL.Types.ComplexGraphType`1.Fields
+  name: Fields
+  nameWithType: ComplexGraphType<EmployeeSortCriterion>.Fields
+  fullName: GraphQL.Types.ComplexGraphType<EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion>.Fields
+  nameWithType.vb: ComplexGraphType(Of EmployeeSortCriterion).Fields
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortCriterion).Fields
+- uid: GraphQL.Types.GraphType.ToString
+  commentId: M:GraphQL.Types.GraphType.ToString
+  parent: GraphQL.Types.GraphType
+  isExternal: true
+  name: ToString()
+  nameWithType: GraphType.ToString()
+  fullName: GraphQL.Types.GraphType.ToString()
+  spec.csharp:
+  - uid: GraphQL.Types.GraphType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.GraphType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: GraphQL.Types.GraphType.Equals(GraphQL.Types.IGraphType)
+  commentId: M:GraphQL.Types.GraphType.Equals(GraphQL.Types.IGraphType)
+  parent: GraphQL.Types.GraphType
+  isExternal: true
+  name: Equals(IGraphType)
+  nameWithType: GraphType.Equals(IGraphType)
+  fullName: GraphQL.Types.GraphType.Equals(GraphQL.Types.IGraphType)
+  spec.csharp:
+  - uid: GraphQL.Types.GraphType.Equals(GraphQL.Types.IGraphType)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IGraphType
+    name: IGraphType
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.GraphType.Equals(GraphQL.Types.IGraphType)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IGraphType
+    name: IGraphType
+    isExternal: true
+  - name: )
+- uid: GraphQL.Types.GraphType.Equals(System.Object)
+  commentId: M:GraphQL.Types.GraphType.Equals(System.Object)
+  parent: GraphQL.Types.GraphType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Equals(object)
+  nameWithType: GraphType.Equals(object)
+  fullName: GraphQL.Types.GraphType.Equals(object)
+  nameWithType.vb: GraphType.Equals(Object)
+  fullName.vb: GraphQL.Types.GraphType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: GraphQL.Types.GraphType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.GraphType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: GraphQL.Types.GraphType.GetHashCode
+  commentId: M:GraphQL.Types.GraphType.GetHashCode
+  parent: GraphQL.Types.GraphType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: GraphType.GetHashCode()
+  fullName: GraphQL.Types.GraphType.GetHashCode()
+  spec.csharp:
+  - uid: GraphQL.Types.GraphType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.GraphType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: GraphQL.Types.GraphType.Name
+  commentId: P:GraphQL.Types.GraphType.Name
+  parent: GraphQL.Types.GraphType
+  isExternal: true
+  name: Name
+  nameWithType: GraphType.Name
+  fullName: GraphQL.Types.GraphType.Name
+- uid: GraphQL.Types.GraphType.Description
+  commentId: P:GraphQL.Types.GraphType.Description
+  parent: GraphQL.Types.GraphType
+  isExternal: true
+  name: Description
+  nameWithType: GraphType.Description
+  fullName: GraphQL.Types.GraphType.Description
+- uid: GraphQL.Types.GraphType.DeprecationReason
+  commentId: P:GraphQL.Types.GraphType.DeprecationReason
+  parent: GraphQL.Types.GraphType
+  isExternal: true
+  name: DeprecationReason
+  nameWithType: GraphType.DeprecationReason
+  fullName: GraphQL.Types.GraphType.DeprecationReason
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,{TType})
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  parent: GraphQL.Utilities.MetadataProvider
+  definition: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, TType)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, TType)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, TType)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, TType)
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, TType)
+  name.vb: GetMetadata(Of TType)(String, TType)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{{TType}})
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  parent: GraphQL.Utilities.MetadataProvider
+  definition: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, Func<TType>)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, Func<TType>)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, System.Func<TType>)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, Func(Of TType))
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, System.Func(Of TType))
+  name.vb: GetMetadata(Of TType)(String, Func(Of TType))
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+  commentId: M:GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+  parent: GraphQL.Utilities.MetadataProvider
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: HasMetadata(string)
+  nameWithType: MetadataProvider.HasMetadata(string)
+  fullName: GraphQL.Utilities.MetadataProvider.HasMetadata(string)
+  nameWithType.vb: MetadataProvider.HasMetadata(String)
+  fullName.vb: GraphQL.Utilities.MetadataProvider.HasMetadata(String)
+  name.vb: HasMetadata(String)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+    name: HasMetadata
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.HasMetadata(System.String)
+    name: HasMetadata
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  commentId: M:GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  parent: GraphQL.Utilities.MetadataProvider
+  isExternal: true
+  name: CopyMetadataTo(IProvideMetadata)
+  nameWithType: MetadataProvider.CopyMetadataTo(IProvideMetadata)
+  fullName: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+    name: CopyMetadataTo
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IProvideMetadata
+    name: IProvideMetadata
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.CopyMetadataTo(GraphQL.Types.IProvideMetadata)
+    name: CopyMetadataTo
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.IProvideMetadata
+    name: IProvideMetadata
+    isExternal: true
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.Metadata
+  commentId: P:GraphQL.Utilities.MetadataProvider.Metadata
+  parent: GraphQL.Utilities.MetadataProvider
+  isExternal: true
+  name: Metadata
+  nameWithType: MetadataProvider.Metadata
+  fullName: GraphQL.Utilities.MetadataProvider.Metadata
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GraphQL.Utilities
+  commentId: N:GraphQL.Utilities
+  isExternal: true
+  name: GraphQL.Utilities
+  nameWithType: GraphQL.Utilities
+  fullName: GraphQL.Utilities
+  spec.csharp:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Utilities
+    name: Utilities
+    isExternal: true
+  spec.vb:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Utilities
+    name: Utilities
+    isExternal: true
+- uid: GraphQL.Types
+  commentId: N:GraphQL.Types
+  isExternal: true
+  name: GraphQL.Types
+  nameWithType: GraphQL.Types
+  fullName: GraphQL.Types
+  spec.csharp:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Types
+    name: Types
+    isExternal: true
+  spec.vb:
+  - uid: GraphQL
+    name: GraphQL
+    isExternal: true
+  - name: .
+  - uid: GraphQL.Types
+    name: Types
+    isExternal: true
+- uid: GraphQL.Types.ComplexGraphType`1
+  commentId: T:GraphQL.Types.ComplexGraphType`1
+  isExternal: true
+  name: ComplexGraphType<TSourceType>
+  nameWithType: ComplexGraphType<TSourceType>
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>
+  nameWithType.vb: ComplexGraphType(Of TSourceType)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType)
+  name.vb: ComplexGraphType(Of TSourceType)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1
+    name: ComplexGraphType
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1
+    name: ComplexGraphType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+- uid: GraphQL.Types.InputObjectGraphType`1
+  commentId: T:GraphQL.Types.InputObjectGraphType`1
+  isExternal: true
+  name: InputObjectGraphType<TSourceType>
+  nameWithType: InputObjectGraphType<TSourceType>
+  fullName: GraphQL.Types.InputObjectGraphType<TSourceType>
+  nameWithType.vb: InputObjectGraphType(Of TSourceType)
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of TSourceType)
+  name.vb: InputObjectGraphType(Of TSourceType)
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType`1
+    name: InputObjectGraphType
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType`1
+    name: InputObjectGraphType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+- uid: GraphQL.Types.InputObjectGraphType`1.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:GraphQL.Types.InputObjectGraphType`1.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: ParseDictionary(IDictionary<string, object>)
+  nameWithType: InputObjectGraphType<TSourceType>.ParseDictionary(IDictionary<string, object>)
+  fullName: GraphQL.Types.InputObjectGraphType<TSourceType>.ParseDictionary(System.Collections.Generic.IDictionary<string, object>)
+  nameWithType.vb: InputObjectGraphType(Of TSourceType).ParseDictionary(IDictionary(Of String, Object))
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of TSourceType).ParseDictionary(System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: ParseDictionary(IDictionary(Of String, Object))
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType`1.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: ParseDictionary
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType`1.ParseDictionary(System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: ParseDictionary
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: GraphQL.Types.InputObjectGraphType`1.IsValidDefault(System.Object)
+  commentId: M:GraphQL.Types.InputObjectGraphType`1.IsValidDefault(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: IsValidDefault(object)
+  nameWithType: InputObjectGraphType<TSourceType>.IsValidDefault(object)
+  fullName: GraphQL.Types.InputObjectGraphType<TSourceType>.IsValidDefault(object)
+  nameWithType.vb: InputObjectGraphType(Of TSourceType).IsValidDefault(Object)
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of TSourceType).IsValidDefault(Object)
+  name.vb: IsValidDefault(Object)
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType`1.IsValidDefault(System.Object)
+    name: IsValidDefault
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType`1.IsValidDefault(System.Object)
+    name: IsValidDefault
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: GraphQL.Types.InputObjectGraphType`1.ToAST(System.Object)
+  commentId: M:GraphQL.Types.InputObjectGraphType`1.ToAST(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: ToAST(object)
+  nameWithType: InputObjectGraphType<TSourceType>.ToAST(object)
+  fullName: GraphQL.Types.InputObjectGraphType<TSourceType>.ToAST(object)
+  nameWithType.vb: InputObjectGraphType(Of TSourceType).ToAST(Object)
+  fullName.vb: GraphQL.Types.InputObjectGraphType(Of TSourceType).ToAST(Object)
+  name.vb: ToAST(Object)
+  spec.csharp:
+  - uid: GraphQL.Types.InputObjectGraphType`1.ToAST(System.Object)
+    name: ToAST
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.InputObjectGraphType`1.ToAST(System.Object)
+    name: ToAST
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.HasField(System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.HasField(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: HasField(string)
+  nameWithType: ComplexGraphType<TSourceType>.HasField(string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.HasField(string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).HasField(String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).HasField(String)
+  name.vb: HasField(String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.HasField(System.String)
+    name: HasField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.HasField(System.String)
+    name: HasField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.GetField(System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.GetField(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetField(string)
+  nameWithType: ComplexGraphType<TSourceType>.GetField(string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.GetField(string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).GetField(String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).GetField(String)
+  name.vb: GetField(String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.GetField(System.String)
+    name: GetField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.GetField(System.String)
+    name: GetField
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.AddField(GraphQL.Types.FieldType)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.AddField(GraphQL.Types.FieldType)
+  isExternal: true
+  name: AddField(FieldType)
+  nameWithType: ComplexGraphType<TSourceType>.AddField(FieldType)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.AddField(GraphQL.Types.FieldType)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).AddField(FieldType)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).AddField(GraphQL.Types.FieldType)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.AddField(GraphQL.Types.FieldType)
+    name: AddField
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.FieldType
+    name: FieldType
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.AddField(GraphQL.Types.FieldType)
+    name: AddField
+    isExternal: true
+  - name: (
+  - uid: GraphQL.Types.FieldType
+    name: FieldType
+    isExternal: true
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Field(Type, string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, string)
+  nameWithType: ComplexGraphType<TSourceType>.Field(Type, string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Field(System.Type, string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<TSourceType>, object>, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Field(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Field(System.Type, String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of TSourceType), Object), String)
+  name.vb: Field(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Field<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, string)
+  nameWithType: ComplexGraphType<TSourceType>.Field<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Field<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<TSourceType>, object>, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Field(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Field(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of TSourceType), Object), String)
+  name.vb: Field(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldDelegate<TGraphType>(string, string, QueryArguments, Delegate, string)
+  nameWithType: ComplexGraphType<TSourceType>.FieldDelegate<TGraphType>(string, string, QueryArguments, Delegate, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.FieldDelegate<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Delegate, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).FieldDelegate(Of TGraphType)(String, String, QueryArguments, Delegate, String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).FieldDelegate(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Delegate, String)
+  name.vb: FieldDelegate(Of TGraphType)(String, String, QueryArguments, Delegate, String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+    name: FieldDelegate
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldDelegate``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Delegate,System.String)
+    name: FieldDelegate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FieldAsync(Type, string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, Task<object>>, string)
+  nameWithType: ComplexGraphType<TSourceType>.FieldAsync(Type, string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, Task<object>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.FieldAsync(System.Type, string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<TSourceType>, System.Threading.Tasks.Task<object>>, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).FieldAsync(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Task(Of Object)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).FieldAsync(System.Type, String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of TSourceType), System.Threading.Tasks.Task(Of Object)), String)
+  name.vb: FieldAsync(Type, String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Task(Of Object)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldAsync(System.Type,System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, Task<object>>, string)
+  nameWithType: ComplexGraphType<TSourceType>.FieldAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, Task<object>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.FieldAsync<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<TSourceType>, System.Threading.Tasks.Task<object>>, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).FieldAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Task(Of Object)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).FieldAsync(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of TSourceType), System.Threading.Tasks.Task(Of Object)), String)
+  name.vb: FieldAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Task(Of Object)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{System.Object}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{``1}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{``1}},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldAsync<TGraphType, TReturnType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, Task<TReturnType>>, string)
+  nameWithType: ComplexGraphType<TSourceType>.FieldAsync<TGraphType, TReturnType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, Task<TReturnType>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.FieldAsync<TGraphType, TReturnType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<TSourceType>, System.Threading.Tasks.Task<TReturnType>>, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).FieldAsync(Of TGraphType, TReturnType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Task(Of TReturnType)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).FieldAsync(Of TGraphType, TReturnType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of TSourceType), System.Threading.Tasks.Task(Of TReturnType)), String)
+  name.vb: FieldAsync(Of TGraphType, TReturnType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Task(Of TReturnType)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{``1}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TReturnType
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldAsync``2(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Threading.Tasks.Task{``1}},System.String)
+    name: FieldAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TReturnType
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldSubscribe<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, Func<IResolveEventStreamContext, IObservable<object>>, string)
+  nameWithType: ComplexGraphType<TSourceType>.FieldSubscribe<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, Func<IResolveEventStreamContext, IObservable<object>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.FieldSubscribe<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<TSourceType>, object>, System.Func<GraphQL.Subscription.IResolveEventStreamContext, System.IObservable<object>>, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).FieldSubscribe(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), Func(Of IResolveEventStreamContext, IObservable(Of Object)), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).FieldSubscribe(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of TSourceType), Object), System.Func(Of GraphQL.Subscription.IResolveEventStreamContext, System.IObservable(Of Object)), String)
+  name.vb: FieldSubscribe(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), Func(Of IResolveEventStreamContext, IObservable(Of Object)), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+    name: FieldSubscribe
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldSubscribe``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.IObservable{System.Object}},System.String)
+    name: FieldSubscribe
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FieldSubscribeAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, Func<IResolveEventStreamContext, Task<IObservable<object>>>, string)
+  nameWithType: ComplexGraphType<TSourceType>.FieldSubscribeAsync<TGraphType>(string, string, QueryArguments, Func<IResolveFieldContext<TSourceType>, object>, Func<IResolveEventStreamContext, Task<IObservable<object>>>, string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.FieldSubscribeAsync<TGraphType>(string, string, GraphQL.Types.QueryArguments, System.Func<GraphQL.IResolveFieldContext<TSourceType>, object>, System.Func<GraphQL.Subscription.IResolveEventStreamContext, System.Threading.Tasks.Task<System.IObservable<object>>>, string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).FieldSubscribeAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), Func(Of IResolveEventStreamContext, Task(Of IObservable(Of Object))), String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).FieldSubscribeAsync(Of TGraphType)(String, String, GraphQL.Types.QueryArguments, System.Func(Of GraphQL.IResolveFieldContext(Of TSourceType), Object), System.Func(Of GraphQL.Subscription.IResolveEventStreamContext, System.Threading.Tasks.Task(Of System.IObservable(Of Object))), String)
+  name.vb: FieldSubscribeAsync(Of TGraphType)(String, String, QueryArguments, Func(Of IResolveFieldContext(Of TSourceType), Object), Func(Of IResolveEventStreamContext, Task(Of IObservable(Of Object))), String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+    name: FieldSubscribeAsync
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: <
+  - name: TSourceType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.FieldSubscribeAsync``1(System.String,System.String,GraphQL.Types.QueryArguments,System.Func{GraphQL.IResolveFieldContext{`0},System.Object},System.Func{GraphQL.Subscription.IResolveEventStreamContext,System.Threading.Tasks.Task{System.IObservable{System.Object}}},System.String)
+    name: FieldSubscribeAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: GraphQL.Types.QueryArguments
+    name: QueryArguments
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.IResolveFieldContext`1
+    name: IResolveFieldContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GraphQL.Subscription.IResolveEventStreamContext
+    name: IResolveEventStreamContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Field``2(System.String)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Field``2(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Field<TGraphType, TReturnType>(string)
+  nameWithType: ComplexGraphType<TSourceType>.Field<TGraphType, TReturnType>(string)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Field<TGraphType, TReturnType>(string)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Field(Of TGraphType, TReturnType)(String)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Field(Of TGraphType, TReturnType)(String)
+  name.vb: Field(Of TGraphType, TReturnType)(String)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``2(System.String)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``2(System.String)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: ','
+  - name: " "
+  - name: TReturnType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Field``1
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Field``1
+  isExternal: true
+  name: Field<TGraphType>()
+  nameWithType: ComplexGraphType<TSourceType>.Field<TGraphType>()
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Field<TGraphType>()
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Field(Of TGraphType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Field(Of TGraphType)()
+  name.vb: Field(Of TGraphType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TGraphType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGraphType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Field<TProperty>(string, Expression<Func<TSourceType, TProperty>>, bool, Type)
+  nameWithType: ComplexGraphType<TSourceType>.Field<TProperty>(string, Expression<Func<TSourceType, TProperty>>, bool, Type)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Field<TProperty>(string, System.Linq.Expressions.Expression<System.Func<TSourceType, TProperty>>, bool, System.Type)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Field(Of TProperty)(String, Expression(Of Func(Of TSourceType, TProperty)), Boolean, Type)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Field(Of TProperty)(String, System.Linq.Expressions.Expression(Of System.Func(Of TSourceType, TProperty)), Boolean, System.Type)
+  name.vb: Field(Of TProperty)(String, Expression(Of Func(Of TSourceType, TProperty)), Boolean, Type)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSourceType
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Field``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Field<TProperty>(Expression<Func<TSourceType, TProperty>>, bool, Type)
+  nameWithType: ComplexGraphType<TSourceType>.Field<TProperty>(Expression<Func<TSourceType, TProperty>>, bool, Type)
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Field<TProperty>(System.Linq.Expressions.Expression<System.Func<TSourceType, TProperty>>, bool, System.Type)
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Field(Of TProperty)(Expression(Of Func(Of TSourceType, TProperty)), Boolean, Type)
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Field(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of TSourceType, TProperty)), Boolean, System.Type)
+  name.vb: Field(Of TProperty)(Expression(Of Func(Of TSourceType, TProperty)), Boolean, Type)
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSourceType
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Field``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean,System.Type)
+    name: Field
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSourceType
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Connection``1
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Connection``1
+  isExternal: true
+  name: Connection<TNodeType>()
+  nameWithType: ComplexGraphType<TSourceType>.Connection<TNodeType>()
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Connection<TNodeType>()
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Connection(Of TNodeType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Connection(Of TNodeType)()
+  name.vb: Connection(Of TNodeType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Connection``1
+    name: Connection
+    isExternal: true
+  - name: <
+  - name: TNodeType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Connection``1
+    name: Connection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNodeType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Connection``2
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Connection``2
+  isExternal: true
+  name: Connection<TNodeType, TEdgeType>()
+  nameWithType: ComplexGraphType<TSourceType>.Connection<TNodeType, TEdgeType>()
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Connection<TNodeType, TEdgeType>()
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Connection(Of TNodeType, TEdgeType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Connection(Of TNodeType, TEdgeType)()
+  name.vb: Connection(Of TNodeType, TEdgeType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Connection``2
+    name: Connection
+    isExternal: true
+  - name: <
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Connection``2
+    name: Connection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Connection``3
+  commentId: M:GraphQL.Types.ComplexGraphType`1.Connection``3
+  isExternal: true
+  name: Connection<TNodeType, TEdgeType, TConnectionType>()
+  nameWithType: ComplexGraphType<TSourceType>.Connection<TNodeType, TEdgeType, TConnectionType>()
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Connection<TNodeType, TEdgeType, TConnectionType>()
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Connection(Of TNodeType, TEdgeType, TConnectionType)()
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Connection(Of TNodeType, TEdgeType, TConnectionType)()
+  name.vb: Connection(Of TNodeType, TEdgeType, TConnectionType)()
+  spec.csharp:
+  - uid: GraphQL.Types.ComplexGraphType`1.Connection``3
+    name: Connection
+    isExternal: true
+  - name: <
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: ','
+  - name: " "
+  - name: TConnectionType
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Types.ComplexGraphType`1.Connection``3
+    name: Connection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNodeType
+  - name: ','
+  - name: " "
+  - name: TEdgeType
+  - name: ','
+  - name: " "
+  - name: TConnectionType
+  - name: )
+  - name: (
+  - name: )
+- uid: GraphQL.Types.ComplexGraphType`1.Fields
+  commentId: P:GraphQL.Types.ComplexGraphType`1.Fields
+  isExternal: true
+  name: Fields
+  nameWithType: ComplexGraphType<TSourceType>.Fields
+  fullName: GraphQL.Types.ComplexGraphType<TSourceType>.Fields
+  nameWithType.vb: ComplexGraphType(Of TSourceType).Fields
+  fullName.vb: GraphQL.Types.ComplexGraphType(Of TSourceType).Fields
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, TType)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, TType)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, TType)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, TType)
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, TType)
+  name.vb: GetMetadata(Of TType)(String, TType)
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,``0)
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TType
+  - name: )
+- uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  commentId: M:GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMetadata<TType>(string, Func<TType>)
+  nameWithType: MetadataProvider.GetMetadata<TType>(string, Func<TType>)
+  fullName: GraphQL.Utilities.MetadataProvider.GetMetadata<TType>(string, System.Func<TType>)
+  nameWithType.vb: MetadataProvider.GetMetadata(Of TType)(String, Func(Of TType))
+  fullName.vb: GraphQL.Utilities.MetadataProvider.GetMetadata(Of TType)(String, System.Func(Of TType))
+  name.vb: GetMetadata(Of TType)(String, Func(Of TType))
+  spec.csharp:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: GraphQL.Utilities.MetadataProvider.GetMetadata``1(System.String,System.Func{``0})
+    name: GetMetadata
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: )
+- uid: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.#ctor*
+  commentId: Overload:EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.#ctor
+  href: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.html#EmployeeManagementGraphQL_GraphQL_Types_EmployeeSortInputType__ctor
+  name: EmployeeSortInputType
+  nameWithType: EmployeeSortInputType.EmployeeSortInputType
+  fullName: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.EmployeeSortInputType
+  nameWithType.vb: EmployeeSortInputType.New
+  fullName.vb: EmployeeManagementGraphQL.GraphQL.Types.EmployeeSortInputType.New
+  name.vb: New

@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  commentId: T:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  id: EmployeesPagedVariables
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL
+  children:
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy
+  - EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir
+  langs:
+  - csharp
+  - vb
+  name: EmployeesPagedVariables
+  nameWithType: EmployeesPagedVariables
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  type: Class
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: public sealed class EmployeesPagedVariables
+    content.vb: Public NotInheritable Class EmployeesPagedVariables
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page
+  commentId: P:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page
+  id: Page
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  langs:
+  - csharp
+  - vb
+  name: Page
+  nameWithType: EmployeesPagedVariables.Page
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: >-
+      [JsonPropertyName("page")]
+
+      public int Page { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonPropertyName("page")>
+
+      Public Property Page As Integer
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: page
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize
+  commentId: P:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize
+  id: PageSize
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: EmployeesPagedVariables.PageSize
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: >-
+      [JsonPropertyName("pageSize")]
+
+      public int PageSize { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonPropertyName("pageSize")>
+
+      Public Property PageSize As Integer
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pageSize
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy
+  commentId: P:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy
+  id: SortBy
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  langs:
+  - csharp
+  - vb
+  name: SortBy
+  nameWithType: EmployeesPagedVariables.SortBy
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: >-
+      [JsonPropertyName("sortBy")]
+
+      public required string SortBy { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("sortBy")>
+
+      Public Property SortBy As String
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sortBy
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir
+  commentId: P:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir
+  id: SortDir
+  parent: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables
+  langs:
+  - csharp
+  - vb
+  name: SortDir
+  nameWithType: EmployeesPagedVariables.SortDir
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir
+  type: Property
+  assemblies:
+  - EmployeeManagementGraphQL.Mvc
+  namespace: EmployeeManagementGraphQL.Mvc.GraphQL
+  syntax:
+    content: >-
+      [JsonPropertyName("sortDir")]
+
+      public required string SortDir { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("sortDir")>
+
+      Public Property SortDir As String
+  overload: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sortDir
+references:
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL
+  commentId: N:EmployeeManagementGraphQL.Mvc.GraphQL
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Mvc.GraphQL
+  nameWithType: EmployeeManagementGraphQL.Mvc.GraphQL
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc
+    name: Mvc
+    href: EmployeeManagementGraphQL.Mvc.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Mvc.GraphQL
+    name: GraphQL
+    href: EmployeeManagementGraphQL.Mvc.GraphQL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeesPagedVariables_Page
+  name: Page
+  nameWithType: EmployeesPagedVariables.Page
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.Page
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeesPagedVariables_PageSize
+  name: PageSize
+  nameWithType: EmployeesPagedVariables.PageSize
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.PageSize
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeesPagedVariables_SortBy
+  name: SortBy
+  nameWithType: EmployeesPagedVariables.SortBy
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortBy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir*
+  commentId: Overload:EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir
+  href: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.html#EmployeeManagementGraphQL_Mvc_GraphQL_EmployeesPagedVariables_SortDir
+  name: SortDir
+  nameWithType: EmployeesPagedVariables.SortDir
+  fullName: EmployeeManagementGraphQL.Mvc.GraphQL.EmployeesPagedVariables.SortDir

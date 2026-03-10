@@ -1,0 +1,13 @@
+- name: Home
+  href: docs/index.md
+- name: API
+  href: docs/api/index.md
+- name: Frontend
+  items:
+  - name: MVC
+    href: docs/frontend/angular/index.md
+  - name: Blazor
+    href: docs/frontend/blazor/index.md
+- name: Architecture
+  href: docs/architecture/index.md
+

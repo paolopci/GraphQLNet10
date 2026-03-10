@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Data
+  commentId: N:EmployeeManagementGraphQL.Data
+  id: EmployeeManagementGraphQL.Data
+  children:
+  - EmployeeManagementGraphQL.Data.EntityDatabaseContext
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.Data
+  nameWithType: EmployeeManagementGraphQL.Data
+  fullName: EmployeeManagementGraphQL.Data
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL
+references:
+- uid: EmployeeManagementGraphQL.Data.EntityDatabaseContext
+  commentId: T:EmployeeManagementGraphQL.Data.EntityDatabaseContext
+  parent: EmployeeManagementGraphQL.Data
+  href: EmployeeManagementGraphQL.Data.EntityDatabaseContext.html
+  name: EntityDatabaseContext
+  nameWithType: EntityDatabaseContext
+  fullName: EmployeeManagementGraphQL.Data.EntityDatabaseContext
+- uid: EmployeeManagementGraphQL.Data
+  commentId: N:EmployeeManagementGraphQL.Data
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data
+  nameWithType: EmployeeManagementGraphQL.Data
+  fullName: EmployeeManagementGraphQL.Data
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html

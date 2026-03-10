@@ -1,0 +1,63 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "EmployeeManagementGraphQL REST API",
+    "version": "v1",
+    "description": "Specifica OpenAPI generata in fallback dalla skill Docs Multi-Stack per i controller REST rilevati."
+  },
+  "paths": {
+    "/api/Employee": {
+      "get": {
+        "tags": ["Employee"],
+        "operationId": "Employee_GetAll",
+        "responses": {
+          "200": { "description": "Elenco dipendenti" }
+        }
+      },
+      "post": {
+        "tags": ["Employee"],
+        "operationId": "Employee_AddEmployee",
+        "responses": {
+          "200": { "description": "Dipendente creato" }
+        }
+      }
+    },
+    "/api/Employee/{id}": {
+      "get": {
+        "tags": ["Employee"],
+        "operationId": "Employee_GetEmployeeById",
+        "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "format": "int32" } }],
+        "responses": {
+          "200": { "description": "Dipendente trovato" },
+          "404": { "description": "Dipendente non trovato" }
+        }
+      },
+      "put": {
+        "tags": ["Employee"],
+        "operationId": "Employee_UpdateEmployee",
+        "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "format": "int32" } }],
+        "responses": {
+          "200": { "description": "Dipendente aggiornato" },
+          "404": { "description": "Dipendente non trovato" }
+        }
+      },
+      "delete": {
+        "tags": ["Employee"],
+        "operationId": "Employee_DeleteEmployee",
+        "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "format": "int32" } }],
+        "responses": {
+          "204": { "description": "Dipendente eliminato" }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": ["WeatherForecast"],
+        "operationId": "WeatherForecast_Get",
+        "responses": {
+          "200": { "description": "Previsioni meteo" }
+        }
+      }
+    }
+  }
+}

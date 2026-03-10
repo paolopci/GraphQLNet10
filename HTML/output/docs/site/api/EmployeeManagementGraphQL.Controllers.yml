@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Controllers
+  commentId: N:EmployeeManagementGraphQL.Controllers
+  id: EmployeeManagementGraphQL.Controllers
+  children:
+  - EmployeeManagementGraphQL.Controllers.EmployeeController
+  - EmployeeManagementGraphQL.Controllers.WeatherForecastController
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL.Controllers
+  nameWithType: EmployeeManagementGraphQL.Controllers
+  fullName: EmployeeManagementGraphQL.Controllers
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL
+references:
+- uid: EmployeeManagementGraphQL.Controllers.EmployeeController
+  commentId: T:EmployeeManagementGraphQL.Controllers.EmployeeController
+  href: EmployeeManagementGraphQL.Controllers.EmployeeController.html
+  name: EmployeeController
+  nameWithType: EmployeeController
+  fullName: EmployeeManagementGraphQL.Controllers.EmployeeController
+- uid: EmployeeManagementGraphQL.Controllers.WeatherForecastController
+  commentId: T:EmployeeManagementGraphQL.Controllers.WeatherForecastController
+  href: EmployeeManagementGraphQL.Controllers.WeatherForecastController.html
+  name: WeatherForecastController
+  nameWithType: WeatherForecastController
+  fullName: EmployeeManagementGraphQL.Controllers.WeatherForecastController

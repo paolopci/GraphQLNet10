@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  commentId: T:EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  id: EmployeeSortField
+  parent: EmployeeManagementGraphQL.Data.Models.Paging
+  children:
+  - EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Email
+  - EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.FirstName
+  - EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Id
+  - EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.LastName
+  langs:
+  - csharp
+  - vb
+  name: EmployeeSortField
+  nameWithType: EmployeeSortField
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  type: Enum
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: public enum EmployeeSortField
+    content.vb: Public Enum EmployeeSortField
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Id
+  commentId: F:EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Id
+  id: Id
+  parent: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: EmployeeSortField.Id
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Id
+  type: Field
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: Id = 0
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.FirstName
+  commentId: F:EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.FirstName
+  id: FirstName
+  parent: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  langs:
+  - csharp
+  - vb
+  name: FirstName
+  nameWithType: EmployeeSortField.FirstName
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.FirstName
+  type: Field
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: FirstName = 1
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.LastName
+  commentId: F:EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.LastName
+  id: LastName
+  parent: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  langs:
+  - csharp
+  - vb
+  name: LastName
+  nameWithType: EmployeeSortField.LastName
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.LastName
+  type: Field
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: LastName = 2
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Email
+  commentId: F:EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Email
+  id: Email
+  parent: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: EmployeeSortField.Email
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.Email
+  type: Field
+  assemblies:
+  - EmployeeManagementGraphQL
+  namespace: EmployeeManagementGraphQL.Data.Models.Paging
+  syntax:
+    content: Email = 3
+    return:
+      type: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+references:
+- uid: EmployeeManagementGraphQL.Data.Models.Paging
+  commentId: N:EmployeeManagementGraphQL.Data.Models.Paging
+  href: EmployeeManagementGraphQL.html
+  name: EmployeeManagementGraphQL.Data.Models.Paging
+  nameWithType: EmployeeManagementGraphQL.Data.Models.Paging
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging
+  spec.csharp:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging
+    name: Paging
+    href: EmployeeManagementGraphQL.Data.Models.Paging.html
+  spec.vb:
+  - uid: EmployeeManagementGraphQL
+    name: EmployeeManagementGraphQL
+    href: EmployeeManagementGraphQL.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data
+    name: Data
+    href: EmployeeManagementGraphQL.Data.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models
+    name: Models
+    href: EmployeeManagementGraphQL.Data.Models.html
+  - name: .
+  - uid: EmployeeManagementGraphQL.Data.Models.Paging
+    name: Paging
+    href: EmployeeManagementGraphQL.Data.Models.Paging.html
+- uid: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  commentId: T:EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField
+  parent: EmployeeManagementGraphQL.Data.Models.Paging
+  href: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField.html
+  name: EmployeeSortField
+  nameWithType: EmployeeSortField
+  fullName: EmployeeManagementGraphQL.Data.Models.Paging.EmployeeSortField

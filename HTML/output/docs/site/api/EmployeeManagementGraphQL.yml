@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmployeeManagementGraphQL
+  commentId: N:EmployeeManagementGraphQL
+  id: EmployeeManagementGraphQL
+  children:
+  - EmployeeManagementGraphQL.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: EmployeeManagementGraphQL
+  nameWithType: EmployeeManagementGraphQL
+  fullName: EmployeeManagementGraphQL
+  type: Namespace
+  assemblies:
+  - EmployeeManagementGraphQL
+references:
+- uid: EmployeeManagementGraphQL.WeatherForecast
+  commentId: T:EmployeeManagementGraphQL.WeatherForecast
+  href: EmployeeManagementGraphQL.WeatherForecast.html
+  name: WeatherForecast
+  nameWithType: WeatherForecast
+  fullName: EmployeeManagementGraphQL.WeatherForecast
